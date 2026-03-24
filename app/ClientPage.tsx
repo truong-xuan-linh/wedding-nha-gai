@@ -64,48 +64,92 @@ export default function ClientPage({ htmlContent }: ClientPageProps) {
     // initial (hidden/translated) state first, then animate them in on scroll.
     const transitionEls = container.querySelectorAll("[data-transition-key]");
 
+    // Detect the actual scrollable container.
+    const scrollContainer = container.querySelector("#root-page-container")
+      ?.parentElement as HTMLElement | null;
+
+    const revealedRefs = new Set<HTMLElement>();
+
+    const revealEl = (el: HTMLElement) => {
+      if (revealedRefs.has(el)) return;
+      revealedRefs.add(el);
+      el.style.transform = "none";
+      el.style.opacity = "1";
+    };
+
     transitionEls.forEach((el) => {
       const htmlEl = el as HTMLElement;
+
+      // Disable transition temporarily to set the initial hidden state instantly
+      htmlEl.style.transition = "none";
+
       const key = htmlEl.getAttribute("data-transition-key") ?? "";
       if (key.includes("slide-up")) {
         htmlEl.style.transform = "translateY(50px)";
-        htmlEl.style.opacity = "0";
       } else if (key.includes("slide-down")) {
         htmlEl.style.transform = "translateY(-50px)";
-        htmlEl.style.opacity = "0";
       } else if (key.includes("slide-right")) {
         htmlEl.style.transform = "translateX(-50px)";
-        htmlEl.style.opacity = "0";
       } else if (key.includes("slide-left")) {
         htmlEl.style.transform = "translateX(50px)";
-        htmlEl.style.opacity = "0";
-      } else if (key.includes("fade")) {
-        htmlEl.style.opacity = "0";
       }
+      htmlEl.style.opacity = "0";
+
+      // Force a reflow
+      htmlEl.offsetHeight;
+      // Set a standard transition for the reveal effect
+      htmlEl.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
     });
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const el = entry.target as HTMLElement;
-            el.style.transform = "none";
-            el.style.opacity = "1";
-            observer.unobserve(el);
+            revealEl(entry.target as HTMLElement);
+            observer.unobserve(entry.target);
           }
         });
       },
       {
-        threshold: 0.05,
-        rootMargin: "0px 0px -50px 0px",
+        root: scrollContainer,
+        threshold: 0,
+        rootMargin: "0px 0px 50px 0px",
       }
     );
 
-    transitionEls.forEach((el) => observer.observe(el));
+    // Fallback scroll listener for cases where IntersectionObserver fails or is clipped by ancestors
+    const handleScrollReveal = () => {
+      if (!scrollContainer) return;
+      const containerRect = scrollContainer.getBoundingClientRect();
+      transitionEls.forEach((el) => {
+        const htmlEl = el as HTMLElement;
+        if (revealedRefs.has(htmlEl)) return;
+        const rect = htmlEl.getBoundingClientRect();
+        // Trigger if top of element is within viewport + margin
+        if (rect.top < containerRect.bottom + 50) {
+          revealEl(htmlEl);
+        }
+      });
+    };
+
+    if (scrollContainer) {
+      scrollContainer.addEventListener("scroll", handleScrollReveal);
+    }
+
+    // Double rAF: IntersectionObserver fires BEFORE paint (as part of the rendering
+    // pipeline: rAF → layout → IO → paint). A single rAF means IO reveals elements
+    // before the browser ever paints them hidden — no transition plays.
+    // The outer rAF causes the browser to paint the hidden state first.
+    // The inner rAF then starts observing; IO fires in the next rendering cycle
+    // when elements have already been painted hidden, so the transition plays.
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        transitionEls.forEach((el) => observer.observe(el));
+      });
+    });
 
     // Auto-scroll: replicate original site's autoScroll speed of 0.06px per frame
-    const scrollContainer = container.querySelector("#root-page-container")
-      ?.parentElement as HTMLElement | null;
+
     let scrollAnimId: number;
 
     // Pause auto-scroll when user manually scrolls, resume after 3s idle
@@ -133,8 +177,12 @@ export default function ClientPage({ htmlContent }: ClientPageProps) {
       }, 3000);
     };
 
+    // Listen on wheel/touch events only — NOT the scroll event — so that
+    // auto-scroll's own programmatic scrollTop changes don't pause themselves.
     if (scrollContainer) {
-      scrollContainer.addEventListener("scroll", handleUserScroll, { passive: true });
+      scrollContainer.addEventListener("wheel", handleUserScroll, { passive: true });
+      scrollContainer.addEventListener("touchstart", handleUserScroll, { passive: true });
+      scrollContainer.addEventListener("touchmove", handleUserScroll, { passive: true });
     }
 
     // Countdown timer
@@ -163,28 +211,35 @@ export default function ClientPage({ htmlContent }: ClientPageProps) {
       };
 
       updateCountdown();
-      const countdownInterval = setInterval(updateCountdown, 60000);
+      const countdownIntervalId = setInterval(updateCountdown, 60000);
+
+      const originalCleanup = () => {
+        clearInterval(countdownIntervalId);
+      };
+      
+      // We'll wrap the final return to include this
       return () => {
-        clearInterval(countdownInterval);
-        observer.disconnect();
-        cancelAnimationFrame(scrollAnimId);
-        if (scrollContainer) scrollContainer.removeEventListener("scroll", handleUserScroll);
-        if (userScrollTimeout) clearTimeout(userScrollTimeout);
-        if (messageBtn) messageBtn.removeEventListener("click", openPopup);
-        if (closeBtn) closeBtn.removeEventListener("click", closePopup);
-        if (popupBackdrop) popupBackdrop.removeEventListener("click", closePopup);
+        originalCleanup();
+        cleanupAll();
       };
     }
 
-    return () => {
+    const cleanupAll = () => {
       observer.disconnect();
       cancelAnimationFrame(scrollAnimId);
-      if (scrollContainer) scrollContainer.removeEventListener("scroll", handleUserScroll);
+      if (scrollContainer) {
+        scrollContainer.removeEventListener("wheel", handleUserScroll);
+        scrollContainer.removeEventListener("touchstart", handleUserScroll);
+        scrollContainer.removeEventListener("touchmove", handleUserScroll);
+        scrollContainer.removeEventListener("scroll", handleScrollReveal);
+      }
       if (userScrollTimeout) clearTimeout(userScrollTimeout);
       if (messageBtn) messageBtn.removeEventListener("click", openPopup);
       if (closeBtn) closeBtn.removeEventListener("click", closePopup);
       if (popupBackdrop) popupBackdrop.removeEventListener("click", closePopup);
     };
+
+    return cleanupAll;
   }, []);
 
   return (
