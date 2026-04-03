@@ -62,8 +62,7 @@ export default function ClientPage() {
     const transitionEls = container.querySelectorAll("[data-transition-key]");
 
     // Detect the actual scrollable container.
-    const scrollContainer = container.querySelector("#root-page-container")
-      ?.parentElement as HTMLElement | null;
+    const scrollContainer = container.querySelector(".relative.overflow-x-hidden") as HTMLElement | null;
 
     const revealedRefs = new Set<HTMLElement>();
 
@@ -111,7 +110,7 @@ export default function ClientPage() {
         root: scrollContainer,
         threshold: 0,
         rootMargin: "0px 0px 50px 0px",
-      }
+      },
     );
 
     // Fallback scroll listener for cases where IntersectionObserver fails or is clipped by ancestors
@@ -155,9 +154,7 @@ export default function ClientPage() {
 
     const autoScroll = () => {
       if (!paused && scrollContainer) {
-        const atBottom =
-          scrollContainer.scrollTop + scrollContainer.clientHeight >=
-          scrollContainer.scrollHeight - 1;
+        const atBottom = scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight - 1;
         if (!atBottom) {
           scrollContainer.scrollTop += 0.06;
         }
@@ -184,6 +181,8 @@ export default function ClientPage() {
 
     // Countdown timer
     const countdownEl = container.querySelector(".countdown.componentBOX") as HTMLElement;
+    let countdownIntervalId: NodeJS.Timeout;
+
     if (countdownEl) {
       const weddingDate = new Date("2026-01-07T00:00:00");
 
@@ -194,36 +193,37 @@ export default function ClientPage() {
         const dayDivs = countdownEl.querySelectorAll(":scope > div");
 
         if (diff <= 0) {
-          if (dayDivs.length >= 1) {
-            const dayEl = dayDivs[0].querySelector("div:first-child");
-            if (dayEl) dayEl.textContent = "0";
-          }
+          dayDivs.forEach((div) => {
+            const numEl = div.querySelector("div:first-child");
+            if (numEl) numEl.textContent = "0";
+          });
         } else {
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          if (dayDivs.length >= 1) {
-            const dayEl = dayDivs[0].querySelector("div:first-child");
-            if (dayEl) dayEl.textContent = String(days);
+          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((diff / 1000 / 60) % 60);
+          const seconds = Math.floor((diff / 1000) % 60);
+
+          if (dayDivs.length >= 4) {
+            const d = dayDivs[0].querySelector("div:first-child");
+            const h = dayDivs[1].querySelector("div:first-child");
+            const m = dayDivs[2].querySelector("div:first-child");
+            const s = dayDivs[3].querySelector("div:first-child");
+            if (d) d.textContent = String(days);
+            if (h) h.textContent = String(hours);
+            if (m) m.textContent = String(minutes);
+            if (s) s.textContent = String(seconds);
           }
         }
       };
 
       updateCountdown();
-      const countdownIntervalId = setInterval(updateCountdown, 60000);
-
-      const originalCleanup = () => {
-        clearInterval(countdownIntervalId);
-      };
-      
-      // We'll wrap the final return to include this
-      return () => {
-        originalCleanup();
-        cleanupAll();
-      };
+      countdownIntervalId = setInterval(updateCountdown, 1000);
     }
 
     const cleanupAll = () => {
       observer.disconnect();
       cancelAnimationFrame(scrollAnimId);
+      clearInterval(countdownIntervalId);
       if (scrollContainer) {
         scrollContainer.removeEventListener("wheel", handleUserScroll);
         scrollContainer.removeEventListener("touchstart", handleUserScroll);

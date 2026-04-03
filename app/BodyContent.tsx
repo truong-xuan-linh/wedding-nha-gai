@@ -24,39 +24,33 @@ export default function BodyContent() {
                     <div
                       style={{position: 'relative', userSelect: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', width: '474px', height: '8693.39px', minWidth: '50px', minHeight: '50px'}}>
                       <div className="jsx-2177353859 w-full h-full">
-                        <div data-node-id="VOkwY8CwrX" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '-3.80809px', left: '0.3792px', width: '474px', height: '711px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="VOkwY8CwrX-slide-up-1.3-0.2-ease-out-false" data-node-id="VOkwY8CwrX"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/42820ab5-3e06-45cb-90ce-f4e5734f3222.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="VOkwY8CwrX" className="jsx-1944329802 node-abs"
+                          style={{top: '-3.80809px', left: '0.3792px', width: '474px', height: '711px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="VOkwY8CwrX-slide-up-1.3-0.2-ease-out-false" data-node-id="VOkwY8CwrX" className="transition-node-base"
+                            style={{transition: '1.3s ease-out 0.2s'}}>
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/42820ab5-3e06-45cb-90ce-f4e5734f3222.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Hn71xiO_3f" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '105.613px', left: '71.1474px', width: '336.066px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="Hn71xiO_3f-slide-up-1.3-0-ease-out-false" data-node-id="Hn71xiO_3f"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(255, 255, 255)', fontSize: '24.648px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'Mallong', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="Hn71xiO_3f" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '105.613px', left: '71.1474px', width: '336.066px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="Hn71xiO_3f-slide-up-1.3-0-ease-out-false" data-node-id="Hn71xiO_3f" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
+                              <div contentEditable={false} className="text-node-base text-white text-2xl font-bold text-center"
+                                style={{fontFamily: 'Mallong'}}>
                                 Welcome to our wedding</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="p_5BijVme-" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '8.532px', left: '9.48px', width: '455.04px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="p_5BijVme--slide-up-1.3-0-ease-out-false" data-node-id="p_5BijVme-"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="p_5BijVme-" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '8.532px', left: '9.48px', width: '455.04px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="p_5BijVme--slide-up-1.3-0-ease-out-false" data-node-id="p_5BijVme-" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(255, 255, 255)', fontSize: '15.168px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 I love three things in this world.，Sun, moon and you.&nbsp;<div>Sun for morning moon for
@@ -66,126 +60,104 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="6tJI5g6w7X" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '755.457px', left: '129.686px', width: '215.86px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="6tJI5g6w7X-slide-up-1.3-0-ease-out-false" data-node-id="6tJI5g6w7X"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="6tJI5g6w7X" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '755.457px', left: '129.686px', width: '215.86px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="6tJI5g6w7X-slide-up-1.3-0-ease-out-false" data-node-id="6tJI5g6w7X" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(255, 255, 255)', fontSize: '24.648px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Signora', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 2025.05.20</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="xWCwjB0bcC" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '805.938px', left: '0.762192px', width: '150.724px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="xWCwjB0bcC-slide-right-1.3-0-ease-out-false" data-node-id="xWCwjB0bcC"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="xWCwjB0bcC" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '805.938px', left: '0.762192px', width: '150.724px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="xWCwjB0bcC-slide-right-1.3-0-ease-out-false" data-node-id="xWCwjB0bcC" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Belinda Avenue"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 WEDDING</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="dIcL36Uhjb" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '805.926px', left: '174.432px', width: '162.582px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="dIcL36Uhjb-slide-up-1.3-0-ease-out-false" data-node-id="dIcL36Uhjb"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="dIcL36Uhjb" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '805.926px', left: '174.432px', width: '162.582px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="dIcL36Uhjb-slide-up-1.3-0-ease-out-false" data-node-id="dIcL36Uhjb" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Belinda Avenue"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 INVITATION</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="56VLaOplZK" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '805.929px', left: '357.15px', width: '114.7px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="56VLaOplZK-slide-left-1.3-0-ease-out-false" data-node-id="56VLaOplZK"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="56VLaOplZK" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '805.929px', left: '357.15px', width: '114.7px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="56VLaOplZK-slide-left-1.3-0-ease-out-false" data-node-id="56VLaOplZK" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Belinda Avenue"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 2026</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="0GYCtLgdQn" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '838.016px', left: '-0.1896px', width: '474.569px', height: '315.588px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="0GYCtLgdQn-slide-up-1.3-0.2-ease-out-false" data-node-id="0GYCtLgdQn"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/2e27300c-364a-4477-8a4c-bfae17cac71a.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="0GYCtLgdQn" className="jsx-1944329802 node-abs"
+                          style={{top: '838.016px', left: '-0.1896px', width: '474.569px', height: '315.588px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="0GYCtLgdQn-slide-up-1.3-0.2-ease-out-false" data-node-id="0GYCtLgdQn" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/2e27300c-364a-4477-8a4c-bfae17cac71a.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="68KlGToyME" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '1146.31px', left: '10.7214px', width: '455.04px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="68KlGToyME-slide-up-1.3-0-ease-out-false" data-node-id="68KlGToyME"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="68KlGToyME" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '1146.31px', left: '10.7214px', width: '455.04px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="68KlGToyME-slide-up-1.3-0-ease-out-false" data-node-id="68KlGToyME" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '28.44px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'Mallong', textAlign: 'center', lineHeight: 'normal', letterSpacing: '2px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 OUR LOVE STORY</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="iEGVxvDr-K" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '1185.82px', left: '260.226px', width: '87.0264px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="iEGVxvDr-K-slide-up-1.3-0-ease-out-false" data-node-id="iEGVxvDr-K"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '15.168px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'right', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="iEGVxvDr-K" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '1185.82px', left: '260.226px', width: '87.0264px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="iEGVxvDr-K-slide-up-1.3-0-ease-out-false" data-node-id="iEGVxvDr-K" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-end">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '15.168px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'right'}}>
                                 Fall in love</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="4vnGWRKJCL" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '1245.01px', left: '55.932px', width: '361.946px', height: '287.747px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="4vnGWRKJCL-slide-up-1.3-0.2-ease-out-false" data-node-id="4vnGWRKJCL"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/4d0cea10-4d8f-46aa-a3dc-f731f4711ea0.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="4vnGWRKJCL" className="jsx-1944329802 node-abs"
+                          style={{top: '1245.01px', left: '55.932px', width: '361.946px', height: '287.747px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="4vnGWRKJCL-slide-up-1.3-0.2-ease-out-false" data-node-id="4vnGWRKJCL" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/4d0cea10-4d8f-46aa-a3dc-f731f4711ea0.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="I3uEC0lltI" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '1440.35px', left: '263.889px', width: '199.465px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(337.279deg)'}}>
-                          <div data-transition-key="I3uEC0lltI-slide-left-1.3-0-ease-out-false" data-node-id="I3uEC0lltI"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="I3uEC0lltI" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '1440.35px', left: '263.889px', width: '199.465px', height: 'auto', transform: 'rotate(337.279deg)'}}>
+                          <div data-transition-key="I3uEC0lltI-slide-left-1.3-0-ease-out-false" data-node-id="I3uEC0lltI" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgba(140, 140, 140, 0.804)', fontSize: '85.32px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'normal', fontFamily: 'Gillastone', textAlign: 'center', lineHeight: 'normal', letterSpacing: '5px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 Sweet</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="tKrUer3a3k" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '1561.5px', left: '170.45px', width: '130.919px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="tKrUer3a3k-slide-up-1.3-0-ease-out-false" data-node-id="tKrUer3a3k"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="tKrUer3a3k" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '1561.5px', left: '170.45px', width: '130.919px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="tKrUer3a3k-slide-up-1.3-0-ease-out-false" data-node-id="tKrUer3a3k" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Mallong', textAlign: 'center', lineHeight: '1.2', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 WEDDING<div>INVITATION</div>
@@ -193,42 +165,34 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Ogvj8fCVbI" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '1561.32px', left: '162.941px', width: '22.9397px', height: '45.6778px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(-1, 1)'}}>
-                          <div data-transition-key="Ogvj8fCVbI-slide-up-1.3-0.2-ease-out-false" data-node-id="Ogvj8fCVbI"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")', borderRadius: '0px'}}>
+                        <div data-node-id="Ogvj8fCVbI" className="jsx-1944329802 node-abs"
+                          style={{top: '1561.32px', left: '162.941px', width: '22.9397px', height: '45.6778px', transform: 'rotate(0deg) scale(-1, 1)'}}>
+                          <div data-transition-key="Ogvj8fCVbI-slide-up-1.3-0.2-ease-out-false" data-node-id="Ogvj8fCVbI" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="AUcsClJ1bE" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '1561.51px', left: '286.486px', width: '23.3208px', height: '44.3913px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="AUcsClJ1bE-slide-up-1.3-0.2-ease-out-false" data-node-id="AUcsClJ1bE"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")', borderRadius: '0px'}}>
+                        <div data-node-id="AUcsClJ1bE" className="jsx-1944329802 node-abs"
+                          style={{top: '1561.51px', left: '286.486px', width: '23.3208px', height: '44.3913px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="AUcsClJ1bE-slide-up-1.3-0.2-ease-out-false" data-node-id="AUcsClJ1bE" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="htnCY6Ay8P" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '1639.09px', left: '9.3852px', width: '455.04px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="htnCY6Ay8P-slide-up-1.3-0-ease-out-false" data-node-id="htnCY6Ay8P"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="htnCY6Ay8P" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '1639.09px', left: '9.3852px', width: '455.04px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="htnCY6Ay8P-slide-up-1.3-0-ease-out-false" data-node-id="htnCY6Ay8P" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '14.22px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Belinda Avenue"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 Trước đây cứ nghĩ đám cưới chỉ là một thông báo chính thức,&nbsp;<div>Giờ mới hiểu đó là
@@ -241,52 +205,43 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="lyas9w1eaF" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '1837.75px', left: '138.266px', width: '197.468px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="lyas9w1eaF-slide-up-1.3-0-ease-out-false" data-node-id="lyas9w1eaF"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="lyas9w1eaF" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '1837.75px', left: '138.266px', width: '197.468px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="lyas9w1eaF-slide-up-1.3-0-ease-out-false" data-node-id="lyas9w1eaF" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(199, 23, 23)', fontSize: '27.0857px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'Signora', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 07.01.2026</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="pn__7Hi3ZV" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '1900.03px', left: '35.9292px', width: '403.279px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="pn__7Hi3ZV-slide-up-1.3-0-ease-out-false" data-node-id="pn__7Hi3ZV"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="pn__7Hi3ZV" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '1900.03px', left: '35.9292px', width: '403.279px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="pn__7Hi3ZV-slide-up-1.3-0-ease-out-false" data-node-id="pn__7Hi3ZV" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '18.0571px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'Mallong', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 Chúng mình, hẹn gặp nhau trong ngày cưới nhé!</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="9cd8UyBmuK" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '2023.04px', left: '242.688px', width: '208.75px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="9cd8UyBmuK-slide-left-1.3-0-ease-out-false" data-node-id="9cd8UyBmuK"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(199, 23, 23)', fontSize: '24.648px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Arial', textAlign: 'right', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="9cd8UyBmuK" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '2023.04px', left: '242.688px', width: '208.75px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="9cd8UyBmuK-slide-left-1.3-0-ease-out-false" data-node-id="9cd8UyBmuK" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-end">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(199, 23, 23)', fontSize: '24.648px', fontWeight: 500, fontFamily: 'Arial', textAlign: 'right'}}>
                                 <br />
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="cf5ZRdkd5e" className="jsx-3557960200"
-                          style={{position: 'absolute', top: '2026.49px', left: '54.4152px', width: '267.146px', height: '267.146px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="cf5ZRdkd5e-slide-up-1.3-0.2-ease-out-false" data-node-id="cf5ZRdkd5e"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-3557960200"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1}}>
+                        <div data-node-id="cf5ZRdkd5e" className="jsx-3557960200 node-abs"
+                          style={{top: '2026.49px', left: '54.4152px', width: '267.146px', height: '267.146px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="cf5ZRdkd5e-slide-up-1.3-0.2-ease-out-false" data-node-id="cf5ZRdkd5e" className="transition-node-base">
+                            <div className="jsx-3557960200 flex-center">
                               <div className="jsx-3557960200 material-component">
-                                <div id="svg-cf5ZRdkd5e" className="jsx-3557960200 svg-wrap"
-                                  style={{width: '100%', height: '100%', overflow: 'hidden', border: '0px solid', borderRadius: '0px', padding: '0px', boxShadow: 'none'}}>
+                                <div id="svg-cf5ZRdkd5e" className="jsx-3557960200 svg-wrap">
                                   {/* ?xml version="1.0" encoding="utf-8"? */}
                                   {/* Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  */}
                                   <svg preserveAspectRatio="none" width="100%" height="100%" version="1.2"
@@ -305,201 +260,170 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Q9Gv4ubMAq" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '2056.2px', left: '86.2801px', width: '364.679px', height: '547.018px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="Q9Gv4ubMAq-slide-up-1.3-0.2-ease-out-false" data-node-id="Q9Gv4ubMAq"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/9b87d5d7-eeaa-438f-9824-e21feb350c84.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="Q9Gv4ubMAq" className="jsx-1944329802 node-abs"
+                          style={{top: '2056.2px', left: '86.2801px', width: '364.679px', height: '547.018px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="Q9Gv4ubMAq-slide-up-1.3-0.2-ease-out-false" data-node-id="Q9Gv4ubMAq" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/9b87d5d7-eeaa-438f-9824-e21feb350c84.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="t-ImStBK_l" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '2487.55px', left: '9.48px', width: '371.237px', height: '246.872px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="t-ImStBK_l-slide-up-1.3-0.2-ease-out-false" data-node-id="t-ImStBK_l"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '8px', backgroundColor: 'rgb(255, 255, 255)', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/f7405d80-97b2-4fc6-9bca-aeeca3eaf72f.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="t-ImStBK_l" className="jsx-1944329802 node-abs"
+                          style={{top: '2487.55px', left: '9.48px', width: '371.237px', height: '246.872px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="t-ImStBK_l-slide-up-1.3-0.2-ease-out-false" data-node-id="t-ImStBK_l" className="transition-node-base">
+                            <div className="jsx-1944329802 flex-center"
+                              style={{padding: '8px', backgroundColor: 'rgb(255, 255, 255)'}}>
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/f7405d80-97b2-4fc6-9bca-aeeca3eaf72f.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="zDamDiTlHT" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '2622.45px', left: '364.893px', width: '99.3504px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(90deg)'}}>
-                          <div data-transition-key="zDamDiTlHT-slide-left-1.3-0-ease-out-false" data-node-id="zDamDiTlHT"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="zDamDiTlHT" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '2622.45px', left: '364.893px', width: '99.3504px', height: 'auto', transform: 'rotate(90deg)'}}>
+                          <div data-transition-key="zDamDiTlHT-slide-left-1.3-0-ease-out-false" data-node-id="zDamDiTlHT" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(199, 23, 23)', fontSize: '25.9571px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: '"Madam Ghea"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '3px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 07.01</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="I0mIBWg0xr" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '1981.96px', left: '191.78px', width: '259.657px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="I0mIBWg0xr-slide-up-1.3-0-ease-out-false" data-node-id="I0mIBWg0xr"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgba(140, 140, 140, 0.804)', fontSize: '30.336px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: '"Moon Light"', textAlign: 'right', lineHeight: '1.75', letterSpacing: '3px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="I0mIBWg0xr" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '1981.96px', left: '191.78px', width: '259.657px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="I0mIBWg0xr-slide-up-1.3-0-ease-out-false" data-node-id="I0mIBWg0xr" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-end">
+                              <div className="text-node-base"
+                                style={{color: 'rgba(140, 140, 140, 0.804)', fontSize: '30.336px', fontWeight: 'bold', fontFamily: '"Moon Light"', textAlign: 'right', lineHeight: '1.75', letterSpacing: '3px'}}>
                                 OUR&nbsp;<div>LOVE STORY</div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="YAoxbcQYLf" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '2178.72px', left: '-150.068px', width: '402.9px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(90deg)'}}>
-                          <div data-transition-key="YAoxbcQYLf-slide-right-1.3-0-ease-out-false" data-node-id="YAoxbcQYLf"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '28.44px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'normal', fontFamily: 'BethanWhite', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="YAoxbcQYLf" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '2178.72px', left: '-150.068px', width: '402.9px', transform: 'rotate(90deg)'}}>
+                          <div data-transition-key="YAoxbcQYLf-slide-right-1.3-0-ease-out-false" data-node-id="YAoxbcQYLf" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '28.44px', fontFamily: 'BethanWhite', textAlign: 'center'}}>
                                 Love goes with the wind, but never goes away.</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="-MGpE2LcJA" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '2842.34px', left: '33.7014px', width: '397.686px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="-MGpE2LcJA-slide-up-1.3-0-ease-out-false" data-node-id="-MGpE2LcJA"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-start', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '17.064px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Soul Note Display"', textAlign: 'left', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'italic', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="-MGpE2LcJA" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '2842.34px', left: '33.7014px', width: '397.686px'}}>
+                          <div data-transition-key="-MGpE2LcJA-slide-up-1.3-0-ease-out-false" data-node-id="-MGpE2LcJA" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-start">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '17.064px', fontWeight: 500, fontFamily: '"Soul Note Display"', textAlign: 'left', fontStyle: 'italic'}}>
                                 Mong rằng khi ngoảnh lại, ta vẫn có nhau.&nbsp;<div>Cùng nắm tay đi đến bạc đầu...</div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="OF3MBukjW6" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '2739.37px', left: '117.475px', width: '165.561px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="OF3MBukjW6-slide-up-1.3-0-ease-out-false" data-node-id="OF3MBukjW6"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-start', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(92, 92, 92)', fontSize: '26.544px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'left', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="OF3MBukjW6" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '2739.37px', left: '117.475px', width: '165.561px'}}>
+                          <div data-transition-key="OF3MBukjW6-slide-up-1.3-0-ease-out-false" data-node-id="OF3MBukjW6" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-start">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(92, 92, 92)', fontSize: '26.544px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'left'}}>
                                 NGÀY CHUNG ĐÔI</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="AA4BkZu9ox" className="jsx-3557960200"
-                          style={{position: 'absolute', top: '2740.45px', left: '17.4906px', width: '82.95px', height: '70.1125px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="AA4BkZu9ox-slide-right-1.3-0.2-ease-out-false" data-node-id="AA4BkZu9ox"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-3557960200"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1}}>
+                        <div data-node-id="AA4BkZu9ox" className="jsx-3557960200 node-abs"
+                          style={{top: '2740.45px', left: '17.4906px', width: '82.95px', height: '70.1125px'}}>
+                          <div data-transition-key="AA4BkZu9ox-slide-right-1.3-0.2-ease-out-false" data-node-id="AA4BkZu9ox" className="transition-node-base"
+                            style={{transition: '1.3s ease-out 0.2s'}}>
+                            <div className="jsx-3557960200 flex-center">
                               <div className="jsx-3557960200 material-component">
-                                <div className="jsx-3557960200 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/resources/happiness/0o68oy8lw7sad3o74ehkwk.png")', border: '0px solid', borderRadius: '0px', padding: '0px', boxShadow: 'none'}}>
+                                <div className="jsx-3557960200 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/resources/happiness/0o68oy8lw7sad3o74ehkwk.png")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="CFQCzqJ6G2" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '2973.88px', left: '34.602px', width: '402.426px', height: '535.227px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="CFQCzqJ6G2-slide-up-1.3-0.2-ease-out-false" data-node-id="CFQCzqJ6G2"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/c1291ed3-2a45-4de0-9bb7-c01ae539f3e8.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="CFQCzqJ6G2" className="jsx-1944329802 node-abs"
+                          style={{top: '2973.88px', left: '34.602px', width: '402.426px', height: '535.227px'}}>
+                          <div data-transition-key="CFQCzqJ6G2-slide-up-1.3-0.2-ease-out-false" data-node-id="CFQCzqJ6G2" className="transition-node-base"
+                            style={{transition: '1.3s ease-out 0.2s'}}>
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/c1291ed3-2a45-4de0-9bb7-c01ae539f3e8.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="6idBoxTF5e" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '2941.27px', left: '37.92px', width: '91.7664px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="6idBoxTF5e-slide-right-1.3-0-ease-out-false" data-node-id="6idBoxTF5e"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-start', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(67, 67, 67)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'left', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="6idBoxTF5e" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '2941.27px', left: '37.92px', width: '91.7664px'}}>
+                          <div data-transition-key="6idBoxTF5e-slide-right-1.3-0-ease-out-false" data-node-id="6idBoxTF5e" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-start">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(67, 67, 67)', fontSize: '18.96px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'left'}}>
                                 YOU ARE</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="aZ4FlK6yxQ" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '2941.21px', left: '167.224px', width: '171.683px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="aZ4FlK6yxQ-slide-up-1.3-0-ease-out-false" data-node-id="aZ4FlK6yxQ"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(67, 67, 67)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="aZ4FlK6yxQ" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '2941.21px', left: '167.224px', width: '171.683px'}}>
+                          <div data-transition-key="aZ4FlK6yxQ-slide-up-1.3-0-ease-out-false" data-node-id="aZ4FlK6yxQ" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(67, 67, 67)', fontSize: '18.96px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'center'}}>
                                 MY DEAREST</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="u2mV6qK1bQ" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '2941.24px', left: '376.451px', width: '62.094px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="u2mV6qK1bQ-slide-left-1.3-0-ease-out-false" data-node-id="u2mV6qK1bQ"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(67, 67, 67)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'right', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="u2mV6qK1bQ" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '2941.24px', left: '376.451px', width: '62.094px'}}>
+                          <div data-transition-key="u2mV6qK1bQ-slide-left-1.3-0-ease-out-false" data-node-id="u2mV6qK1bQ" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-end">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(67, 67, 67)', fontSize: '18.96px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'right'}}>
                                 LOVE</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="DSA699KhxI" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '3471.16px', left: '100.359px', width: '365.454px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="DSA699KhxI-slide-up-1.3-0-ease-out-false" data-node-id="DSA699KhxI"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgba(140, 140, 140, 0.855)', fontSize: '60.672px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'BethanWhite', textAlign: 'right', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="DSA699KhxI" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '3471.16px', left: '100.359px', width: '365.454px'}}>
+                          <div data-transition-key="DSA699KhxI-slide-up-1.3-0-ease-out-false" data-node-id="DSA699KhxI" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-end">
+                              <div className="text-node-base"
+                                style={{color: 'rgba(140, 140, 140, 0.855)', fontSize: '60.672px', fontWeight: 'bold', fontFamily: 'BethanWhite', textAlign: 'right'}}>
                                 Love and freedom&nbsp;<div>you And gentleness</div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="ZZ-BO4mFEc" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '3606.13px', left: '21.2578px', width: '436.27px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="ZZ-BO4mFEc-slide-up-1.3-0-ease-out-false" data-node-id="ZZ-BO4mFEc"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '17.064px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Soul Note Display"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="ZZ-BO4mFEc" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '3606.13px', left: '21.2578px', width: '436.27px'}}>
+                          <div data-transition-key="ZZ-BO4mFEc-slide-up-1.3-0-ease-out-false" data-node-id="ZZ-BO4mFEc" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '17.064px', fontWeight: 500, fontFamily: '"Soul Note Display"', textAlign: 'center'}}>
                                 Giữa một không gian ngập ánh sáng, chúng mình đứng cạnh nhau với nụ cười rất khẽ.<br /><br />
                                 Không cần nói nhiều về tương lai, chỉ cần biết rằng từ hôm nay, mọi chặng đường đều có
                                 nhau song hành.<br /><br />Một ngày bắt đầu cho câu chuyện trọn đời.</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="-9xJI-GdzK" className="jsx-3557960200"
-                          style={{position: 'absolute', top: '3778.67px', left: '0.948px', width: '473.052px', height: '43.0297px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="-9xJI-GdzK-slide-up-1.3-0.2-ease-out-false" data-node-id="-9xJI-GdzK"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-3557960200"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1}}>
+                        <div data-node-id="-9xJI-GdzK" className="jsx-3557960200 node-abs"
+                          style={{top: '3778.67px', left: '0.948px', width: '473.052px', height: '43.0297px'}}>
+                          <div data-transition-key="-9xJI-GdzK-slide-up-1.3-0.2-ease-out-false" data-node-id="-9xJI-GdzK" className="transition-node-base"
+                            style={{transition: '1.3s ease-out 0.2s'}}>
+                            <div className="jsx-3557960200 flex-center">
                               <div className="jsx-3557960200 material-component">
                                 <div id="svg--9xJI-GdzK" className="jsx-3557960200 svg-wrap"
-                                  style={{width: '100%', height: '100%', overflow: 'hidden', borderTop: '1px solid rgb(140, 140, 140)', borderBottom: '1px solid rgb(140, 140, 140)', borderRadius: '0px', padding: '0px', boxShadow: 'none'}}>
-                                  {/* ?xml version="1.0" encoding="utf-8"? */}
-                                  {/* Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  */}
+                                  style={{borderTop: '1px solid rgb(140, 140, 140)', borderBottom: '1px solid rgb(140, 140, 140)'}}>
                                   <svg preserveAspectRatio="none" width="100%" height="100%" version="1.2"
                                     baseProfile="tiny" id="图层_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
@@ -516,242 +440,187 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="hUtofhAtOR" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '3787.45px', left: '25.833px', width: '85.2252px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="hUtofhAtOR-slide-right-1.3-0-ease-out-false" data-node-id="hUtofhAtOR"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-start', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(140, 140, 140)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'left', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="hUtofhAtOR" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '3787.45px', left: '25.833px', width: '85.2252px'}}>
+                          <div data-transition-key="hUtofhAtOR-slide-right-1.3-0-ease-out-false" data-node-id="hUtofhAtOR" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-start">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(140, 140, 140)', fontSize: '18.96px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'left'}}>
                                 LOVE</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="xSwmMIliYU" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '3788.25px', left: '141.821px', width: '145.897px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="xSwmMIliYU-slide-up-1.3-0-ease-out-false" data-node-id="xSwmMIliYU"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(140, 140, 140)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="xSwmMIliYU" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '3788.25px', left: '141.821px', width: '145.897px'}}>
+                          <div data-transition-key="xSwmMIliYU-slide-up-1.3-0-ease-out-false" data-node-id="xSwmMIliYU" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(140, 140, 140)', fontSize: '18.96px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'center'}}>
                                 WEDDING</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="kTXzdxRWSi" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '3787.49px', left: '283.642px', width: '165.142px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="kTXzdxRWSi-slide-left-1.3-0-ease-out-false" data-node-id="kTXzdxRWSi"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(140, 140, 140)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'right', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="kTXzdxRWSi" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '3787.49px', left: '283.642px', width: '165.142px'}}>
+                          <div data-transition-key="kTXzdxRWSi-slide-left-1.3-0-ease-out-false" data-node-id="kTXzdxRWSi" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-end">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(140, 140, 140)', fontSize: '18.96px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'right'}}>
                                 INFORMATION</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Y-D-5RQXob" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '3845.73px', left: '27.0389px', width: '196.793px', height: '296.174px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="Y-D-5RQXob-slide-right-1.3-0.2-ease-out-false" data-node-id="Y-D-5RQXob"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/6323cd41-3ff8-44bd-a8f7-ab0c0b024723.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="Y-D-5RQXob" className="jsx-1944329802 node-abs"
+                          style={{top: '3845.73px', left: '27.0389px', width: '196.793px', height: '296.174px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="Y-D-5RQXob-slide-right-1.3-0.2-ease-out-false" data-node-id="Y-D-5RQXob" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/6323cd41-3ff8-44bd-a8f7-ab0c0b024723.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="nAP5ma0rnb" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '3845.66px', left: '248.848px', width: '196.866px', height: '296.284px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="nAP5ma0rnb-slide-left-1.3-0.2-ease-out-false" data-node-id="nAP5ma0rnb"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/cc835da9-7e82-4bba-b3e4-284b08c5249e.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="nAP5ma0rnb" className="jsx-1944329802 node-abs"
+                          style={{top: '3845.66px', left: '248.848px', width: '196.866px', height: '296.284px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="nAP5ma0rnb-slide-left-1.3-0.2-ease-out-false" data-node-id="nAP5ma0rnb" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/cc835da9-7e82-4bba-b3e4-284b08c5249e.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Q3O_CijO6v" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '4147.22px', left: '37.8726px', width: '399.203px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="Q3O_CijO6v-slide-up-1.3-0-ease-out-false" data-node-id="Q3O_CijO6v"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(53, 53, 53)', fontSize: '16.116px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
-                                I love three things in this world.，<div>Sun moon and you.&nbsp;<span
-                                    style={{letterSpacing: '0px', backgroundColor: 'transparent'}}>Sun for morning moon for
-                                    night,&nbsp;</span></div>
-                                <div><span style={{letterSpacing: '0px', backgroundColor: 'transparent'}}>and you
-                                    forever.</span></div>
+                        <div data-node-id="Q3O_CijO6v" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '4147.22px', left: '37.8726px', width: '399.203px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="Q3O_CijO6v-slide-up-1.3-0-ease-out-false" data-node-id="Q3O_CijO6v" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(53, 53, 53)', fontSize: '16.116px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'center'}}>
+                                I love three things in this world.，<div>Sun moon and you.&nbsp;<span>Sun for morning moon for night,&nbsp;</span></div>
+                                <div><span>and you forever.</span></div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="zVShdSTOul" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '4326.25px', left: '110.726px', width: '353.983px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="zVShdSTOul-slide-up-1.3-0-ease-out-false" data-node-id="zVShdSTOul"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-start', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Soul Note Display"', textAlign: 'left', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'italic', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
-                                Thương một người, dành trọn một đời</div>
+                        <div data-node-id="vxUX1ygoQO" className="jsx-3557960200 node-abs"
+                          style={{top: '4234.46px', left: '15.168px', width: '92.3352px', height: '76.3964px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="vxUX1ygoQO-slide-right-1.3-0.2-ease-out-false" data-node-id="vxUX1ygoQO" className="transition-node-base">
+                            <div className="jsx-3557960200 flex-center">
+                              <div className="jsx-3557960200 material-component">
+                                <div className="jsx-3557960200 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/resources/happiness/7kchz8iq0r729zjgw2xlh5.png")'}}>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Fdo97Hh-Ls" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '4242.84px', left: '114.992px', width: '203.062px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="Fdo97Hh-Ls-slide-up-1.3-0-ease-out-false" data-node-id="Fdo97Hh-Ls"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-start', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '32.7286px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'left', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="Fdo97Hh-Ls" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '4242.84px', left: '114.992px', width: '203.062px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="Fdo97Hh-Ls-slide-up-1.3-0-ease-out-false" data-node-id="Fdo97Hh-Ls" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-start">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '32.7286px', fontWeight: 500, fontFamily: 'PlayfairDisplay', textAlign: 'left'}}>
                                 Save the Date</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="vxUX1ygoQO" className="jsx-3557960200"
-                          style={{position: 'absolute', top: '4234.46px', left: '15.168px', width: '92.3352px', height: '76.3964px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="vxUX1ygoQO-slide-right-1.3-0.2-ease-out-false" data-node-id="vxUX1ygoQO"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-3557960200"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1}}>
-                              <div className="jsx-3557960200 material-component">
-                                <div className="jsx-3557960200 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/resources/happiness/7kchz8iq0r729zjgw2xlh5.png")', border: '0px solid', borderRadius: '0px', padding: '0px', boxShadow: 'none'}}>
+                        <div data-node-id="zVShdSTOul" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '4326.25px', left: '110.726px', width: '353.983px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="zVShdSTOul-slide-up-1.3-0-ease-out-false" data-node-id="zVShdSTOul" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-start">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '18.96px', fontWeight: 500, fontFamily: '"Soul Note Display"', textAlign: 'left', fontStyle: 'italic'}}>
+                                Thương một người, dành trọn một đời</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-node-id="uozqvxn5TG" className="jsx-1944329802 node-abs"
+                          style={{top: '4405.33px', left: '-0.1896px', width: '474.569px', height: '711.853px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="uozqvxn5TG-slide-up-1.3-0.2-ease-out-false" data-node-id="uozqvxn5TG" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/2a950678-b3a9-4cd6-a7e8-502d00fdc17f.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="uozqvxn5TG" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '4405.33px', left: '-0.1896px', width: '474.569px', height: '711.853px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="uozqvxn5TG-slide-up-1.3-0.2-ease-out-false" data-node-id="uozqvxn5TG"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/2a950678-b3a9-4cd6-a7e8-502d00fdc17f.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="IjSN6gpxqD" className="jsx-1944329802 node-abs"
+                          style={{top: '4446.38px', left: '277.574px', width: '17.7276px', height: '33.7933px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="IjSN6gpxqD-slide-up-1.3-0.2-ease-out-false" data-node-id="IjSN6gpxqD" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="3l_fTDOMDp" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '4447.79px', left: '187.894px', width: '96.0324px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="3l_fTDOMDp-slide-up-1.3-0-ease-out-false" data-node-id="3l_fTDOMDp"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(255, 255, 255)', fontSize: '13.272px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
-                                WEDDING<div>
-                                  INVITATION</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div data-node-id="IjSN6gpxqD" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '4446.38px', left: '277.574px', width: '17.7276px', height: '33.7933px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="IjSN6gpxqD-slide-up-1.3-0.2-ease-out-false" data-node-id="IjSN6gpxqD"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")', borderRadius: '0px'}}>
+                        <div data-node-id="Ssj9y_tTWm" className="jsx-1944329802 node-abs"
+                          style={{top: '4447.25px', left: '178.828px', width: '16.3076px', height: '31.0864px', transform: 'rotate(0deg) scale(-1, 1)'}}>
+                          <div data-transition-key="Ssj9y_tTWm-slide-up-1.3-0.2-ease-out-false" data-node-id="Ssj9y_tTWm" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Ssj9y_tTWm" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '4447.25px', left: '178.828px', width: '16.3076px', height: '31.0864px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(-1, 1)'}}>
-                          <div data-transition-key="Ssj9y_tTWm-slide-up-1.3-0.2-ease-out-false" data-node-id="Ssj9y_tTWm"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")', borderRadius: '0px'}}>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div data-node-id="h_IxGMML5I" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '4408.88px', left: '11.7552px', width: '67.5924px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="h_IxGMML5I-slide-right-1.3-0-ease-out-false" data-node-id="h_IxGMML5I"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-start', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(255, 255, 255)', fontSize: '17.064px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'left', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="h_IxGMML5I" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '4408.88px', left: '11.7552px', width: '67.5924px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="h_IxGMML5I-slide-right-1.3-0-ease-out-false" data-node-id="h_IxGMML5I" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-start">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(255, 255, 255)', fontSize: '17.064px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'left'}}>
                                 NO.12</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="lLVttkpyCf" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '4407.51px', left: '87.4056px', width: '101.626px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="lLVttkpyCf-slide-right-1.3-0-ease-out-false" data-node-id="lLVttkpyCf"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(255, 255, 255)', fontSize: '18.0571px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'Quicksand', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="lLVttkpyCf" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '4407.51px', left: '87.4056px', width: '101.626px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="lLVttkpyCf-slide-right-1.3-0-ease-out-false" data-node-id="lLVttkpyCf" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(255, 255, 255)', fontSize: '18.0571px', fontWeight: 'bold', fontFamily: 'Quicksand', textAlign: 'center'}}>
                                 07.01</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="XwBWXbKXzF" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '4408.84px', left: '239.18px', width: '131.203px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="XwBWXbKXzF-slide-up-1.3-0-ease-out-false" data-node-id="XwBWXbKXzF"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(255, 255, 255)', fontSize: '15.168px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="XwBWXbKXzF" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '4408.84px', left: '239.18px', width: '131.203px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="XwBWXbKXzF-slide-up-1.3-0-ease-out-false" data-node-id="XwBWXbKXzF" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(255, 255, 255)', fontSize: '15.168px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'center'}}>
                                 FALL IN</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="BeJqqGSZY1" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '4408.84px', left: '398.168px', width: '66.3524px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="BeJqqGSZY1-slide-left-1.3-0-ease-out-false" data-node-id="BeJqqGSZY1"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(255, 255, 255)', fontSize: '15.168px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="BeJqqGSZY1" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '4408.84px', left: '398.168px', width: '66.3524px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="BeJqqGSZY1-slide-left-1.3-0-ease-out-false" data-node-id="BeJqqGSZY1" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(255, 255, 255)', fontSize: '15.168px', fontWeight: 500, fontFamily: 'Quicksand', textAlign: 'center'}}>
                                 LOVE</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="t_9NomLv6h"
-                          style={{position: 'absolute', top: '4784.09px', left: '105.569px', width: '318.433px', height: '297.205px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="t_9NomLv6h-slide-up-1.3-0.3-ease-out-false" data-node-id="t_9NomLv6h"
-                            style={{transition: '1.3s ease-out 0.3s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'rgba(255, 255, 255, 0)', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, borderRadius: '0px', boxShadow: 'rgba(0, 0, 0, 0.5) 0px 0px 10px 0px'}}>
+                        <div data-node-id="t_9NomLv6h" className="node-abs"
+                          style={{top: '4784.09px', left: '105.569px', width: '318.433px', height: '297.205px', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="t_9NomLv6h-slide-up-1.3-0.3-ease-out-false" data-node-id="t_9NomLv6h" className="transition-node-base">
+                            <div className="flex-center"
+                              style={{boxShadow: 'rgba(0, 0, 0, 0.5) 0px 0px 10px 0px'}}>
                               <div className="calendar componentBOX"
-                                style={{opacity: 1, zIndex: 154, borderRadius: '0px', width: '100%', height: '100%', color: 'rgb(0, 0, 0)', fontSize: '13.5429px', fontFamily: 'Arial'}}>
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '13.5429px', fontFamily: 'Arial'}}>
                                 <div className="template-three">
                                   <div className="empty">
                                     <div></div>
@@ -860,15 +729,13 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Ai-5GZ7_gP" className="jsx-3557960200"
-                          style={{position: 'absolute', top: '5632.84px', left: '2.0856px', width: '474.569px', height: '331.475px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="Ai-5GZ7_gP-slide-up-1.3-0.2-ease-out-false" data-node-id="Ai-5GZ7_gP"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-3557960200"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1}}>
+                        <div data-node-id="Ai-5GZ7_gP" className="jsx-3557960200 node-abs"
+                          style={{top: '5632.84px', left: '2.0856px', width: '474.569px', height: '331.475px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="Ai-5GZ7_gP-slide-up-1.3-0.2-ease-out-false" data-node-id="Ai-5GZ7_gP" className="transition-node-base"
+                            style={{transition: '1.3s ease-out 0.2s'}}>
+                            <div className="jsx-3557960200 inner-content-base">
                               <div className="jsx-3557960200 material-component">
-                                <div id="svg-Ai-5GZ7_gP" className="jsx-3557960200 svg-wrap"
-                                  style={{width: '100%', height: '100%', overflow: 'hidden', border: '0px solid', borderRadius: '0px', padding: '0px', boxShadow: 'none'}}>
+                                <div id="svg-Ai-5GZ7_gP" className="jsx-3557960200 svg-wrap material-node-base">
                                   {/* ?xml version="1.0" encoding="utf-8"? */}
                                   {/* Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  */}
                                   <svg preserveAspectRatio="none" width="100%" height="100%" version="1.2"
@@ -887,42 +754,36 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="FjQz5o0O0j" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '5539.37px', left: '99.7315px', width: '171.681px', height: '257.521px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="FjQz5o0O0j-slide-up-1.3-0.2-ease-out-false" data-node-id="FjQz5o0O0j"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/9937d24b-da38-47f8-9821-e97a6d0cf6e0.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="FjQz5o0O0j" className="jsx-1944329802 node-abs"
+                          style={{top: '5539.37px', left: '99.7315px', width: '171.681px', height: '257.521px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="FjQz5o0O0j-slide-up-1.3-0.2-ease-out-false" data-node-id="FjQz5o0O0j" className="transition-node-base"
+                            style={{transition: '1.3s ease-out 0.2s'}}>
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/9937d24b-da38-47f8-9821-e97a6d0cf6e0.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="5pGoBBGGjT" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '5539.67px', left: '287.748px', width: '171.478px', height: '257.217px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="5pGoBBGGjT-slide-left-1.3-0.2-ease-out-false" data-node-id="5pGoBBGGjT"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/7f9e158d-5bfb-4c3d-90f2-6fe0f0cc1f60.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="5pGoBBGGjT" className="jsx-1944329802 node-abs"
+                          style={{top: '5539.67px', left: '287.748px', width: '171.478px', height: '257.217px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="5pGoBBGGjT-slide-left-1.3-0.2-ease-out-false" data-node-id="5pGoBBGGjT" className="transition-node-base"
+                            style={{transition: '1.3s ease-out 0.2s'}}>
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/7f9e158d-5bfb-4c3d-90f2-6fe0f0cc1f60.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Ok6EzCjw2k" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '5796.41px', left: '43.189px', width: '291.7px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="Ok6EzCjw2k-slide-up-1.3-0-ease-out-false" data-node-id="Ok6EzCjw2k"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'flex-start', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="Ok6EzCjw2k" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '5796.41px', left: '43.189px', width: '291.7px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="Ok6EzCjw2k-slide-up-1.3-0-ease-out-false" data-node-id="Ok6EzCjw2k" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(56, 56, 56)', fontSize: '24.648px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Faugllin Balseyn"', textAlign: 'left', lineHeight: 'normal', letterSpacing: '1px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 As the clouds and mist dissipate&nbsp;<div>love you and everyone knows it</div>
@@ -930,182 +791,154 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="immPW4EEnU" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '5891.39px', left: '43.9127px', width: '253.139px', height: '283.415px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="immPW4EEnU-slide-up-1.3-0.2-ease-out-false" data-node-id="immPW4EEnU"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '11px', backgroundColor: 'rgb(255, 255, 255)', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'url("https://assets.cinelove.me/resources/cropShapes/001_ecxcylqi2s.png")', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'url("https://assets.cinelove.me/resources/cropShapes/001_ecxcylqi2s.png")', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/3fc235c9-ab1e-4826-8d6b-9ca03729c40f.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="immPW4EEnU" className="jsx-1944329802 node-abs"
+                          style={{top: '5891.39px', left: '43.9127px', width: '253.139px', height: '283.415px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="immPW4EEnU-slide-up-1.3-0.2-ease-out-false" data-node-id="immPW4EEnU" className="transition-node-base">
+                            <div className="jsx-1944329802 flex-center"
+                              style={{padding: '11px', backgroundColor: 'rgb(255, 255, 255)'}}>
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/3fc235c9-ab1e-4826-8d6b-9ca03729c40f.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="_3QG3aIVv8" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '5995.57px', left: '347.971px', width: '109.968px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(90deg)'}}>
-                          <div data-transition-key="_3QG3aIVv8-slide-left-1.3-0-ease-out-false" data-node-id="_3QG3aIVv8"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="_3QG3aIVv8" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '5995.57px', left: '347.971px', width: '109.968px', height: 'auto', transform: 'rotate(90deg)'}}>
+                          <div data-transition-key="_3QG3aIVv8-slide-left-1.3-0-ease-out-false" data-node-id="_3QG3aIVv8" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '17.064px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Belinda Avenue"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 FOREVER</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="9TdaEgnFme" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '6077.3px', left: '367.993px', width: '69.86px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(90deg)'}}>
-                          <div data-transition-key="9TdaEgnFme-slide-left-1.3-0-ease-out-false" data-node-id="9TdaEgnFme"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="9TdaEgnFme" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '6077.3px', left: '367.993px', width: '69.86px', height: 'auto', transform: 'rotate(90deg)'}}>
+                          <div data-transition-key="9TdaEgnFme-slide-left-1.3-0-ease-out-false" data-node-id="9TdaEgnFme" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '17.064px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Belinda Avenue"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 AND</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="rzA0OoKG1P" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '6146.75px', left: '366.666px', width: '72.522px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(90deg)'}}>
-                          <div data-transition-key="rzA0OoKG1P-slide-left-1.3-0-ease-out-false" data-node-id="rzA0OoKG1P"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="rzA0OoKG1P" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '6146.75px', left: '366.666px', width: '72.522px', height: 'auto', transform: 'rotate(90deg)'}}>
+                          <div data-transition-key="rzA0OoKG1P-slide-left-1.3-0-ease-out-false" data-node-id="rzA0OoKG1P" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '17.064px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Belinda Avenue"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 EVER</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="8BmnYeSOiS" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '6764.74px', left: '0.918657px', width: '473.621px', height: '314.958px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="8BmnYeSOiS-slide-up-1.3-0.2-ease-out-false" data-node-id="8BmnYeSOiS"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/5adc6e05-dc4c-4b0f-a62e-5136017a7a55.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="8BmnYeSOiS" className="jsx-1944329802 node-abs"
+                          style={{top: '6764.74px', left: '0.918657px', width: '473.621px', height: '314.958px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="8BmnYeSOiS-slide-up-1.3-0.2-ease-out-false" data-node-id="8BmnYeSOiS" className="transition-node-base">
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/5adc6e05-dc4c-4b0f-a62e-5136017a7a55.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="5nChUoaR48" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '7079.65px', left: '3.21869px', width: '138.598px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="5nChUoaR48-slide-right-1.3-0-ease-out-false" data-node-id="5nChUoaR48"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="5nChUoaR48" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '7079.65px', left: '3.21869px', width: '138.598px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="5nChUoaR48-slide-right-1.3-0-ease-out-false" data-node-id="5nChUoaR48" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Belinda Avenue"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 LOVE YOU</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="5LRMjD9f8Q" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '7079.62px', left: '157.887px', width: '182.016px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="5LRMjD9f8Q-slide-up-1.3-0-ease-out-false" data-node-id="5LRMjD9f8Q"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="5LRMjD9f8Q" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '7079.62px', left: '157.887px', width: '182.016px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="5LRMjD9f8Q-slide-up-1.3-0-ease-out-false" data-node-id="5LRMjD9f8Q" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Belinda Avenue"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 FOREVER</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="2QdoVtdn9b" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '7079.62px', left: '332.802px', width: '128.833px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="2QdoVtdn9b-slide-left-1.3-0-ease-out-false" data-node-id="2QdoVtdn9b"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="2QdoVtdn9b" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '7079.62px', left: '332.802px', width: '128.833px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="2QdoVtdn9b-slide-left-1.3-0-ease-out-false" data-node-id="2QdoVtdn9b" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '18.96px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Belinda Avenue"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 AND EVER</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="JrrEzHBC3c" className="jsx-1944329802"
-                          style={{position: 'absolute', top: '7134.68px', left: '-0.934818px', width: '473.621px', height: '710.431px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="JrrEzHBC3c-slide-up-1.3-0.2-ease-out-false" data-node-id="JrrEzHBC3c"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1944329802"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, boxShadow: 'none', borderRadius: '0px'}}>
-                              <div className="jsx-1944329802 photo-component"
-                                style={{WebkitMaskBoxImageSource: 'none', WebkitMaskBoxImageSlice: '0 fill', maskImage: 'none', maskSize: '100% 100%', maskRepeat: 'no-repeat'}}>
-                                <div className="jsx-1944329802 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/5e381788-0c5d-44ef-8678-550261a46d19.jpeg")', borderRadius: '0px'}}>
+                        <div data-node-id="JrrEzHBC3c" className="jsx-1944329802 node-abs"
+                          style={{top: '7134.68px', left: '-0.934818px', width: '473.621px', height: '710.431px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="JrrEzHBC3c-slide-up-1.3-0.2-ease-out-false" data-node-id="JrrEzHBC3c" className="transition-node-base"
+                            style={{transition: '1.3s ease-out 0.2s'}}>
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/5e381788-0c5d-44ef-8678-550261a46d19.jpeg")'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="W3GBplK8YF" className="jsx-3557960200"
-                          style={{position: 'absolute', top: '8381.19px', left: '203.278px', width: '91.008px', height: '112.421px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="W3GBplK8YF-slide-up-1.3-0.2-ease-out-false" data-node-id="W3GBplK8YF"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-3557960200"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1}}>
+                        <div data-node-id="W3GBplK8YF" className="jsx-3557960200 node-abs"
+                          style={{top: '8381.19px', left: '203.278px', width: '91.008px', height: '112.421px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="W3GBplK8YF-slide-up-1.3-0.2-ease-out-false" data-node-id="W3GBplK8YF" className="transition-node-base"
+                            style={{transition: '1.3s ease-out 0.2s'}}>
+                            <div className="jsx-3557960200 inner-content-base">
                               <div className="jsx-3557960200 material-component">
-                                <div className="jsx-3557960200 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/resources/characters/2pln23imlphtxz5q16j3mc.png")', border: '0px solid', borderRadius: '0px', padding: '0px', boxShadow: 'none'}}>
+                                <div className="jsx-3557960200 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/resources/characters/2pln23imlphtxz5q16j3mc.png")', border: '0px solid', padding: '0px', boxShadow: 'none'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="a77vdXA4WC" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '8514.96px', left: '8.29274px', width: '455.04px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="a77vdXA4WC-slide-up-1.3-0-ease-out-false" data-node-id="a77vdXA4WC"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="a77vdXA4WC" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '8514.96px', left: '8.29274px', width: '455.04px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="a77vdXA4WC-slide-up-1.3-0-ease-out-false" data-node-id="a77vdXA4WC" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '60.672px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"The Hamstter"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 Thankyou</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="8_Hm1R3U-7" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '185.763px', left: '343.627px', width: '127.032px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="8_Hm1R3U-7-slide-left-1.3-0-ease-out-false" data-node-id="8_Hm1R3U-7"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="8_Hm1R3U-7" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '185.763px', left: '343.627px', width: '127.032px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="8_Hm1R3U-7-slide-left-1.3-0-ease-out-false" data-node-id="8_Hm1R3U-7" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(255, 255, 255)', fontSize: '24.648px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'Mallong', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 Thu Huyền</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="EqAsle3Atj" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '185.755px', left: '-1.92309px', width: '169.123px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="EqAsle3Atj-slide-right-1.3-0-ease-out-false" data-node-id="EqAsle3Atj"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="EqAsle3Atj" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '185.755px', left: '-1.92309px', width: '169.123px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="EqAsle3Atj-slide-right-1.3-0-ease-out-false" data-node-id="EqAsle3Atj" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(255, 255, 255)', fontSize: '24.648px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'Mallong', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 Bá Tú</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="FH5miMTtwn" className="jsx-3557960200"
-                          style={{position: 'absolute', top: '6617.6px', left: '74.5354px', width: '312.65px', height: '141.684px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="FH5miMTtwn-slide-up-1.3-0.2-ease-out-false" data-node-id="FH5miMTtwn"
-                            style={{transition: '1.3s ease-out 0.2s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-3557960200"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1}}>
+                        <div data-node-id="FH5miMTtwn" className="jsx-3557960200 node-abs"
+                          style={{top: '6617.6px', left: '74.5354px', width: '312.65px', height: '141.684px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="FH5miMTtwn-slide-up-1.3-0.2-ease-out-false" data-node-id="FH5miMTtwn" className="transition-node-base">
+                            <div className="jsx-3557960200 flex-center">
                               <div className="jsx-3557960200 material-component">
                                 <div id="svg-FH5miMTtwn" className="jsx-3557960200 svg-wrap"
-                                  style={{width: '100%', height: '100%', overflow: 'hidden', border: '0px solid', borderRadius: '0px', padding: '0px', boxShadow: 'none'}}>
+                                  style={{width: '100%', height: '100%', overflow: 'hidden'}}>
                                   {/* ?xml version="1.0" encoding="UTF-8"? */}
                                   <svg preserveAspectRatio="none" width="100%" height="100%" id="_图层_1" data-name="图层 1"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
@@ -1162,12 +995,11 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="X9yjGloHKo" className="jsx-1768321534 rsvp-form-container"
-                          style={{width: '340.048px', height: '362.717px', minWidth: '200px', position: 'absolute', top: '7939.86px', left: '67.0078px', transform: 'rotate(0deg)', cursor: 'default', zIndex: 0}}>
-                          <div data-transition-key="X9yjGloHKo-slide-up-1.3-0.3-ease-out-false" data-node-id="X9yjGloHKo"
-                            style={{transition: '1.3s ease-out 0.3s', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
+                        <div data-node-id="X9yjGloHKo" className="jsx-1768321534 rsvp-form-container node-abs"
+                          style={{width: '340.048px', height: '362.717px', minWidth: '200px', top: '7939.86px', left: '67.0078px', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="X9yjGloHKo-slide-up-1.3-0.3-ease-out-false" data-node-id="X9yjGloHKo" className="transition-node-base">
                             <div className="jsx-1768321534"
-                              style={{width: '100%', height: '100%', minWidth: '200px', position: 'relative', borderRadius: '5px', opacity: 1}}>
+                              style={{width: '100%', height: '100%', minWidth: '200px', position: 'relative', borderRadius: '5px'}}>
                               <div className="rsvp-form"
                                 style={{backgroundColor: 'rgb(255, 255, 255)', color: 'rgb(51, 51, 51)', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 2px 10px 0px', borderRadius: '5px', padding: '16px', minHeight: '100%', width: '100%', fontSize: '13.272px', fontFamily: 'Arial', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', position: 'relative', overflow: 'visible', border: '1px solid rgb(224, 224, 224)'}}>
                                 <h3
@@ -1206,223 +1038,186 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Wm-iv8mpt4" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '0px', left: '0px', width: '0px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="Wm-iv8mpt4-slide-right-1.3-0-ease-out-false" data-node-id="Wm-iv8mpt4"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="Wm-iv8mpt4" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '0px', left: '0px', width: '0px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="Wm-iv8mpt4-slide-right-1.3-0-ease-out-false" data-node-id="Wm-iv8mpt4" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '0px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Arial', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 designed by cinelove.me</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="M7ihUz2I-0" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '6653.23px', left: '11.06px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="M7ihUz2I-0-slide-up-1.3-0-ease-out-false" data-node-id="M7ihUz2I-0"
-                            style={{transition: '1.3s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="M7ihUz2I-0" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '6653.23px', left: '11.06px', width: '451.429px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="M7ihUz2I-0-slide-up-1.3-0-ease-out-false" data-node-id="M7ihUz2I-0" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '18.0571px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'Signora', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 Số Nhà 119 - Thôn Yên Sở 5 - Xã Dương Hoà - TP Hà Nội</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="tGtkSMG5KA" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '6689.76px', left: '14.3329px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="tGtkSMG5KA-fade-in-1.6-0-ease-out-false" data-node-id="tGtkSMG5KA"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="tGtkSMG5KA" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '6689.76px', left: '14.3329px', width: '451.429px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="tGtkSMG5KA-fade-in-1.6-0-ease-out-false" data-node-id="tGtkSMG5KA" className="transition-node-base">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '25.9571px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'normal', fontFamily: 'BucThu', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 Sự hiện diện của Quý khách là niềm vinh hạnh cho gia đình chúng tôi!<br /><br /></div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="Cf3SKeUYkN" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '6164.82px', left: '9.48px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="Cf3SKeUYkN-fade-in-1.6-0-ease-out-false" data-node-id="Cf3SKeUYkN"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(199, 23, 23)', fontSize: '41.7571px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'BucThu', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="Cf3SKeUYkN" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '6164.82px', left: '9.48px', width: '451.429px'}}>
+                          <div data-transition-key="Cf3SKeUYkN-fade-in-1.6-0-ease-out-false" data-node-id="Cf3SKeUYkN" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(199, 23, 23)', fontSize: '41.7571px', fontWeight: 'bold', fontFamily: 'BucThu', textAlign: 'center'}}>
                                 Lễ Thành Hôn<br /></div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="zVg4y5Lt8k" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '6235.73px', left: '10.0443px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="zVg4y5Lt8k-fade-in-1.6-0-ease-out-false" data-node-id="zVg4y5Lt8k"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '25.9571px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'Signora', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="zVg4y5Lt8k" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '6235.73px', left: '10.0443px', width: '451.429px'}}>
+                          <div data-transition-key="zVg4y5Lt8k-fade-in-1.6-0-ease-out-false" data-node-id="zVg4y5Lt8k" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '25.9571px', fontWeight: 'bold', fontFamily: 'Signora', textAlign: 'center'}}>
                                 <br />Được Tổ Chức Vào Lúc 10 Giờ 30 Phút<br />
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="0VALc76oF8" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '6301.47px', left: '11.6243px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="0VALc76oF8-fade-in-1.6-0-ease-out-false" data-node-id="0VALc76oF8"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(199, 23, 23)', fontSize: '25.9571px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="0VALc76oF8" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '6301.47px', left: '11.6243px', width: '451.429px'}}>
+                          <div data-transition-key="0VALc76oF8-fade-in-1.6-0-ease-out-false" data-node-id="0VALc76oF8" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(199, 23, 23)', fontSize: '25.9571px', fontWeight: 'bold', fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center'}}>
                                 Thứ Tư, 07 . 01 . 2026</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="ZuoMaQrVbk" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '6332.22px', left: '3.16px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="ZuoMaQrVbk-fade-in-1.6-0-ease-out-false" data-node-id="ZuoMaQrVbk"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '20.3143px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="ZuoMaQrVbk" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '6332.22px', left: '3.16px', width: '451.429px'}}>
+                          <div data-transition-key="ZuoMaQrVbk-fade-in-1.6-0-ease-out-false" data-node-id="ZuoMaQrVbk" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '20.3143px', fontWeight: 500, fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center'}}>
                                 (Tức 19.11.Ất Tỵ)</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="w3A-6qilHU" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '6379.14px', left: '10.1571px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="w3A-6qilHU-fade-in-1.6-0-ease-out-false" data-node-id="w3A-6qilHU"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '24.8286px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="w3A-6qilHU" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '6379.14px', left: '10.1571px', width: '451.429px'}}>
+                          <div data-transition-key="w3A-6qilHU-fade-in-1.6-0-ease-out-false" data-node-id="w3A-6qilHU" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '24.8286px', fontWeight: 500, fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center'}}>
                                 Tại Tư Gia Nhà Trai</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="xQyEnxcjWW" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '5076.31px', left: '11.2857px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="xQyEnxcjWW-fade-in-1.6-0-ease-out-false" data-node-id="xQyEnxcjWW"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '24.8286px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: 'Arial', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="xQyEnxcjWW" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '5076.31px', left: '11.2857px', width: '451.429px'}}>
+                          <div data-transition-key="xQyEnxcjWW-fade-in-1.6-0-ease-out-false" data-node-id="xQyEnxcjWW" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '24.8286px', fontWeight: 500, fontFamily: 'Arial', textAlign: 'center'}}>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="jJwIEbkllI" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '5196.47px', left: '15.1229px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="jJwIEbkllI-fade-in-1.6-0-ease-out-false" data-node-id="jJwIEbkllI"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(199, 23, 23)', fontSize: '28.2143px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'BucThu', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="jJwIEbkllI" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '5196.47px', left: '15.1229px', width: '451.429px'}}>
+                          <div data-transition-key="jJwIEbkllI-fade-in-1.6-0-ease-out-false" data-node-id="jJwIEbkllI" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(199, 23, 23)', fontSize: '28.2143px', fontWeight: 'bold', fontFamily: 'BucThu', textAlign: 'center'}}>
                                 Bá Tú<br /><br />Thu Huyền</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="4YPSo1hE4y" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '5123.57px', left: '11.6243px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="4YPSo1hE4y-fade-in-1.6-0-ease-out-false" data-node-id="4YPSo1hE4y"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '20.3143px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: 'Signora', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="4YPSo1hE4y" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '5123.57px', left: '11.6243px', width: '451.429px'}}>
+                          <div data-transition-key="4YPSo1hE4y-fade-in-1.6-0-ease-out-false" data-node-id="4YPSo1hE4y" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '20.3143px', fontWeight: 'bold', fontFamily: 'Signora', textAlign: 'center'}}>
                                 Trân Trọng Kính Mời Mọi Người<br />Tới Dự Bữa Cơm Thân Mật <br />Cùng Gia Đình Chúng Tôi !
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="cYWuPmqKVW" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '5322.86px', left: '10.0443px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="cYWuPmqKVW-fade-in-1.6-0-ease-out-false" data-node-id="cYWuPmqKVW"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '24.8286px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="cYWuPmqKVW" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '5322.86px', left: '10.0443px', width: '451.429px'}}>
+                          <div data-transition-key="cYWuPmqKVW-fade-in-1.6-0-ease-out-false" data-node-id="cYWuPmqKVW" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '24.8286px', fontWeight: 'bold', fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center'}}>
                                 Thứ Ba, 06 . 01 . 2026</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="GtN9qZm7pz" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '5353.81px', left: '8.35143px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="GtN9qZm7pz-fade-in-1.6-0-ease-out-false" data-node-id="GtN9qZm7pz"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '15.8px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 500, fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="GtN9qZm7pz" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '5353.81px', left: '8.35143px', width: '451.429px'}}>
+                          <div data-transition-key="GtN9qZm7pz-fade-in-1.6-0-ease-out-false" data-node-id="GtN9qZm7pz" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '15.8px', fontWeight: 500, fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center'}}>
                                 (Tức Ngày 18.11.Ất Tỵ)</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="CJNrpOGg3w" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '5383.73px', left: '-130.011px', width: '459.441px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="CJNrpOGg3w-fade-in-1.6-0-ease-out-false" data-node-id="CJNrpOGg3w"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
-                              <div contentEditable={false}
-                                style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '13.5429px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
+                        <div data-node-id="CJNrpOGg3w" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '5383.73px', left: '-130.011px', width: '459.441px'}}>
+                          <div data-transition-key="CJNrpOGg3w-fade-in-1.6-0-ease-out-false" data-node-id="CJNrpOGg3w" className="transition-node-base">
+                            <div className="jsx-1828971989 flex-center">
+                              <div className="text-node-base"
+                                style={{color: 'rgb(0, 0, 0)', fontSize: '13.5429px', fontWeight: 'bold', fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center'}}>
                                 Tại Tư Gia Nhà Trai<br /><br /><br />Số 119 - Thôn Yên Sở 5<br />Xã Dương Hoà - TP Hà Nội</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="B_0eyD8q2D" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '5382.42px', left: '147.73px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="B_0eyD8q2D-fade-in-1.6-0-ease-out-false" data-node-id="B_0eyD8q2D"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="B_0eyD8q2D" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '5382.42px', left: '147.73px', width: '451.429px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="B_0eyD8q2D-fade-in-1.6-0-ease-out-false" data-node-id="B_0eyD8q2D" className="transition-node-1-6">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '13.5429px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: '"Scarlet Bradley.regular"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 Tại Tư Gia Nhà Gái<br /><br /><br />TDP Liên Hải - P. Ngọc Sơn<br />Tỉnh Thanh Hoá</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="f07vS6YLqh" className="jsx-1828971989 text-box-component "
-                          style={{position: 'absolute', top: '5490.75px', left: '12.4143px', width: '451.429px', height: 'auto', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="f07vS6YLqh-fade-in-1.6-0-ease-out-false" data-node-id="f07vS6YLqh"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-1828971989"
-                              style={{position: 'relative', width: '100%', height: '100%', padding: '0px', borderRadius: '0px', boxShadow: 'none', backgroundColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', opacity: 1, border: '0px solid'}}>
+                        <div data-node-id="f07vS6YLqh" className="jsx-1828971989 text-box-component node-abs"
+                          style={{top: '5490.75px', left: '12.4143px', width: '451.429px', height: 'auto', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="f07vS6YLqh-fade-in-1.6-0-ease-out-false" data-node-id="f07vS6YLqh" className="transition-node-1-6">
+                            <div className="jsx-1828971989 inner-content-base">
                               <div contentEditable={false}
                                 style={{height: 'auto', width: '100%', minWidth: '20px', color: 'rgb(0, 0, 0)', fontSize: '24.8286px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', fontWeight: 'bold', fontFamily: '"Monsieur La Doulaise"', textAlign: 'center', lineHeight: 'normal', letterSpacing: '0px', textTransform: 'none', textDecoration: 'none', fontStyle: 'normal', pointerEvents: 'none', overflow: 'hidden', wordBreak: 'break-word'}}>
                                 Rất hân hạnh được đón tiếp!</div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="cciVZlL9zH" className="jsx-3557960200"
-                          style={{position: 'absolute', top: '5245.29px', left: '224.078px', width: '28.2143px', height: '24.6875px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="cciVZlL9zH-fade-in-1.6-0-ease-out-false" data-node-id="cciVZlL9zH"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-3557960200"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1}}>
+                        <div data-node-id="cciVZlL9zH" className="jsx-3557960200 node-abs"
+                          style={{top: '5245.29px', left: '224.078px', width: '28.2143px', height: '24.6875px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="cciVZlL9zH-fade-in-1.6-0-ease-out-false" data-node-id="cciVZlL9zH" className="transition-node-1-6">
+                            <div className="jsx-3557960200 inner-content-base">
                               <div className="jsx-3557960200 material-component">
-                                <div className="jsx-3557960200 photo-bg-wrap"
-                                  style={{backgroundImage: 'url("https://assets.cinelove.me/resources/love/1ufqiy0iyebfxitvbfetd7.png")', border: '0px solid', borderRadius: '0px', padding: '0px', boxShadow: 'none'}}>
+                                <div className="jsx-3557960200 photo-bg-wrap photo-bg-base"
+                                  style={{backgroundImage: 'url("https://assets.cinelove.me/resources/love/1ufqiy0iyebfxitvbfetd7.png")', border: '0px solid', padding: '0px', boxShadow: 'none'}}>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="BNm4hOsApW" className="jsx-3557960200"
-                          style={{position: 'absolute', top: '6156.23px', left: '151.511px', width: '156.533px', height: '156.533px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg) scale(1, 1)'}}>
-                          <div data-transition-key="BNm4hOsApW-fade-in-1.6-0-ease-out-false" data-node-id="BNm4hOsApW"
-                            style={{transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div className="jsx-3557960200"
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', backgroundColor: 'transparent', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1}}>
+                        <div data-node-id="BNm4hOsApW" className="jsx-3557960200 node-abs"
+                          style={{top: '6156.23px', left: '151.511px', width: '156.533px', height: '156.533px', transform: 'rotate(0deg) scale(1, 1)'}}>
+                          <div data-transition-key="BNm4hOsApW-fade-in-1.6-0-ease-out-false" data-node-id="BNm4hOsApW" className="transition-node-1-6">
+                            <div className="jsx-3557960200 inner-content-base">
                               <div className="jsx-3557960200 material-component">
-                                <div id="svg-BNm4hOsApW" className="jsx-3557960200 svg-wrap"
-                                  style={{width: '100%', height: '100%', overflow: 'hidden', border: '0px solid', borderRadius: '0px', padding: '0px', boxShadow: 'none'}}>
+                                <div id="svg-BNm4hOsApW" className="jsx-3557960200 svg-wrap material-node-base">
                                   {/* ?xml version="1.0" standalone="no"? */}
                                   <svg preserveAspectRatio="none" width="100%"
                                     height="100%" className="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -1441,12 +1236,10 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
-                        <div data-node-id="zHH-K90dxi"
-                          style={{position: 'absolute', top: '5968.19px', left: '309.793px', width: '47.4px', height: '189.6px', zIndex: 0, cursor: 'default', transform: 'rotate(0deg)'}}>
-                          <div data-transition-key="zHH-K90dxi-fade-in-1.6-0-ease-out-false" data-node-id="zHH-K90dxi"
-                            style={{transition: '1.6s ease-out', transform: 'none', opacity: 1, width: '100%', height: '100%'}}>
-                            <div
-                              style={{position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxSizing: 'border-box', border: '0px solid', padding: '0px', textShadow: 'rgba(0, 0, 0, 0) 0px 0px 2px', opacity: 1, backgroundColor: 'transparent', borderRadius: '0px', boxShadow: 'none'}}>
+                        <div data-node-id="zHH-K90dxi" className="node-abs"
+                          style={{top: '5968.19px', left: '309.793px', width: '47.4px', height: '189.6px', transform: 'rotate(0deg)'}}>
+                          <div data-transition-key="zHH-K90dxi-fade-in-1.6-0-ease-out-false" data-node-id="zHH-K90dxi" className="transition-node-1-6">
+                            <div className="inner-content-base">
                               <div className="jsx-3272123691 countdown componentBOX vertical"
                                 style={{color: 'rgb(255, 255, 255)', backgroundColor: 'rgba(199, 23, 23, 0.306)', width: '100%', height: '100%', fontSize: '15.8px', fontFamily: 'Arial'}}>
                                 <div className="jsx-3272123691" style={{backgroundColor: 'rgba(199, 23, 23, 0.306)'}}>
@@ -1593,12 +1386,12 @@ export default function BodyContent() {
                   <div className="jsx-1401461546 toolbar">
                     <div className="jsx-831523885 toolbar-left">
                       <div className="jsx-831523885 message-box-button"><span className="jsx-831523885"
-                          style={{display: 'inline-block', width: 'calc(100% - 24px)'}}>Gửi lời chúc...</span><img
+                          style={{display: 'inline-block', width: 'calc(100% - 24px)'}}>Gửi lời chúc...</span><img alt=""
                           className="jsx-831523885" src="/message.24f9a1e2.png" style={{height: '24px', verticalAlign: 'middle'}} />
                       </div>
                     </div>
                     <div className="jsx-2074202128 toolbar-right">
-                      <div id="animation-gift-preview-btn" className="jsx-2074202128"><img className="jsx-2074202128"
+                      <div id="animation-gift-preview-btn" className="jsx-2074202128"><img alt="gift icon" className="jsx-2074202128"
                           src="/biubiu.png" /><span className="jsx-2074202128">Bắn tim</span>
                       </div>
                       <div id="cinelove-gift-button" className="jsx-2074202128"></div>
@@ -1636,9 +1429,9 @@ export default function BodyContent() {
                       <path d="M18 6 6 18" className="jsx-773491098"></path>
                       <path d="m6 6 12 12" className="jsx-773491098"></path>
                     </svg></div>
-                </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
