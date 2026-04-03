@@ -1,12 +1,9 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import BodyContent from "./BodyContent";
 
-interface ClientPageProps {
-  htmlContent: string;
-}
-
-export default function ClientPage({ htmlContent }: ClientPageProps) {
+export default function ClientPage() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -248,10 +245,9 @@ export default function ClientPage({ htmlContent }: ClientPageProps) {
       <link rel="preload" as="image" href="/calen_heart_1.png" />
       <link rel="preload" as="image" href="/message.24f9a1e2.png" />
       <link rel="preload" as="image" href="/biubiu.png" />
-      <div
-        ref={containerRef}
-        dangerouslySetInnerHTML={{ __html: htmlContent }}
-      />
+      <div ref={containerRef}>
+        <BodyContent />
+      </div>
     </>
   );
 }
