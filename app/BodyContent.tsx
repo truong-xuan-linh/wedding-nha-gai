@@ -1,18 +1,12 @@
 export default function BodyContent() {
   return (
     <div id="__next">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html:
-            '{"@context":"https://schema.org","@type":"Organization","name":"CineLove","url":"https://cinelove.me","logo":{"@type":"ImageObject","url":"https://cinelove.me/images/logos/logo-cinelove-full.svg","width":250,"height":60},"description":"Tạo thiệp online miễn phí với bộ sưu tập mẫu đa dạng: thiệp cưới, sinh nhật, sự kiện, kỷ niệm. Thiệp điện tử đẹp, hiện đại, dễ tùy chỉnh tại Cinelove.","contactPoint":{"@type":"ContactPoint","contactType":"customer service","email":"cinelove.contact@gmail.com","availableLanguage":["Vietnamese"]},"sameAs":["https://www.facebook.com/cinelove.me","https://www.instagram.com/cinelove.me","https://www.tiktok.com/@cinelove.me"]}',
-        }}
-      />
+      <script type="application/ld+json" />
       <div className="ant-spin-nested-loading css-var-«r0»">
         <div className="ant-spin-container">
           <div
             className="jsx-3147566159 pc-container"
-            style={{ backgroundColor: "rgb(240, 242, 245)", height: "100vh", width: "100vw", paddingTop: "5vh" }}
+            style={{ backgroundColor: "rgb(240, 242, 245)", minHeight: "100vh", width: "100vw", paddingTop: "5vh" }}
           >
             <div
               className="jsx-3147566159 pc-content"
@@ -1787,7 +1781,7 @@ export default function BodyContent() {
                             top: "4784.09px",
                             left: "105.569px",
                             width: "318.433px",
-                            height: "297.205px",
+                            height: "190px",
                             transform: "rotate(0deg)",
                           }}
                         >
@@ -3602,7 +3596,9 @@ export default function BodyContent() {
                     <div className="jsx-3319829800 bar-m-tit">Lời chúc</div>
 
                     {/* Gold ornament divider */}
-                    <div className="blessing-gold-divider"><span>✦</span></div>
+                    <div className="blessing-gold-divider">
+                      <span>✦</span>
+                    </div>
 
                     {/* Form fields */}
                     <div className="jsx-3319829800 bar-m-cont">

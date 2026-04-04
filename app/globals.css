@@ -6416,3 +6416,92 @@
   box-sizing: border-box;
 }
 
+/* =============================================
+   MOBILE RESPONSIVE — full-screen card layout
+   ============================================= */
+
+/* Base: prevent horizontal overflow at document level */
+html {
+  overflow-x: hidden;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+@media (max-width: 520px) {
+  /* Fill full viewport — remove any gap below the card */
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #fff;
+  }
+
+  #__next {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Ant Design spin wrappers must fill full height */
+  .ant-spin-nested-loading,
+  .ant-spin-container {
+    width: 100% !important;
+    height: 100vh !important;
+    overflow: hidden !important;
+    background: #fff !important;
+  }
+
+  /* Remove the gray desktop background + top padding */
+  .pc-container {
+    background-color: #fff !important;
+    padding-top: 0 !important;
+    height: 100vh !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+  }
+
+  /* Full-screen card: no border, shadow, radius */
+  .pc-content {
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* app-view-index must not expand beyond viewport */
+  #app-view-index {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+  }
+
+  /* Inner scroll container: clip x, scroll y */
+  .relative.overflow-x-hidden {
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Scale the 474px-wide page content to fit viewport width */
+  #root-page-container {
+    transform-origin: top left;
+    transform: scale(var(--mobile-scale, 1));
+    width: 474px !important;
+  }
+
+  /* Blessing popup: full width on mobile */
+  .popup-wrapper.jsx-831600802 {
+    border-radius: 0.75rem 0.75rem 0 0 !important;
+  }
+}
+

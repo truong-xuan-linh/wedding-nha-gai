@@ -10,6 +10,28 @@ export default function ClientPage() {
     const container = containerRef.current;
     if (!container) return;
 
+    // ── Mobile scale — fit 474px-wide content into narrow viewports ────────────
+    const DESIGN_WIDTH = 474;
+    const rootPage = container.querySelector("#root-page-container") as HTMLElement | null;
+    const applyMobileScale = () => {
+      const vw = window.innerWidth;
+      if (rootPage && vw < DESIGN_WIDTH) {
+        const scale = vw / DESIGN_WIDTH;
+        document.documentElement.style.setProperty("--mobile-scale", String(scale));
+        // Shrink scroll container height to match scaled content
+        if (rootPage.parentElement) {
+          rootPage.parentElement.style.height = `${vw / DESIGN_WIDTH * 100}vh`;
+        }
+      } else if (rootPage) {
+        document.documentElement.style.removeProperty("--mobile-scale");
+        if (rootPage.parentElement) {
+          rootPage.parentElement.style.height = "";
+        }
+      }
+    };
+    applyMobileScale();
+    window.addEventListener("resize", applyMobileScale);
+
     // Blessing popup open/close interaction.
     // The popup is hidden via inline style in body-content.html from the start.
     const popupBackdrop = container.querySelector(".popup-backdrop") as HTMLElement | null;
@@ -455,6 +477,7 @@ export default function ClientPage() {
     }
 
     const cleanupAll = () => {
+      window.removeEventListener("resize", applyMobileScale);
       observer.disconnect();
       cancelAnimationFrame(scrollAnimId);
       clearInterval(countdownIntervalId);
