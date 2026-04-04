@@ -35,7 +35,7 @@ export default function SparkleEffects() {
   ];
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden" style={{ opacity: 0.75 }}>
+    <div id="sparkle-layer" className="fixed inset-0 pointer-events-none z-10 overflow-hidden" style={{ opacity: 0.75 }}>
       {particles.map((p) => (
         <div
           key={p.id}

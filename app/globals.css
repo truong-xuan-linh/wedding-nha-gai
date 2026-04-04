@@ -41,6 +41,17 @@
   100% { transform: scale(1.08); }
 }
 
+/* Override for specific photo: drift background upward, NO scale */
+.photo-bg-base.photo-breathe-up {
+  animation: photoShiftUp 10s infinite ease-in-out alternate !important;
+  transform: none !important;
+  background-position: center 50%;
+}
+@keyframes photoShiftUp {
+  0%   { transform: none; background-position: center 50%; }
+  100% { transform: none; background-position: center 35%; }
+}
+
 /* 2. Glassmorphism for Forms */
 .rsvp-form, .bar-messwin {
   background: rgba(255, 255, 255, 0.4) !important;

@@ -506,6 +506,18 @@ export default function ClientPage() {
       countdownIntervalId = setInterval(updateCountdown, 1000);
     }
 
+    // Sparkle parallax: stars drift gently in the same direction as scroll,
+    // giving a sense that they share the same space as the page content.
+    const sparkleLayer = document.getElementById("sparkle-layer") as HTMLElement | null;
+    const handleSparkleParallax = () => {
+      if (!scrollContainer || !sparkleLayer) return;
+      const drift = scrollContainer.scrollTop * 0.12;
+      sparkleLayer.style.transform = `translateY(${drift}px)`;
+    };
+    if (scrollContainer && sparkleLayer) {
+      scrollContainer.addEventListener("scroll", handleSparkleParallax, { passive: true });
+    }
+
     const cleanupAll = () => {
       window.removeEventListener("resize", applyMobileScale);
       observer.disconnect();
@@ -517,6 +529,7 @@ export default function ClientPage() {
         scrollContainer.removeEventListener("touchstart", handleUserScroll);
         scrollContainer.removeEventListener("touchmove", handleUserScroll);
         scrollContainer.removeEventListener("scroll", handleScrollReveal);
+        scrollContainer.removeEventListener("scroll", handleSparkleParallax);
       }
       if (userScrollTimeout) clearTimeout(userScrollTimeout);
       if (messageBtn) messageBtn.removeEventListener("click", openPopup);

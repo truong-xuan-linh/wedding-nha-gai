@@ -1579,7 +1579,7 @@ export default function BodyContent() {
                             <div className="jsx-1944329802 inner-content-base">
                               <div className="jsx-1944329802 photo-component photo-mask-base">
                                 <div
-                                  className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  className="jsx-1944329802 photo-bg-wrap photo-bg-base photo-breathe-up"
                                   style={{
                                     backgroundImage: 'url("/assets/images/43200767490142075934.jpg")',
                                   }}
