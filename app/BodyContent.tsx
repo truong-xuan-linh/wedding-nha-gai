@@ -3330,7 +3330,7 @@ export default function BodyContent() {
                                   textAlign: "center",
                                 }}
                               >
-                                Thứ Ba, 21 . 04 . 2026
+                                Thứ Hai, 20 . 04 . 2026
                               </div>
                             </div>
                           </div>
@@ -3356,7 +3356,7 @@ export default function BodyContent() {
                                   textAlign: "center",
                                 }}
                               >
-                                (Tức Ngày 05.03.Bính Ngọ)
+                                (Tức Ngày 04.03.Bính Ngọ)
                               </div>
                             </div>
                           </div>
