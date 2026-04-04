@@ -40,7 +40,7 @@ export default function BodyContent() {
                       backgroundImage: "none",
                       backgroundSize: "cover",
                       width: "474px",
-                      height: "8693.39px",
+                      height: "9493.39px",
                       position: "relative",
                     }}
                   >
@@ -53,7 +53,7 @@ export default function BodyContent() {
                         justifyContent: "center",
                         boxSizing: "border-box",
                         width: "474px",
-                        height: "8693.39px",
+                        height: "9493.39px",
                         minWidth: "50px",
                         minHeight: "50px",
                       }}
@@ -2406,11 +2406,261 @@ export default function BodyContent() {
                             </div>
                           </div>
                         </div>
+
+                        {/* ===== GALLERY SECTION: Our Memories ===== */}
+                        {/* Section title */}
+                        <div
+                          data-node-id="gallery-section-title"
+                          className="jsx-1828971989 text-box-component node-abs"
+                          style={{
+                            top: "8465px",
+                            left: "10.7214px",
+                            width: "455.04px",
+                            height: "auto",
+                            transform: "rotate(0deg)",
+                          }}
+                        >
+                          <div
+                            data-transition-key="gallery-section-title-slide-up-1.3-0-ease-out-false"
+                            data-node-id="gallery-section-title"
+                            className="transition-node-base"
+                          >
+                            <div className="jsx-1828971989 inner-content-base">
+                              <div
+                                contentEditable={false}
+                                style={{
+                                  height: "auto",
+                                  width: "100%",
+                                  minWidth: "20px",
+                                  color: "rgb(0, 0, 0)",
+                                  fontSize: "28.44px",
+                                  textShadow: "rgba(0, 0, 0, 0) 0px 0px 2px",
+                                  fontWeight: "bold",
+                                  fontFamily: "Mallong",
+                                  textAlign: "center",
+                                  lineHeight: "normal",
+                                  letterSpacing: "2px",
+                                  textTransform: "none",
+                                  textDecoration: "none",
+                                  fontStyle: "normal",
+                                  pointerEvents: "none",
+                                  overflow: "hidden",
+                                  wordBreak: "break-word",
+                                }}
+                              >
+                                OUR MOMENTS
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Gold divider text */}
+                        <div
+                          data-node-id="gallery-section-sub"
+                          className="jsx-1828971989 text-box-component node-abs"
+                          style={{
+                            top: "8508px",
+                            left: "10.7214px",
+                            width: "455.04px",
+                            height: "auto",
+                            transform: "rotate(0deg)",
+                          }}
+                        >
+                          <div
+                            data-transition-key="gallery-section-sub-slide-up-1.3-0.1-ease-out-false"
+                            data-node-id="gallery-section-sub"
+                            className="transition-node-base"
+                          >
+                            <div className="jsx-1828971989 inner-content-base">
+                              <div
+                                contentEditable={false}
+                                style={{
+                                  height: "auto",
+                                  width: "100%",
+                                  minWidth: "20px",
+                                  color: "#c9a96e",
+                                  fontSize: "12px",
+                                  fontFamily: "Quicksand",
+                                  textAlign: "center",
+                                  letterSpacing: "4px",
+                                  textTransform: "uppercase",
+                                  pointerEvents: "none",
+                                  overflow: "hidden",
+                                  wordBreak: "break-word",
+                                }}
+                              >
+                                ✦ &nbsp; Khoảnh Khắc Đáng Nhớ &nbsp; ✦
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Photo 1 - top-left */}
+                        <div
+                          data-node-id="gallery-photo-01"
+                          className="jsx-1944329802 node-abs"
+                          style={{
+                            top: "8540px",
+                            left: "7px",
+                            width: "224px",
+                            height: "300px",
+                            transform: "rotate(0deg) scale(1, 1)",
+                          }}
+                        >
+                          <div
+                            data-transition-key="gallery-photo-01-slide-up-1.3-0.2-ease-out-false"
+                            data-node-id="gallery-photo-01"
+                            className="transition-node-base"
+                            style={{ transition: "1.3s ease-out 0.2s" }}
+                          >
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div
+                                  className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{
+                                    backgroundImage: 'url("/assets/images/4277553449265611777.jpg")',
+                                    backgroundPosition: "center center",
+                                  }}
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Photo 2 - top-right */}
+                        <div
+                          data-node-id="gallery-photo-02"
+                          className="jsx-1944329802 node-abs"
+                          style={{
+                            top: "8540px",
+                            left: "243px",
+                            width: "224px",
+                            height: "300px",
+                            transform: "rotate(0deg) scale(1, 1)",
+                          }}
+                        >
+                          <div
+                            data-transition-key="gallery-photo-02-slide-up-1.3-0.3-ease-out-false"
+                            data-node-id="gallery-photo-02"
+                            className="transition-node-base"
+                            style={{ transition: "1.3s ease-out 0.3s" }}
+                          >
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div
+                                  className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{
+                                    backgroundImage: 'url("/assets/images/14364002538572917985.jpg")',
+                                    backgroundPosition: "center center",
+                                  }}
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Photo 3 - bottom-left */}
+                        <div
+                          data-node-id="gallery-photo-03"
+                          className="jsx-1944329802 node-abs"
+                          style={{
+                            top: "8853px",
+                            left: "7px",
+                            width: "143px",
+                            height: "200px",
+                            transform: "rotate(0deg) scale(1, 1)",
+                          }}
+                        >
+                          <div
+                            data-transition-key="gallery-photo-03-slide-up-1.3-0.2-ease-out-false"
+                            data-node-id="gallery-photo-03"
+                            className="transition-node-base"
+                            style={{ transition: "1.3s ease-out 0.2s" }}
+                          >
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div
+                                  className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{
+                                    backgroundImage: 'url("/assets/images/358840436175251077526.jpg")',
+                                    backgroundPosition: "center center",
+                                  }}
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Photo 4 - bottom-center */}
+                        <div
+                          data-node-id="gallery-photo-04"
+                          className="jsx-1944329802 node-abs"
+                          style={{
+                            top: "8853px",
+                            left: "162px",
+                            width: "150px",
+                            height: "200px",
+                            transform: "rotate(0deg) scale(1, 1)",
+                          }}
+                        >
+                          <div
+                            data-transition-key="gallery-photo-04-slide-up-1.3-0.3-ease-out-false"
+                            data-node-id="gallery-photo-04"
+                            className="transition-node-base"
+                            style={{ transition: "1.3s ease-out 0.3s" }}
+                          >
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div
+                                  className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{
+                                    backgroundImage: 'url("/assets/images/8c4a8124-4e17-42f1-a18a-434a5492dda8.jpeg")',
+                                    backgroundPosition: "center center",
+                                  }}
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Photo 5 - bottom-right */}
+                        <div
+                          data-node-id="gallery-photo-05"
+                          className="jsx-1944329802 node-abs"
+                          style={{
+                            top: "8853px",
+                            left: "324px",
+                            width: "143px",
+                            height: "200px",
+                            transform: "rotate(0deg) scale(1, 1)",
+                          }}
+                        >
+                          <div
+                            data-transition-key="gallery-photo-05-slide-up-1.3-0.4-ease-out-false"
+                            data-node-id="gallery-photo-05"
+                            className="transition-node-base"
+                            style={{ transition: "1.3s ease-out 0.4s" }}
+                          >
+                            <div className="jsx-1944329802 inner-content-base">
+                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                                <div
+                                  className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{
+                                    backgroundImage: 'url("/assets/images/c2dbf33d-35d1-4182-807c-dc5fafb67ed4.jpeg")',
+                                    backgroundPosition: "center center",
+                                  }}
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {/* ===== END GALLERY SECTION ===== */}
+
                         <div
                           data-node-id="W3GBplK8YF"
                           className="jsx-3557960200 node-abs"
                           style={{
-                            top: "8381.19px",
+                            top: "9181.19px",
                             left: "0px",
                             width: "100%",
                             height: "280px",
@@ -2441,7 +2691,7 @@ export default function BodyContent() {
                           data-node-id="a77vdXA4WC"
                           className="jsx-1828971989 text-box-component node-abs"
                           style={{
-                            top: "8330.96px",
+                            top: "9130.96px",
                             left: "8.29274px",
                             width: "455.04px",
                             height: "auto",
