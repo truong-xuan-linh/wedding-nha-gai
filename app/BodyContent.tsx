@@ -2417,10 +2417,9 @@ export default function BodyContent() {
                           className="jsx-3557960200 node-abs"
                           style={{
                             top: "8381.19px",
-                            left: "203.278px",
-                            width: "91.008px",
-                            height: "112.421px",
-                            transform: "rotate(0deg) scale(1, 1)",
+                            left: "0px",
+                            width: "100%",
+                            height: "280px",
                           }}
                         >
                           <div
@@ -2434,8 +2433,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-3557960200 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/resources/characters/2pln23imlphtxz5q16j3mc.png")',
+                                    backgroundImage: 'url("/assets/images/footer.jpeg")',
                                     border: "0px solid",
                                     padding: "0px",
                                     boxShadow: "none",
@@ -2449,7 +2447,7 @@ export default function BodyContent() {
                           data-node-id="a77vdXA4WC"
                           className="jsx-1828971989 text-box-component node-abs"
                           style={{
-                            top: "8514.96px",
+                            top: "8330.96px",
                             left: "8.29274px",
                             width: "455.04px",
                             height: "auto",
