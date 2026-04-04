@@ -20,15 +20,15 @@ export default function ClientPage() {
       if (rootPage && vw < DESIGN_WIDTH) {
         const scale = vw / DESIGN_WIDTH;
         document.documentElement.style.setProperty("--mobile-scale", String(scale));
-        
-        // Fix for the "white area" at the bottom: 
-        // transform: scale only visual, doesn't affect document flow. 
+
+        // Fix for the "white area" at the bottom:
+        // transform: scale only visual, doesn't affect document flow.
         // We use negative margin-bottom to shrink the occupied height.
         const originalHeight = 8693.39;
         const scaledHeight = originalHeight * scale;
         const diff = originalHeight - scaledHeight;
         rootPage.style.marginBottom = `-${diff}px`;
-        
+
         // Also ensure pc-content parent doesn't have fixed 90vh on mobile if we want full screen
         const pcContent = container.querySelector(".pc-content") as HTMLElement | null;
         if (pcContent) {
@@ -143,11 +143,9 @@ export default function ClientPage() {
         e.preventDefault();
         const nameInput = rsvpForm.querySelector("input[name='rsvp-name']") as HTMLInputElement;
         const attendingInput = rsvpForm.querySelector(
-          "input[name='rsvp-attendance']:checked"
+          "input[name='rsvp-attendance']:checked",
         ) as HTMLInputElement | null;
-        const countInput = rsvpForm.querySelector(
-          "input[name='rsvp-count']:checked"
-        ) as HTMLInputElement | null;
+        const countInput = rsvpForm.querySelector("input[name='rsvp-count']:checked") as HTMLInputElement | null;
 
         const name = nameInput?.value?.trim() ?? "";
         const attending = attendingInput?.value !== "no";
@@ -170,7 +168,9 @@ export default function ClientPage() {
               rsvpBtn.style.background = "linear-gradient(135deg, #7caa6e 0%, #4e8040 100%)";
               rsvpBtn.style.boxShadow = "0 2px 12px rgba(78, 128, 64, 0.3)";
             }
-            rsvpForm.querySelectorAll("input").forEach((el) => (el as HTMLInputElement).setAttribute("disabled", "true"));
+            rsvpForm
+              .querySelectorAll("input")
+              .forEach((el) => (el as HTMLInputElement).setAttribute("disabled", "true"));
           } else {
             if (rsvpBtn) {
               rsvpBtn.disabled = false;
@@ -240,7 +240,7 @@ export default function ClientPage() {
               }, 1000);
             }
           }
-        }, 2000);
+        }, 3000);
       })
       .catch(() => {});
 
@@ -308,7 +308,8 @@ export default function ClientPage() {
 
     if (audioWrapper && audioEl && audioToggle) {
       // Try autoplay on load; browsers usually block this until user interaction
-      audioEl.play()
+      audioEl
+        .play()
         .then(() => setPlayingState(true))
         .catch(() => {
           // Autoplay blocked — show paused state visually
