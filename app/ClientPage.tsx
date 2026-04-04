@@ -184,7 +184,7 @@ export default function ClientPage() {
     let countdownIntervalId: NodeJS.Timeout;
 
     if (countdownEl) {
-      const weddingDate = new Date("2026-01-07T00:00:00");
+      const weddingDate = new Date("2026-04-21T00:00:00");
 
       const updateCountdown = () => {
         const now = new Date();

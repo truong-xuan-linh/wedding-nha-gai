@@ -2901,7 +2901,7 @@ export default function BodyContent() {
                                   fontWeight: "bold",
                                   fontFamily: "Signora",
                                   textAlign: "center",
-                                  lineHeight: "normal",
+                                  lineHeight: "1.4",
                                   letterSpacing: "0px",
                                   textTransform: "none",
                                   textDecoration: "none",
@@ -3036,6 +3036,7 @@ export default function BodyContent() {
                                   fontWeight: "bold",
                                   fontFamily: '"Scarlet Bradley.regular"',
                                   textAlign: "center",
+                                  lineHeight: "1.4",
                                 }}
                               >
                                 Thứ Ba, 21 . 04 . 2026
@@ -3088,6 +3089,8 @@ export default function BodyContent() {
                                   fontWeight: 500,
                                   fontFamily: '"Scarlet Bradley.regular"',
                                   textAlign: "center",
+                                  lineHeight: "1.4",
+                                  padding: "10px 0",
                                 }}
                               >
                                 Tại NHÀ HÀNG KIM BÌNH
@@ -3356,8 +3359,8 @@ export default function BodyContent() {
                           className="node-abs"
                           style={{
                             top: "5968.19px",
-                            left: "309.793px",
-                            width: "47.4px",
+                            left: "297px",
+                            width: "60px",
                             height: "189.6px",
                             transform: "rotate(0deg)",
                           }}
@@ -3375,7 +3378,7 @@ export default function BodyContent() {
                                   backgroundColor: "rgba(199, 23, 23, 0.306)",
                                   width: "100%",
                                   height: "100%",
-                                  fontSize: "15.8px",
+                                  fontSize: "12px",
                                   fontFamily: "Arial",
                                 }}
                               >
