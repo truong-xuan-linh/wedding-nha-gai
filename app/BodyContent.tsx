@@ -2759,58 +2759,91 @@ export default function BodyContent() {
                                   </div>
                                   <div>
                                     <label
-                                      htmlFor="rsvp-attendance"
                                       style={{ display: "block", marginBottom: "6px", fontSize: "13.272px" }}
                                     >
                                       Bạn sẽ tham dự chứ?
                                     </label>
-                                    <div
-                                      className="ant-radio-group ant-radio-group-outline css-var-«r0» ant-radio-css-var"
-                                      style={{ width: "100%" }}
+                                    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                                      <label
+                                        style={{
+                                          display: "flex",
+                                          alignItems: "center",
+                                          gap: "8px",
+                                          cursor: "pointer",
+                                          fontSize: "13.272px",
+                                          color: "rgb(51, 51, 51)",
+                                        }}
+                                      >
+                                        <input
+                                          type="radio"
+                                          name="rsvp-attendance"
+                                          value="yes"
+                                          defaultChecked
+                                          style={{ accentColor: "rgb(92, 92, 92)", width: "15px", height: "15px" }}
+                                        />
+                                        Có, tôi sẽ tham dự
+                                      </label>
+                                      <label
+                                        style={{
+                                          display: "flex",
+                                          alignItems: "center",
+                                          gap: "8px",
+                                          cursor: "pointer",
+                                          fontSize: "13.272px",
+                                          color: "rgb(51, 51, 51)",
+                                        }}
+                                      >
+                                        <input
+                                          type="radio"
+                                          name="rsvp-attendance"
+                                          value="no"
+                                          style={{ accentColor: "rgb(92, 92, 92)", width: "15px", height: "15px" }}
+                                        />
+                                        Tôi bận, rất tiếc không thể tham dự
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <label
+                                      htmlFor="rsvp-count"
+                                      style={{ display: "block", marginBottom: "6px", fontSize: "13.272px" }}
                                     >
-                                      <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                                      Số người tham dự
+                                    </label>
+                                    <div style={{ display: "flex", gap: "6px" }}>
+                                      {[1, 2, 3, 4, 5].map((n) => (
                                         <label
-                                          className="ant-radio-wrapper ant-radio-wrapper-checked css-var-«r0» ant-radio-css-var"
+                                          key={n}
                                           style={{
-                                            fontSize: "13.272px",
-                                            fontFamily: "Arial",
-                                            whiteSpace: "break-spaces",
-                                            color: "rgb(51, 51, 51)",
+                                            flex: 1,
+                                            textAlign: "center",
+                                            cursor: "pointer",
                                           }}
                                         >
-                                          <span className="ant-radio ant-wave-target ant-radio-checked">
-                                            <input
-                                              className="ant-radio-input"
-                                              type="radio"
-                                              defaultValue="yes"
-                                              defaultChecked
-                                              name="rsvp-attendance"
-                                            />
-                                            <span className="ant-radio-inner"></span>
+                                          <input
+                                            type="radio"
+                                            name="rsvp-count"
+                                            value={String(n)}
+                                            defaultChecked={n === 1}
+                                            style={{ display: "none" }}
+                                          />
+                                          <span
+                                            className="rsvp-count-btn"
+                                            style={{
+                                              display: "block",
+                                              padding: "4px 0",
+                                              borderRadius: "4px",
+                                              border: "1px solid rgb(224, 224, 224)",
+                                              fontSize: "13.272px",
+                                              backgroundColor: n === 1 ? "rgb(92, 92, 92)" : "white",
+                                              color: n === 1 ? "white" : "rgb(51, 51, 51)",
+                                              transition: "all 0.15s",
+                                            }}
+                                          >
+                                            {n}
                                           </span>
-                                          <span className="ant-radio-label">Có, tôi sẽ tham dự</span>
                                         </label>
-                                        <label
-                                          className="ant-radio-wrapper css-var-«r0» ant-radio-css-var"
-                                          style={{
-                                            fontSize: "13.272px",
-                                            fontFamily: "Arial",
-                                            whiteSpace: "break-spaces",
-                                            color: "rgb(51, 51, 51)",
-                                          }}
-                                        >
-                                          <span className="ant-radio ant-wave-target">
-                                            <input
-                                              className="ant-radio-input"
-                                              type="radio"
-                                              defaultValue="no"
-                                              name="rsvp-attendance"
-                                            />
-                                            <span className="ant-radio-inner"></span>
-                                          </span>
-                                          <span className="ant-radio-label">Tôi bận, rất tiếc không thể tham dự</span>
-                                        </label>
-                                      </div>
+                                      ))}
                                     </div>
                                   </div>
                                   <button
@@ -3432,198 +3465,6 @@ export default function BodyContent() {
                   </div>
                 </div>
                 <div id="blessing-box" className="jsx-3895218497" style={{ opacity: 1 }}>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "845.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Hoàng Thuý</strong>: Chúc mừng sinh nhật anh chị ạaaaaa🫶🏻🫶🏻
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "884.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Kiều Trang</strong>: Chúc chị trăm năm hạnh phúc nhaaaa 🎉🥰
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "923.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Ẩn danh</strong>: Congtats
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "958.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Đỗ Viết Minh </strong>: 2 bạn đẹp đôi thế, chúc mừng hạnh phúc
-                      2 bạn🥰
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "997.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Huyền</strong>: Chúc mừng hp 2 bạn. Trăm năm hp nha❤️
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "1032.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Huyền chảnh</strong>: Chúc tình iu trăm năm hạnh phúc nhenn😘
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "1071.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Chú rể</strong>: Chúc mừng bạn lấy được anh chồng đẹp trai nhé
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "1110.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Em Hồng xinh gái😗😗</strong>: Đẹp đôi quá shop ơi😍chúc anh
-                      chị mãi mãi hạnh phúc nhaa😘
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "1149.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Thanh An</strong>: Trùi uii đôi nì đẹp quá🥰🥰, chúc 2 bạn luôn
-                      đồng hành cùng nhau ở mọi khoảnh khắc nha😍😍
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "1202.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Hồng Nhung </strong>: Chúc 2 vợ chồng trăm năm hạnh phúc nhe
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "1241.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Phương Thảo</strong>: Chúc tình iuu của em trăm năm hạnh phúc
-                      ☺️💗
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "1280.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Bạn Quỳnh Hoa❤️❤️</strong>: Chúc bạn iu của tui luôn hạnh phúc
-                      và sớm sinh quý tử nhaaaaaa❤️❤️
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "1319.5px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Lan Anh </strong>: Chúc mừng hạnh phúc chị iu🌷
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "-31px", opacity: -0.97 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497"> Viet Ha B10</strong>: Chúc bạn iu của tui luôn hạnh phúc , ảnh
-                      cưới xinh quá xinh luon
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "8px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Em đoan xinh gái</strong>: Chúc chị huyền của em mãi mãi một
-                      tình yêu nhé
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "47px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Minh Đức </strong>: Chúc 2 em trăm năm hp nha xl năm nay anh ko
-                      về đc rồi hp nha e 😍❤️
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "86px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Hường Hồ</strong>: Chúc bạn iu trăm năm hạnh phúc nhen🥰
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "125px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Nhunnhun</strong>: Chúc 2 bạn trăm năm hạnh phúc nha
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "160px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Thuỳ Trang</strong>: Chúc Mừng Hai Bạn Thật Hạnh Phúc nhé ❤️
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "199px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Thuỳ Giang</strong>: Chúc 2 vc bạn trăm năm hạnh phúc, sớm sinh
-                      quý tử nhé 🎉
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "238px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Hương Pii đây</strong>: Chúc 2 bạn 99 năm hạnh phúc thui nhau,
-                      luôn yth nhau sớm sinh quý tử nè❤️🥰
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "277px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">vân xinh gái đáng iuu</strong>: chúc mừng anh chị, tỉ năm hạnh
-                      phúc ạ happy happy🥰🥰
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "316px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Nore</strong>: Chúc anh chị trăm năm hạnh phúc 🎉😍💖👩‍❤️‍👨
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "351px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Phương Uyên </strong>: oaaaoaaaa hạnh phúc quá 😍
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "386px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Huyền vũ </strong>: Chúc anh chị hạnh phúccccc
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "421px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Em Thanh</strong>: Chúc chị yêu trăm năm hạnh phúc😍{" "}
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "456px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Lường Thị Vân Anh</strong>: Chúc bạn trăm năm hạnh phúc nhé🎉🎉
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "495px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Lan Anh D1</strong>: Chúc bạn Tú &amp; Huyền trăm năm hạnh phúc
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "534px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Hải Yến</strong>: Chúc bạn trăm năm hạnh phúc!
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "569px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Bạn Mai 🥰</strong>: Chúc bạn yêu của tôi trăm năm hạnh
-                      phúc🥰🥰🥰
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "608px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Thuý Xinh Gái Đáng Iu</strong>: Chúc 2 bạn mãi mãi hạnh phúc,
-                      bình an và giàu. Sanh 2 đứa thôi nhé, 3 cũng được😘
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "661px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Quỳnh Anh</strong>: Chúc hai anh chị trăm năm hạnh phúc nhó
-                      🫶🏻🫶🏻🫶🏻♥️
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "700px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">chị Oanh 🫶🏻</strong>: Chúc 2 đứa mãi yêu thương nhau, đồng hành
-                      cùng nhau, nỗ lực cùng nhau, luôn vì đối phương mà thay đổi tốt lên, mãi hạnh phúc một đời.{" "}
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "753px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">em Liên</strong>: Đẹp ghê thiệt chớ, chúc ac mãi mãi hạnh
-                      phúc💓
-                    </span>
-                  </div>
-                  <div className="jsx-3895218497 blessing-message" style={{ top: "792px", opacity: 1 }}>
-                    <span className="jsx-3895218497 blessing-text">
-                      <strong className="jsx-3895218497">Em Bảo</strong>: Em chúc anh chị trăm năm hạnh phúc ạ , vui vẻ
-                      mạnh khoẻ và luôn đồng hành cùng nhau trong mọi khoảnh khắc của cuộc đời ạ💗💗💗💗
-                    </span>
-                  </div>
                 </div>
                 <div id="cinelove-toolbar" className="jsx-1401461546">
                   <div className="jsx-1401461546 toolbar">
@@ -3649,14 +3490,16 @@ export default function BodyContent() {
                 <div className="jsx-831600802 popup-backdrop" style={{ display: "none" }}></div>
                 <div id="blessing-box-popup" className="jsx-831600802 popup-wrapper" style={{ display: "none" }}>
                   <div className="jsx-3319829800 bar-messwin">
-                    <img alt="message heart" className="jsx-3319829800 danmu-logo" src="/message-heart.9f3f7935.png" />
-                    <span className="jsx-3319829800 iconfont icon-guanbi cursor-pointer">x</span>
+                    <div className="blessing-popup-header">
+                      <img alt="message heart" className="jsx-3319829800 danmu-logo" src="/message-heart.9f3f7935.png" />
+                      <span className="jsx-3319829800 iconfont icon-guanbi cursor-pointer">×</span>
+                    </div>
                     <div className="jsx-3319829800 bar-m-tit">Lời chúc</div>
                     <div className="jsx-3319829800 bar-m-cont">
                       <div className="jsx-3319829800 bar-m-info">
                         <input
                           maxLength={25}
-                          placeholder="Tên của bạn"
+                          placeholder="Tên của bạn (không bắt buộc)"
                           className="jsx-3319829800 bar-m-com bar-m-name"
                           type="text"
                           defaultValue=""
@@ -3664,12 +3507,12 @@ export default function BodyContent() {
                       </div>
                       <div className="jsx-3319829800 bar-m-info">
                         <textarea
-                          placeholder="Lời chúc của bạn"
+                          placeholder="Nhập lời chúc của bạn..."
                           className="jsx-3319829800 bar-m-com bar-m-mess"
                         ></textarea>
                       </div>
                     </div>
-                    <button className="jsx-120244559 cinelove-btn rounded " style={{ marginTop: "25px", width: "90%" }}>
+                    <button className="jsx-120244559 cinelove-btn rounded" style={{ marginTop: "20px", width: "90%" }}>
                       Gửi Lời Chúc
                     </button>
                   </div>

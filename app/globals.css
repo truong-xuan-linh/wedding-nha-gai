@@ -1160,10 +1160,8 @@
 
 
     #blessing-box.jsx-3895218497 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
+      flex-direction: column-reverse;
       overflow: hidden;
       z-index: 1000;
       height: 180px;
@@ -1174,51 +1172,40 @@
       -webkit-transition: opacity 0.3s ease-in-out;
       transition: opacity 0.3s ease-in-out;
       -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
       user-select: none;
       -webkit-tap-highlight-color: transparent;
       pointer-events: none;
+      gap: 4px;
+      padding: 4px 0;
+      box-sizing: border-box;
     }
 
     .blessing-message.jsx-3895218497 {
       font-size: 11px;
       color: white;
-      position: absolute;
+      position: relative;
       min-height: 28px;
       line-height: 14px;
-      margin: 3px 0;
       border-radius: 7px;
-      padding: 2px 10px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
+      padding: 5px 10px;
       display: flex;
       text-align: left;
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+      justify-content: flex-start;
       background: rgba(225, 117, 117, 0.5);
-      -webkit-transition: opacity 0.5s ease-out;
-      transition: opacity 0.5s ease-out;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      -webkit-tap-highlight-color: transparent;
+      flex-shrink: 0;
+      width: 100%;
+      box-sizing: border-box;
+      word-break: break-word;
+    }
+
+    @keyframes blessingSlideIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .blessing-message-new.jsx-3895218497 {
+      animation: blessingSlideIn 0.4s ease-out;
     }
   
 
@@ -1542,6 +1529,23 @@
     }
   
 
+
+    @keyframes popupSlideUp {
+      from { transform: translateY(100%); }
+      to   { transform: translateY(0); }
+    }
+    @keyframes popupSlideDown {
+      from { transform: translateY(0); }
+      to   { transform: translateY(100%); }
+    }
+    @keyframes backdropFadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes backdropFadeOut {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+    }
 
     .popup-wrapper.jsx-831600802 {
       width: 100%;
@@ -6113,26 +6117,96 @@
 /* Blessing form (jsx-3319829800) */
 .bar-messwin.jsx-3319829800 {
   width: 100%;
-  min-height: 370px;
   position: relative;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  flex-flow: column;
   align-items: center;
   box-sizing: border-box;
-  background-color: #fff;
-  border-radius: 10px;
   background: radial-gradient(328px at 2.9% 15%, rgb(255 226 226) 0%, rgb(255 255 255) 25.8%, rgb(255 255 255) 50.8%, rgb(255 255 255) 77.6%, rgb(255 246 246) 100.7%);
+  padding-bottom: 28px;
 }
-.bar-messwin.jsx-3319829800 .bar-m-tit.jsx-3319829800 { margin-top: 57px; font-size: 21px; font-weight: 600; color: #333; z-index: 1; }
-.bar-messwin.jsx-3319829800 .bar-m-cont.jsx-3319829800 { z-index: 1; width: 90%; }
+
+/* Popup header: logo centered + x at top-right */
+.blessing-popup-header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px 8px;
+  box-sizing: border-box;
+}
+
+.blessing-popup-header .icon-guanbi {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  font-size: 16px;
+  font-style: normal;
+  color: #666;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.blessing-popup-header .icon-guanbi:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.blessing-popup-header .danmu-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.bar-messwin.jsx-3319829800 .bar-m-tit.jsx-3319829800 {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.bar-messwin.jsx-3319829800 .bar-m-cont.jsx-3319829800 {
+  width: 90%;
+  margin-top: 16px;
+}
+
+.bar-m-info.jsx-3319829800 {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.bar-m-com.jsx-3319829800 {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  background: #fafafa;
+  box-sizing: border-box;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.bar-m-com.jsx-3319829800:focus {
+  border-color: #ed5566;
+  background: #fff;
+}
+
+.bar-m-mess.jsx-3319829800 {
+  min-height: 80px;
+  resize: none;
+  display: block;
+}
+
 .bar-messwin.jsx-3319829800 .bar-m-sub.jsx-3319829800 { z-index: 1; width: 361px; height: 46px; background: #ed5566; border-radius: 73px; font-size: 17px; color: #fff; margin-top: 26px; border: none; }
 
 /* Gift animation (jsx-3944061065) */

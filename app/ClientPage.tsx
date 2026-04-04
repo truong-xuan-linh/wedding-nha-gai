@@ -15,13 +15,41 @@ export default function ClientPage() {
     const popupBackdrop = container.querySelector(".popup-backdrop") as HTMLElement | null;
     const popupWrapper = container.querySelector("#blessing-box-popup") as HTMLElement | null;
 
+    const POPUP_DURATION = 300;
+
     const openPopup = () => {
-      if (popupBackdrop) popupBackdrop.style.display = "block";
-      if (popupWrapper) popupWrapper.style.display = "block";
+      // Reset animations first, then display, then force reflow, then apply animation
+      if (popupBackdrop) {
+        popupBackdrop.style.animation = "";
+        popupBackdrop.style.display = "block";
+        void popupBackdrop.offsetHeight; // force reflow so browser registers the displayed state
+        popupBackdrop.style.animation = `backdropFadeIn ${POPUP_DURATION}ms ease-out forwards`;
+      }
+      if (popupWrapper) {
+        popupWrapper.style.animation = "";
+        popupWrapper.style.display = "block";
+        void popupWrapper.offsetHeight; // force reflow
+        popupWrapper.style.animation = `popupSlideUp ${POPUP_DURATION}ms ease-out forwards`;
+      }
     };
+
     const closePopup = () => {
-      if (popupBackdrop) popupBackdrop.style.display = "none";
-      if (popupWrapper) popupWrapper.style.display = "none";
+      if (popupBackdrop) {
+        popupBackdrop.style.animation = `backdropFadeOut ${POPUP_DURATION}ms ease-in forwards`;
+      }
+      if (popupWrapper) {
+        popupWrapper.style.animation = `popupSlideDown ${POPUP_DURATION}ms ease-in forwards`;
+      }
+      setTimeout(() => {
+        if (popupBackdrop) {
+          popupBackdrop.style.display = "none";
+          popupBackdrop.style.animation = "";
+        }
+        if (popupWrapper) {
+          popupWrapper.style.display = "none";
+          popupWrapper.style.animation = "";
+        }
+      }, POPUP_DURATION);
     };
 
     const messageBtn = container.querySelector(".message-box-button") as HTMLElement | null;
@@ -31,6 +59,177 @@ export default function ClientPage() {
     if (closeBtn) closeBtn.addEventListener("click", closePopup);
 
     if (popupBackdrop) popupBackdrop.addEventListener("click", closePopup);
+
+    // ── RSVP form ──────────────────────────────────────────────────────────────
+    const rsvpForm = container.querySelector(".rsvp-form form") as HTMLFormElement | null;
+    if (rsvpForm) {
+      const rsvpBtn = rsvpForm.querySelector("button[type='submit']") as HTMLButtonElement | null;
+
+      // Highlight selected count button
+      const countRadios = rsvpForm.querySelectorAll("input[name='rsvp-count']");
+      countRadios.forEach((radio) => {
+        radio.addEventListener("change", () => {
+          countRadios.forEach((r) => {
+            const span = r.nextElementSibling as HTMLElement | null;
+            if (span) {
+              span.style.backgroundColor = "white";
+              span.style.color = "rgb(51, 51, 51)";
+            }
+          });
+          const selected = (radio as HTMLInputElement).nextElementSibling as HTMLElement | null;
+          if (selected) {
+            selected.style.backgroundColor = "rgb(92, 92, 92)";
+            selected.style.color = "white";
+          }
+        });
+      });
+
+      rsvpForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const nameInput = rsvpForm.querySelector("input[name='rsvp-name']") as HTMLInputElement;
+        const attendingInput = rsvpForm.querySelector(
+          "input[name='rsvp-attendance']:checked"
+        ) as HTMLInputElement | null;
+        const countInput = rsvpForm.querySelector(
+          "input[name='rsvp-count']:checked"
+        ) as HTMLInputElement | null;
+
+        const name = nameInput?.value?.trim() ?? "";
+        const attending = attendingInput?.value !== "no";
+        const attendee_count = Number(countInput?.value ?? "1");
+
+        if (rsvpBtn) {
+          rsvpBtn.disabled = true;
+          rsvpBtn.textContent = "Đang gửi...";
+        }
+
+        try {
+          const res = await fetch("/api/rsvp", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, attending, attendee_count }),
+          });
+          if (res.ok) {
+            if (rsvpBtn) {
+              rsvpBtn.textContent = attending ? "Đã xác nhận tham dự 🎉" : "Đã ghi nhận, cảm ơn bạn!";
+              rsvpBtn.style.backgroundColor = "#4caf50";
+            }
+            rsvpForm.querySelectorAll("input").forEach((el) => (el as HTMLInputElement).setAttribute("disabled", "true"));
+          } else {
+            if (rsvpBtn) {
+              rsvpBtn.disabled = false;
+              rsvpBtn.textContent = "Gửi thất bại, thử lại";
+            }
+          }
+        } catch {
+          if (rsvpBtn) {
+            rsvpBtn.disabled = false;
+            rsvpBtn.textContent = "Gửi thất bại, thử lại";
+          }
+        }
+      });
+    }
+
+    // ── Blessing ticker + form ─────────────────────────────────────────────────
+    const blessingBox = container.querySelector("#blessing-box") as HTMLElement | null;
+    const blessingNameInput = container.querySelector(".bar-m-name") as HTMLInputElement | null;
+    const blessingTextarea = container.querySelector(".bar-m-mess") as HTMLTextAreaElement | null;
+    const blessingBtn = container.querySelector("#blessing-box-popup .cinelove-btn") as HTMLButtonElement | null;
+
+    // Prepend a message to the ticker (column-reverse → prepend = appears at bottom)
+    const MAX_TICKER_ITEMS = 5;
+    const pushToTicker = (name: string, message: string, animate = false) => {
+      if (!blessingBox) return;
+      const div = document.createElement("div");
+      div.className = "jsx-3895218497 blessing-message" + (animate ? " blessing-message-new" : "");
+      div.innerHTML = `<span class="jsx-3895218497 blessing-text"><strong class="jsx-3895218497">${name}</strong>: ${message}</span>`;
+      blessingBox.prepend(div);
+      // Remove oldest (last child in DOM = topmost visual item) when overflow
+      while (blessingBox.children.length > MAX_TICKER_ITEMS) {
+        blessingBox.removeChild(blessingBox.lastElementChild!);
+      }
+    };
+
+    // Fetch blessings, display one-by-one, then clear when done
+    let tickerIntervalId: ReturnType<typeof setInterval> | null = null;
+
+    fetch("/api/blessings")
+      .then((r) => r.json())
+      .then((data) => {
+        const list = (data.blessings ?? []) as Array<{ name: string; message: string }>;
+        if (!list.length) return;
+        const queue = [...list].reverse(); // oldest first
+        let idx = 0;
+
+        // Show first message immediately
+        pushToTicker(queue[idx].name, queue[idx].message, true);
+        idx++;
+
+        tickerIntervalId = setInterval(() => {
+          if (idx < queue.length) {
+            pushToTicker(queue[idx].name, queue[idx].message, true);
+            idx++;
+          } else {
+            // No more blessings — fade out all visible messages then clear
+            if (tickerIntervalId) clearInterval(tickerIntervalId);
+            if (blessingBox) {
+              blessingBox.style.transition = "opacity 1s ease-out";
+              blessingBox.style.opacity = "0";
+              setTimeout(() => {
+                if (blessingBox) {
+                  blessingBox.innerHTML = "";
+                  blessingBox.style.opacity = "1";
+                  blessingBox.style.transition = "";
+                }
+              }, 1000);
+            }
+          }
+        }, 2000);
+      })
+      .catch(() => {});
+
+    if (blessingBtn) {
+      blessingBtn.addEventListener("click", async () => {
+        const name = blessingNameInput?.value?.trim() ?? "";
+        const message = blessingTextarea?.value?.trim() ?? "";
+
+        if (!message) {
+          alert("Vui lòng nhập lời chúc của bạn!");
+          return;
+        }
+
+        blessingBtn.disabled = true;
+        blessingBtn.textContent = "Đang gửi...";
+
+        try {
+          const res = await fetch("/api/blessings", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, message }),
+          });
+
+          if (res.ok) {
+            if (blessingNameInput) blessingNameInput.value = "";
+            if (blessingTextarea) blessingTextarea.value = "";
+            // Inject new blessing immediately into ticker
+            pushToTicker(name || "Ẩn danh", message, true);
+            // Close popup after short success feedback
+            blessingBtn.textContent = "Đã gửi 💕";
+            setTimeout(() => {
+              closePopup();
+              blessingBtn.disabled = false;
+              blessingBtn.textContent = "Gửi Lời Chúc";
+            }, 1200);
+          } else {
+            blessingBtn.disabled = false;
+            blessingBtn.textContent = "Gửi thất bại, thử lại";
+          }
+        } catch {
+          blessingBtn.disabled = false;
+          blessingBtn.textContent = "Gửi thất bại, thử lại";
+        }
+      });
+    }
 
     // Audio player interaction
     const audioWrapper = container.querySelector("#audio-control-wrapper") as HTMLElement;
@@ -224,6 +423,7 @@ export default function ClientPage() {
       observer.disconnect();
       cancelAnimationFrame(scrollAnimId);
       clearInterval(countdownIntervalId);
+      if (tickerIntervalId) clearInterval(tickerIntervalId);
       if (scrollContainer) {
         scrollContainer.removeEventListener("wheel", handleUserScroll);
         scrollContainer.removeEventListener("touchstart", handleUserScroll);
