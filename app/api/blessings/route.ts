@@ -5,8 +5,7 @@ export async function GET() {
   const { data, error } = await supabaseAdmin
     .from("bride_blessings")
     .select("id, name, message, created_at")
-    .order("created_at", { ascending: false })
-    .limit(100);
+    .order("created_at", { ascending: false });
 
   if (error) {
     console.error("Supabase blessings GET error:", error);

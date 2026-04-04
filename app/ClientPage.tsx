@@ -24,7 +24,7 @@ export default function ClientPage() {
         // Fix for the "white area" at the bottom:
         // transform: scale only visual, doesn't affect document flow.
         // We use negative margin-bottom to shrink the occupied height.
-        const originalHeight = 8693.39;
+        const originalHeight = 9568.39;
         const scaledHeight = originalHeight * scale;
         const diff = originalHeight - scaledHeight;
         rootPage.style.marginBottom = `-${diff}px`;
@@ -192,21 +192,16 @@ export default function ClientPage() {
     const blessingTextarea = container.querySelector(".bar-m-mess") as HTMLTextAreaElement | null;
     const blessingBtn = container.querySelector("#blessing-box-popup .cinelove-btn") as HTMLButtonElement | null;
 
-    // Prepend a message to the ticker (column-reverse → prepend = appears at bottom)
-    const MAX_TICKER_ITEMS = 5;
+    // Prepend a message to the ticker — no item limit, show all blessings in full
     const pushToTicker = (name: string, message: string, animate = false) => {
       if (!blessingBox) return;
       const div = document.createElement("div");
       div.className = "jsx-3895218497 blessing-message" + (animate ? " blessing-message-new" : "");
       div.innerHTML = `<span class="jsx-3895218497 blessing-text"><strong class="jsx-3895218497">${name}</strong>: ${message}</span>`;
       blessingBox.prepend(div);
-      // Remove oldest (last child in DOM = topmost visual item) when overflow
-      while (blessingBox.children.length > MAX_TICKER_ITEMS) {
-        blessingBox.removeChild(blessingBox.lastElementChild!);
-      }
     };
 
-    // Fetch blessings, display one-by-one, then clear when done
+    // Fetch ALL blessings, display one-by-one sequentially (no repeat), then fade out slowly
     let tickerIntervalId: ReturnType<typeof setInterval> | null = null;
 
     fetch("/api/blessings")
@@ -226,19 +221,21 @@ export default function ClientPage() {
             pushToTicker(queue[idx].name, queue[idx].message, true);
             idx++;
           } else {
-            // No more blessings — fade out all visible messages then clear
+            // All blessings shown — wait 12s then fade out slowly
             if (tickerIntervalId) clearInterval(tickerIntervalId);
-            if (blessingBox) {
-              blessingBox.style.transition = "opacity 1s ease-out";
-              blessingBox.style.opacity = "0";
-              setTimeout(() => {
-                if (blessingBox) {
-                  blessingBox.innerHTML = "";
-                  blessingBox.style.opacity = "1";
-                  blessingBox.style.transition = "";
-                }
-              }, 1000);
-            }
+            setTimeout(() => {
+              if (blessingBox) {
+                blessingBox.style.transition = "opacity 2s ease-out";
+                blessingBox.style.opacity = "0";
+                setTimeout(() => {
+                  if (blessingBox) {
+                    blessingBox.innerHTML = "";
+                    blessingBox.style.opacity = "1";
+                    blessingBox.style.transition = "";
+                  }
+                }, 2000);
+              }
+            }, 8000);
           }
         }, 3000);
       })
@@ -322,11 +319,11 @@ export default function ClientPage() {
               })
               .catch(() => {});
             ["click", "touchstart", "keydown", "scroll"].forEach((evt) =>
-              document.removeEventListener(evt, playOnInteraction)
+              document.removeEventListener(evt, playOnInteraction),
             );
           };
           ["click", "touchstart", "keydown", "scroll"].forEach((evt) =>
-            document.addEventListener(evt, playOnInteraction, { once: true, passive: true })
+            document.addEventListener(evt, playOnInteraction, { once: true, passive: true }),
           );
         });
 
@@ -511,7 +508,10 @@ export default function ClientPage() {
     const sparkleLayer = document.getElementById("sparkle-layer") as HTMLElement | null;
     const handleSparkleParallax = () => {
       if (!scrollContainer || !sparkleLayer) return;
-      const drift = scrollContainer.scrollTop * 0.12;
+      // Cap drift so sparkles never leave the viewport regardless of page length.
+      // At 0.008 multiplier, max drift at ~9000px scroll is ~72px — subtle and safe.
+      const maxDrift = window.innerHeight * 0.15;
+      const drift = Math.min(scrollContainer.scrollTop * 0.008, maxDrift);
       sparkleLayer.style.transform = `translateY(${drift}px)`;
     };
     if (scrollContainer && sparkleLayer) {
