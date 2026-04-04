@@ -67,20 +67,39 @@ export default function ClientPage() {
 
       // Highlight selected count button
       const countRadios = rsvpForm.querySelectorAll("input[name='rsvp-count']");
+      const setCountStyle = (span: HTMLElement, active: boolean) => {
+        span.style.background = active ? "rgba(185,145,80,0.14)" : "transparent";
+        span.style.color = active ? "#7a5520" : "#a08060";
+        span.style.borderColor = active ? "rgba(185,145,80,0.7)" : "rgba(185,145,80,0.25)";
+        span.style.fontWeight = active ? "600" : "400";
+      };
       countRadios.forEach((radio) => {
         radio.addEventListener("change", () => {
           countRadios.forEach((r) => {
             const span = r.nextElementSibling as HTMLElement | null;
-            if (span) {
-              span.style.backgroundColor = "white";
-              span.style.color = "rgb(51, 51, 51)";
-            }
+            if (span) setCountStyle(span, false);
           });
           const selected = (radio as HTMLInputElement).nextElementSibling as HTMLElement | null;
-          if (selected) {
-            selected.style.backgroundColor = "rgb(92, 92, 92)";
-            selected.style.color = "white";
-          }
+          if (selected) setCountStyle(selected, true);
+        });
+      });
+
+      // Highlight selected attendance card
+      const attendanceRadios = rsvpForm.querySelectorAll("input[name='rsvp-attendance']");
+      const setAttendanceStyle = (span: HTMLElement, active: boolean) => {
+        span.style.background = active ? "rgba(185,145,80,0.12)" : "transparent";
+        span.style.color = active ? "#7a5520" : "#a08060";
+        span.style.borderColor = active ? "rgba(185,145,80,0.6)" : "rgba(185,145,80,0.25)";
+        span.style.fontWeight = active ? "600" : "400";
+      };
+      attendanceRadios.forEach((radio) => {
+        radio.addEventListener("change", () => {
+          attendanceRadios.forEach((r) => {
+            const span = r.nextElementSibling as HTMLElement | null;
+            if (span) setAttendanceStyle(span, false);
+          });
+          const selected = (radio as HTMLInputElement).nextElementSibling as HTMLElement | null;
+          if (selected) setAttendanceStyle(selected, true);
         });
       });
 
@@ -111,8 +130,9 @@ export default function ClientPage() {
           });
           if (res.ok) {
             if (rsvpBtn) {
-              rsvpBtn.textContent = attending ? "Đã xác nhận tham dự 🎉" : "Đã ghi nhận, cảm ơn bạn!";
-              rsvpBtn.style.backgroundColor = "#4caf50";
+              rsvpBtn.textContent = attending ? "✓  Đã xác nhận tham dự" : "✓  Đã ghi nhận, cảm ơn bạn!";
+              rsvpBtn.style.background = "linear-gradient(135deg, #7caa6e 0%, #4e8040 100%)";
+              rsvpBtn.style.boxShadow = "0 2px 12px rgba(78, 128, 64, 0.3)";
             }
             rsvpForm.querySelectorAll("input").forEach((el) => (el as HTMLInputElement).setAttribute("disabled", "true"));
           } else {
@@ -236,23 +256,38 @@ export default function ClientPage() {
     const audioEl = container.querySelector("audio") as HTMLAudioElement;
     const audioToggle = container.querySelector(".audio-toggle") as HTMLElement;
 
+    // mrotate = spinning = playing; no mrotate = static = paused
     let isPlaying = false;
 
+    const setPlayingState = (playing: boolean) => {
+      isPlaying = playing;
+      if (playing) {
+        audioToggle.classList.add("mrotate");
+        audioToggle.classList.remove("mrotate-stop");
+      } else {
+        audioToggle.classList.remove("mrotate");
+        audioToggle.classList.add("mrotate-stop");
+      }
+    };
+
     if (audioWrapper && audioEl && audioToggle) {
-      const handleAudioClick = () => {
+      // Try autoplay on load; browsers usually block this until user interaction
+      audioEl.play()
+        .then(() => setPlayingState(true))
+        .catch(() => {
+          // Autoplay blocked — show paused state visually
+          setPlayingState(false);
+        });
+
+      audioWrapper.addEventListener("click", () => {
         if (isPlaying) {
           audioEl.pause();
-          audioToggle.classList.add("mrotate");
-          audioToggle.classList.remove("mrotate-stop");
-          isPlaying = false;
+          setPlayingState(false);
         } else {
           audioEl.play().catch(() => {});
-          audioToggle.classList.remove("mrotate");
-          audioToggle.classList.add("mrotate-stop");
-          isPlaying = true;
+          setPlayingState(true);
         }
-      };
-      audioWrapper.addEventListener("click", handleAudioClick);
+      });
     }
 
     // Scroll-based reveal animations using IntersectionObserver.

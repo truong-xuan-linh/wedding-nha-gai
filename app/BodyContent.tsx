@@ -2681,7 +2681,7 @@ export default function BodyContent() {
                             width: "340.048px",
                             height: "362.717px",
                             minWidth: "200px",
-                            top: "7939.86px",
+                            top: "7870px",
                             left: "67.0078px",
                             transform: "rotate(0deg)",
                           }}
@@ -2704,40 +2704,83 @@ export default function BodyContent() {
                               <div
                                 className="rsvp-form"
                                 style={{
-                                  backgroundColor: "rgb(255, 255, 255)",
-                                  color: "rgb(51, 51, 51)",
-                                  boxShadow: "rgba(0, 0, 0, 0.1) 0px 2px 10px 0px",
-                                  borderRadius: "5px",
-                                  padding: "16px",
-                                  minHeight: "100%",
+                                  background: "linear-gradient(160deg, #fdfaf5 0%, #fef8f0 100%)",
+                                  border: "1px solid rgba(185, 150, 90, 0.22)",
+                                  boxShadow: "0 8px 32px rgba(120, 80, 20, 0.08), inset 0 1px 0 rgba(255,255,255,0.9)",
+                                  borderRadius: "3px",
+                                  padding: "24px 22px 22px",
                                   width: "100%",
-                                  fontSize: "13.272px",
-                                  fontFamily: "Arial",
-                                  display: "flex",
-                                  flexDirection: "column",
-                                  justifyContent: "center",
-                                  alignItems: "center",
+                                  fontFamily: "Quicksand",
+                                  color: "#3d2c18",
                                   position: "relative",
                                   overflow: "visible",
-                                  border: "1px solid rgb(224, 224, 224)",
+                                  boxSizing: "border-box",
                                 }}
                               >
-                                <h3
+                                {/* Top ornament line */}
+                                <div
                                   style={{
-                                    marginBottom: "16px",
-                                    color: "rgb(51, 51, 51)",
-                                    fontWeight: "bold",
-                                    fontSize: "17.272px",
-                                    textAlign: "center",
+                                    position: "absolute",
+                                    top: 0,
+                                    left: "15%",
+                                    right: "15%",
+                                    height: "1px",
+                                    background:
+                                      "linear-gradient(to right, transparent, rgba(185,145,80,0.45), transparent)",
                                   }}
+                                />
+
+                                {/* Header */}
+                                <div style={{ textAlign: "center", marginBottom: "18px" }}>
+                                  <p
+                                    style={{
+                                      margin: 0,
+                                      fontSize: "10px",
+                                      letterSpacing: "4px",
+                                      textTransform: "uppercase",
+                                      color: "#a07830",
+                                      fontFamily: "Quicksand",
+                                      fontWeight: 700,
+                                    }}
+                                  >
+                                    — RSVP —
+                                  </p>
+                                  <h3
+                                    style={{
+                                      margin: "5px 0 0",
+                                      fontFamily: "Signora",
+                                      fontSize: "22px",
+                                      color: "#3d2408",
+                                      fontWeight: 400,
+                                      letterSpacing: "1px",
+                                    }}
+                                  >
+                                    Xác nhận tham dự
+                                  </h3>
+                                </div>
+
+                                {/* Gold divider */}
+                                <div
+                                  style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "20px" }}
                                 >
-                                  Xác nhận tham dự
-                                </h3>
-                                <form style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+                                  <div style={{ flex: 1, height: "1px", background: "rgba(185,145,80,0.25)" }} />
+                                  <span style={{ color: "#c9a96e", fontSize: "10px" }}>✦</span>
+                                  <div style={{ flex: 1, height: "1px", background: "rgba(185,145,80,0.25)" }} />
+                                </div>
+
+                                <form style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
+                                  {/* Name — underline style */}
                                   <div>
                                     <label
-                                      htmlFor="rsvp-name"
-                                      style={{ display: "block", marginBottom: "6px", fontSize: "13.272px" }}
+                                      style={{
+                                        display: "block",
+                                        fontSize: "10px",
+                                        letterSpacing: "2px",
+                                        textTransform: "uppercase",
+                                        color: "#a07830",
+                                        marginBottom: "8px",
+                                        fontWeight: 700,
+                                      }}
                                     >
                                       Họ và tên
                                     </label>
@@ -2748,78 +2791,109 @@ export default function BodyContent() {
                                       name="rsvp-name"
                                       style={{
                                         width: "100%",
-                                        padding: "4px 8px",
-                                        borderRadius: "4px",
-                                        border: "1px solid rgb(224, 224, 224)",
-                                        fontSize: "13.272px",
-                                        backgroundColor: "white",
-                                        color: "rgb(51, 51, 51)",
+                                        border: "none",
+                                        borderBottom: "1px solid rgba(185, 145, 80, 0.45)",
+                                        padding: "5px 0",
+                                        background: "transparent",
+                                        fontSize: "13px",
+                                        color: "#2a1a08",
+                                        outline: "none",
+                                        fontFamily: "Quicksand",
+                                        boxSizing: "border-box",
                                       }}
                                     />
                                   </div>
+
+                                  {/* Attendance — card toggle */}
                                   <div>
                                     <label
-                                      style={{ display: "block", marginBottom: "6px", fontSize: "13.272px" }}
+                                      style={{
+                                        display: "block",
+                                        fontSize: "10px",
+                                        letterSpacing: "2px",
+                                        textTransform: "uppercase",
+                                        color: "#a07830",
+                                        marginBottom: "8px",
+                                        fontWeight: 700,
+                                      }}
                                     >
-                                      Bạn sẽ tham dự chứ?
+                                      Tham dự
                                     </label>
-                                    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                                      <label
-                                        style={{
-                                          display: "flex",
-                                          alignItems: "center",
-                                          gap: "8px",
-                                          cursor: "pointer",
-                                          fontSize: "13.272px",
-                                          color: "rgb(51, 51, 51)",
-                                        }}
-                                      >
+                                    <div style={{ display: "flex", gap: "8px" }}>
+                                      <label style={{ flex: 1, cursor: "pointer" }}>
                                         <input
                                           type="radio"
                                           name="rsvp-attendance"
                                           value="yes"
                                           defaultChecked
-                                          style={{ accentColor: "rgb(92, 92, 92)", width: "15px", height: "15px" }}
+                                          style={{ display: "none" }}
                                         />
-                                        Có, tôi sẽ tham dự
+                                        <span
+                                          className="rsvp-attendance-card"
+                                          style={{
+                                            display: "block",
+                                            textAlign: "center",
+                                            padding: "9px 4px",
+                                            fontSize: "12px",
+                                            border: "1px solid rgba(185,145,80,0.6)",
+                                            borderRadius: "2px",
+                                            background: "rgba(185,145,80,0.12)",
+                                            color: "#5a3000",
+                                            fontWeight: 700,
+                                            letterSpacing: "0.5px",
+                                            transition: "all 0.2s",
+                                          }}
+                                        >
+                                          ✓ Có mặt
+                                        </span>
                                       </label>
-                                      <label
-                                        style={{
-                                          display: "flex",
-                                          alignItems: "center",
-                                          gap: "8px",
-                                          cursor: "pointer",
-                                          fontSize: "13.272px",
-                                          color: "rgb(51, 51, 51)",
-                                        }}
-                                      >
+                                      <label style={{ flex: 1, cursor: "pointer" }}>
                                         <input
                                           type="radio"
                                           name="rsvp-attendance"
                                           value="no"
-                                          style={{ accentColor: "rgb(92, 92, 92)", width: "15px", height: "15px" }}
+                                          style={{ display: "none" }}
                                         />
-                                        Tôi bận, rất tiếc không thể tham dự
+                                        <span
+                                          className="rsvp-attendance-card"
+                                          style={{
+                                            display: "block",
+                                            textAlign: "center",
+                                            padding: "9px 4px",
+                                            fontSize: "12px",
+                                            border: "1px solid rgba(185,145,80,0.3)",
+                                            borderRadius: "2px",
+                                            background: "transparent",
+                                            color: "#7a5c3a",
+                                            fontWeight: 500,
+                                            letterSpacing: "0.5px",
+                                            transition: "all 0.2s",
+                                          }}
+                                        >
+                                          ✗ Tiếc không thể
+                                        </span>
                                       </label>
                                     </div>
                                   </div>
+
+                                  {/* Count */}
                                   <div>
                                     <label
-                                      htmlFor="rsvp-count"
-                                      style={{ display: "block", marginBottom: "6px", fontSize: "13.272px" }}
+                                      style={{
+                                        display: "block",
+                                        fontSize: "10px",
+                                        letterSpacing: "2px",
+                                        textTransform: "uppercase",
+                                        color: "#a07830",
+                                        marginBottom: "8px",
+                                        fontWeight: 700,
+                                      }}
                                     >
-                                      Số người tham dự
+                                      Số người
                                     </label>
-                                    <div style={{ display: "flex", gap: "6px" }}>
+                                    <div style={{ display: "flex", gap: "5px" }}>
                                       {[1, 2, 3, 4, 5].map((n) => (
-                                        <label
-                                          key={n}
-                                          style={{
-                                            flex: 1,
-                                            textAlign: "center",
-                                            cursor: "pointer",
-                                          }}
-                                        >
+                                        <label key={n} style={{ flex: 1, textAlign: "center", cursor: "pointer" }}>
                                           <input
                                             type="radio"
                                             name="rsvp-count"
@@ -2831,12 +2905,17 @@ export default function BodyContent() {
                                             className="rsvp-count-btn"
                                             style={{
                                               display: "block",
-                                              padding: "4px 0",
-                                              borderRadius: "4px",
-                                              border: "1px solid rgb(224, 224, 224)",
-                                              fontSize: "13.272px",
-                                              backgroundColor: n === 1 ? "rgb(92, 92, 92)" : "white",
-                                              color: n === 1 ? "white" : "rgb(51, 51, 51)",
+                                              padding: "7px 0",
+                                              border:
+                                                n === 1
+                                                  ? "1px solid rgba(185,145,80,0.7)"
+                                                  : "1px solid rgba(185,145,80,0.25)",
+                                              borderRadius: "2px",
+                                              fontSize: "13px",
+                                              fontFamily: "Quicksand",
+                                              background: n === 1 ? "rgba(185,145,80,0.14)" : "transparent",
+                                              color: n === 1 ? "#5a3000" : "#7a5c3a",
+                                              fontWeight: n === 1 ? 700 : 500,
                                               transition: "all 0.15s",
                                             }}
                                           >
@@ -2846,23 +2925,43 @@ export default function BodyContent() {
                                       ))}
                                     </div>
                                   </div>
+
+                                  {/* Submit */}
                                   <button
                                     type="submit"
                                     style={{
-                                      backgroundColor: "rgb(92, 92, 92)",
-                                      color: "rgb(255, 255, 255)",
-                                      padding: "6px 12px",
-                                      borderRadius: "4px",
+                                      width: "100%",
+                                      padding: "11px",
+                                      background: "linear-gradient(135deg, #c9a96e 0%, #a07438 100%)",
+                                      color: "#fff",
                                       border: "none",
-                                      fontSize: "13.272px",
+                                      borderRadius: "2px",
+                                      fontSize: "10.5px",
+                                      letterSpacing: "3px",
+                                      textTransform: "uppercase",
+                                      fontFamily: "Quicksand",
+                                      fontWeight: 700,
                                       cursor: "pointer",
-                                      marginTop: "8px",
-                                      opacity: 1,
+                                      marginTop: "2px",
+                                      boxShadow: "0 2px 12px rgba(160, 116, 56, 0.3)",
                                     }}
                                   >
                                     Gửi xác nhận
                                   </button>
                                 </form>
+
+                                {/* Bottom ornament */}
+                                <div
+                                  style={{
+                                    position: "absolute",
+                                    bottom: 0,
+                                    left: "15%",
+                                    right: "15%",
+                                    height: "1px",
+                                    background:
+                                      "linear-gradient(to right, transparent, rgba(185,145,80,0.45), transparent)",
+                                  }}
+                                />
                               </div>
                             </div>
                           </div>
@@ -3464,8 +3563,7 @@ export default function BodyContent() {
                     ></div>
                   </div>
                 </div>
-                <div id="blessing-box" className="jsx-3895218497" style={{ opacity: 1 }}>
-                </div>
+                <div id="blessing-box" className="jsx-3895218497" style={{ opacity: 1 }}></div>
                 <div id="cinelove-toolbar" className="jsx-1401461546">
                   <div className="jsx-1401461546 toolbar">
                     <div className="jsx-831523885 toolbar-left">
@@ -3490,29 +3588,44 @@ export default function BodyContent() {
                 <div className="jsx-831600802 popup-backdrop" style={{ display: "none" }}></div>
                 <div id="blessing-box-popup" className="jsx-831600802 popup-wrapper" style={{ display: "none" }}>
                   <div className="jsx-3319829800 bar-messwin">
+                    {/* Header */}
                     <div className="blessing-popup-header">
-                      <img alt="message heart" className="jsx-3319829800 danmu-logo" src="/message-heart.9f3f7935.png" />
+                      <img
+                        alt="message heart"
+                        className="jsx-3319829800 danmu-logo"
+                        src="/message-heart.9f3f7935.png"
+                      />
                       <span className="jsx-3319829800 iconfont icon-guanbi cursor-pointer">×</span>
                     </div>
+
+                    {/* Title */}
                     <div className="jsx-3319829800 bar-m-tit">Lời chúc</div>
+
+                    {/* Gold ornament divider */}
+                    <div className="blessing-gold-divider"><span>✦</span></div>
+
+                    {/* Form fields */}
                     <div className="jsx-3319829800 bar-m-cont">
                       <div className="jsx-3319829800 bar-m-info">
+                        <label>Tên của bạn</label>
                         <input
                           maxLength={25}
-                          placeholder="Tên của bạn (không bắt buộc)"
+                          placeholder="Không bắt buộc"
                           className="jsx-3319829800 bar-m-com bar-m-name"
                           type="text"
                           defaultValue=""
                         />
                       </div>
                       <div className="jsx-3319829800 bar-m-info">
+                        <label>Lời chúc</label>
                         <textarea
                           placeholder="Nhập lời chúc của bạn..."
                           className="jsx-3319829800 bar-m-com bar-m-mess"
                         ></textarea>
                       </div>
                     </div>
-                    <button className="jsx-120244559 cinelove-btn rounded" style={{ marginTop: "20px", width: "90%" }}>
+
+                    <button className="jsx-120244559 cinelove-btn rounded" style={{ marginTop: "4px", width: "88%" }}>
                       Gửi Lời Chúc
                     </button>
                   </div>

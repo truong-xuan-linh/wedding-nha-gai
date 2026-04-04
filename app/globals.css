@@ -6114,6 +6114,12 @@
 .qr-code-wrapper.jsx-3196837057 { padding: 6px; background: white; border-radius: 6px; }
 .qr-code-text.jsx-3196837057 { margin: 0; font-size: 11px; color: #666; text-align: center; font-weight: 500; line-height: 1.4; max-width: 120px; }
 
+/* Blessing popup wrapper */
+.popup-wrapper.jsx-831600802 {
+  background: linear-gradient(170deg, #fdfaf5 0%, #fef8f0 100%) !important;
+  border-top: 1px solid rgba(185, 145, 80, 0.25) !important;
+}
+
 /* Blessing form (jsx-3319829800) */
 .bar-messwin.jsx-3319829800 {
   width: 100%;
@@ -6122,8 +6128,8 @@
   flex-flow: column;
   align-items: center;
   box-sizing: border-box;
-  background: radial-gradient(328px at 2.9% 15%, rgb(255 226 226) 0%, rgb(255 255 255) 25.8%, rgb(255 255 255) 50.8%, rgb(255 255 255) 77.6%, rgb(255 246 246) 100.7%);
-  padding-bottom: 28px;
+  background: transparent;
+  padding-bottom: 32px;
 }
 
 /* Popup header: logo centered + x at top-right */
@@ -6133,78 +6139,139 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 16px 8px;
+  padding: 22px 16px 0;
   box-sizing: border-box;
 }
 
 .blessing-popup-header .icon-guanbi {
   position: absolute;
-  right: 16px;
-  top: 16px;
-  width: 28px;
-  height: 28px;
+  right: 18px;
+  top: 18px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(185, 145, 80, 0.1);
+  border: 1px solid rgba(185, 145, 80, 0.25);
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
-  color: #666;
+  color: #a07830;
   cursor: pointer;
   line-height: 1;
+  transition: all 0.2s;
 }
 
 .blessing-popup-header .icon-guanbi:hover {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(185, 145, 80, 0.2);
+  color: #7a5520;
 }
 
 .blessing-popup-header .danmu-logo {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
+  filter: sepia(0.3) saturate(1.2);
+}
+
+/* Gold ornament divider */
+.blessing-gold-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 90%;
+  margin: 10px 0 0;
+}
+.blessing-gold-divider::before,
+.blessing-gold-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(185, 145, 80, 0.3);
+}
+.blessing-gold-divider span {
+  color: #c9a96e;
+  font-size: 10px;
 }
 
 .bar-messwin.jsx-3319829800 .bar-m-tit.jsx-3319829800 {
-  margin-top: 4px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: Signora, serif;
+  color: #3d2408;
+  letter-spacing: 1px;
 }
 
 .bar-messwin.jsx-3319829800 .bar-m-cont.jsx-3319829800 {
-  width: 90%;
-  margin-top: 16px;
+  width: 88%;
+  margin-top: 18px;
 }
 
 .bar-m-info.jsx-3319829800 {
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.bar-m-info.jsx-3319829800 label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a07830;
+  font-weight: 700;
+  font-family: Quicksand, sans-serif;
+  margin-bottom: 8px;
 }
 
 .bar-m-com.jsx-3319829800 {
   width: 100%;
-  padding: 10px 12px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  font-size: 14px;
-  color: #333;
-  background: #fafafa;
+  padding: 6px 0;
+  border: none;
+  border-bottom: 1px solid rgba(185, 145, 80, 0.4);
+  border-radius: 0;
+  font-size: 13px;
+  color: #2a1a08;
+  background: transparent;
   box-sizing: border-box;
   outline: none;
-  font-family: inherit;
+  font-family: Quicksand, sans-serif;
   transition: border-color 0.2s;
 }
 
+.bar-m-com.jsx-3319829800::placeholder {
+  color: rgba(160, 120, 48, 0.45);
+}
+
 .bar-m-com.jsx-3319829800:focus {
-  border-color: #ed5566;
-  background: #fff;
+  border-bottom-color: rgba(185, 145, 80, 0.8);
 }
 
 .bar-m-mess.jsx-3319829800 {
-  min-height: 80px;
+  min-height: 72px;
   resize: none;
   display: block;
+  line-height: 1.6;
+}
+
+/* Send button override */
+.bar-messwin.jsx-3319829800 .cinelove-btn {
+  background: linear-gradient(135deg, #c9a96e 0%, #a07438 100%) !important;
+  border-radius: 2px !important;
+  font-size: 10.5px !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  font-family: Quicksand, sans-serif !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 12px rgba(160, 116, 56, 0.28) !important;
+  color: #fff !important;
+  border: none !important;
+  transition: opacity 0.2s !important;
+}
+
+.bar-messwin.jsx-3319829800 .cinelove-btn:hover {
+  opacity: 0.88;
 }
 
 .bar-messwin.jsx-3319829800 .bar-m-sub.jsx-3319829800 { z-index: 1; width: 361px; height: 46px; background: #ed5566; border-radius: 73px; font-size: 17px; color: #fff; margin-top: 26px; border: none; }
