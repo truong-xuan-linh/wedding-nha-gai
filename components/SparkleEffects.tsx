@@ -26,12 +26,20 @@ export default function SparkleEffects() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Vary gold tones per particle for a richer look
+  const goldPalettes = [
+    "radial-gradient(circle, #fffbe0 0%, #f5c518 55%, #b8860b 100%)",
+    "radial-gradient(circle, #fff8cc 0%, #e8b800 55%, #a07000 100%)",
+    "radial-gradient(circle, #ffffff 0%, #ffd700 45%, #c8960a 100%)",
+    "radial-gradient(circle, #fffae6 0%, #daa520 55%, #8b6914 100%)",
+  ];
+
   return (
-    <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden opacity-60 mix-blend-screen">
+    <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden" style={{ opacity: 0.75 }}>
       {particles.map((p) => (
         <div
           key={p.id}
-          className="absolute rounded-full bg-[#fdf5e6]"
+          className="absolute rounded-full"
           style={{
             left: `${p.x}vw`,
             top: `${p.y}vh`,
@@ -43,8 +51,7 @@ export default function SparkleEffects() {
             animationIterationCount: "infinite, infinite",
             animationDirection: "normal, alternate",
             animationDelay: `${p.delay}s, ${p.delay}s`,
-            boxShadow: `0 0 ${p.size * 4}px rgba(212, 175, 55, 1), 0 0 ${p.size * 2}px #fff`,
-            background: "radial-gradient(circle, #fff 0%, #fdf5e6 60%, #d4af37 100%)",
+            background: goldPalettes[p.id % goldPalettes.length],
           }}
         />
       ))}
