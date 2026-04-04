@@ -33,11 +33,7 @@ export default function BodyContent() {
                     <img alt="music icon" className="jsx-3522513885 music-icon" src="/audio-1.png" />
                   </div>
                 </div>
-                <audio
-                  src="/assets/cinelove/mp3/de0b9487-deec-473f-a184-56106298338f.mp3"
-                  loop
-                  preload="auto"
-                ></audio>
+                <audio src="/assets/cinelove/mp3/de0b9487-deec-473f-a184-56106298338f.mp3" loop preload="auto"></audio>
                 <div
                   className="relative overflow-x-hidden styles_customScroll__X5r6w h-full"
                   style={{ backgroundColor: "rgb(255, 255, 255)", overflowY: "auto", touchAction: "auto" }}
@@ -91,8 +87,8 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/42820ab5-3e06-45cb-90ce-f4e5734f3222.jpeg")',
+                                    backgroundImage: 'url("/assets/images/42473582302482258273.jpg")',
+                                    backgroundPosition: "40% center",
                                   }}
                                 ></div>
                               </div>
@@ -364,13 +360,28 @@ export default function BodyContent() {
                             data-node-id="0GYCtLgdQn"
                             className="transition-node-base"
                           >
-                            <div className="jsx-1944329802 inner-content-base">
-                              <div className="jsx-1944329802 photo-component photo-mask-base">
+                            <div className="jsx-1944329802 inner-content-base" style={{ display: "flex" }}>
+                              <div className="jsx-1944329802 photo-component photo-mask-base" style={{ flex: 1 }}>
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/2e27300c-364a-4477-8a4c-bfae17cac71a.jpeg")',
+                                    backgroundImage: 'url("/assets/images/36817307803945082541.jpg")',
+                                  }}
+                                ></div>
+                              </div>
+                              <div className="jsx-1944329802 photo-component photo-mask-base" style={{ flex: 1 }}>
+                                <div
+                                  className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{
+                                    backgroundImage: 'url("/assets/images/387299715805235554815.jpg")',
+                                  }}
+                                ></div>
+                              </div>
+                              <div className="jsx-1944329802 photo-component photo-mask-base" style={{ flex: 1 }}>
+                                <div
+                                  className="jsx-1944329802 photo-bg-wrap photo-bg-base"
+                                  style={{
+                                    backgroundImage: 'url("/assets/images/101864290496999730910.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -474,8 +485,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/4d0cea10-4d8f-46aa-a3dc-f731f4711ea0.jpeg")',
+                                    backgroundImage: 'url("/assets/images/1682736387193641798.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -865,8 +875,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/9b87d5d7-eeaa-438f-9824-e21feb350c84.jpeg")',
+                                    backgroundImage: 'url("/assets/images/14008826562983666211.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -897,8 +906,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/f7405d80-97b2-4fc6-9bca-aeeca3eaf72f.jpeg")',
+                                    backgroundImage: 'url("/assets/images/17457372152845203113.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -1101,8 +1109,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/c1291ed3-2a45-4de0-9bb7-c01ae539f3e8.jpeg")',
+                                    backgroundImage: 'url("/assets/images/7136578849314697051.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -1392,8 +1399,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/6323cd41-3ff8-44bd-a8f7-ab0c0b024723.jpeg")',
+                                    backgroundImage: 'url("/assets/images/44052868667947625542.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -1421,8 +1427,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/cc835da9-7e82-4bba-b3e4-284b08c5249e.jpeg")',
+                                    backgroundImage: 'url("/assets/images/12399296685934003276.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -1582,8 +1587,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/2a950678-b3a9-4cd6-a7e8-502d00fdc17f.jpeg")',
+                                    backgroundImage: 'url("/assets/images/43200767490142075934.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -1976,8 +1980,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/9937d24b-da38-47f8-9821-e97a6d0cf6e0.jpeg")',
+                                    backgroundImage: 'url("/assets/images/40690148698466372312.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -2006,8 +2009,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/7f9e158d-5bfb-4c3d-90f2-6fe0f0cc1f60.jpeg")',
+                                    backgroundImage: 'url("/assets/images/9621243010577606206.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -2082,8 +2084,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/3fc235c9-ab1e-4826-8d6b-9ca03729c40f.jpeg")',
+                                    backgroundImage: 'url("/assets/images/939475353426528191.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -2243,8 +2244,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/5adc6e05-dc4c-4b0f-a62e-5136017a7a55.jpeg")',
+                                    backgroundImage: 'url("/assets/images/379305311598336904827.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -2405,8 +2405,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage:
-                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/5e381788-0c5d-44ef-8678-550261a46d19.jpeg")',
+                                    backgroundImage: 'url("/assets/images/4011796024475880260.webp")',
                                   }}
                                 ></div>
                               </div>
