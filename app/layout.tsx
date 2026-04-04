@@ -1,29 +1,38 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const SITE_URL = "https://wedding-bride-three.vercel.app";
+const OG_IMAGE = `${SITE_URL}/assets/images/4011796024475880260.webp`;
+const TITLE = "Thiệp cưới Diễm My & Công Tú 💍 21.04.2026";
+const DESCRIPTION = "Trân trọng kính mời bạn đến dự lễ vu quy của Diễm My & Công Tú vào ngày 21 tháng 04 năm 2026. 💕";
+
 export const metadata: Metadata = {
-  title: "Thiệp cưới Diễm My & Công Tú 💍 21.04.2026",
-  description: "Trân trọng kính mời bạn đến dự lễ vu quy của Diễm My & Công Tú vào ngày 21 tháng 04 năm 2026. 💕",
+  title: TITLE,
+  description: DESCRIPTION,
+  metadataBase: new URL(SITE_URL),
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   openGraph: {
-    title: "Thiệp cưới Diễm My & Công Tú 💍 21.04.2026",
-    description: "Trân trọng kính mời bạn đến dự lễ vu quy của Diễm My & Công Tú vào ngày 21 tháng 04 năm 2026. 💕",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: SITE_URL,
+    siteName: "Thiệp Cưới Diễm My & Công Tú",
     type: "website",
+    locale: "vi_VN",
     images: [
       {
-        url: "https://wedding-bride-three.vercel.app/assets/images/4011796024475880260.webp",
+        url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Thiệp cưới Diễm My & Công Tú 💍 21.04.2026",
+        alt: TITLE,
+        type: "image/webp",
       },
     ],
-    locale: "vi_VN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thiệp cưới Diễm My & Công Tú 💍 21.04.2026",
-    description: "Trân trọng kính mời bạn đến dự lễ vu quy của Diễm My & Công Tú vào ngày 21 tháng 04 năm 2026. 💕",
-    images: ["https://wedding-bride-three.vercel.app/assets/images/4011796024475880260.webp"],
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [OG_IMAGE],
   },
 };
 
