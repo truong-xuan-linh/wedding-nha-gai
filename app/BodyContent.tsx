@@ -40,7 +40,7 @@ export default function BodyContent() {
                       backgroundImage: "none",
                       backgroundSize: "cover",
                       width: "474px",
-                      height: "9493.39px",
+                      height: "9568.39px",
                       position: "relative",
                     }}
                   >
@@ -53,7 +53,7 @@ export default function BodyContent() {
                         justifyContent: "center",
                         boxSizing: "border-box",
                         width: "474px",
-                        height: "9493.39px",
+                        height: "9568.39px",
                         minWidth: "50px",
                         minHeight: "50px",
                       }}
@@ -2413,7 +2413,7 @@ export default function BodyContent() {
                           data-node-id="gallery-section-title"
                           className="jsx-1828971989 text-box-component node-abs"
                           style={{
-                            top: "8465px",
+                            top: "8390px",
                             left: "10.7214px",
                             width: "455.04px",
                             height: "auto",
@@ -2459,7 +2459,7 @@ export default function BodyContent() {
                           data-node-id="gallery-section-sub"
                           className="jsx-1828971989 text-box-component node-abs"
                           style={{
-                            top: "8508px",
+                            top: "8433px",
                             left: "10.7214px",
                             width: "455.04px",
                             height: "auto",
@@ -2495,15 +2495,15 @@ export default function BodyContent() {
                           </div>
                         </div>
 
-                        {/* Photo 1 - top-left */}
+                        {/* Photo 1 - full width landscape */}
                         <div
                           data-node-id="gallery-photo-01"
                           className="jsx-1944329802 node-abs"
                           style={{
-                            top: "8540px",
+                            top: "8465px",
                             left: "7px",
-                            width: "224px",
-                            height: "300px",
+                            width: "460px",
+                            height: "220px",
                             transform: "rotate(0deg) scale(1, 1)",
                           }}
                         >
@@ -2527,15 +2527,15 @@ export default function BodyContent() {
                           </div>
                         </div>
 
-                        {/* Photo 2 - top-right */}
+                        {/* Photo 2 - full width landscape */}
                         <div
                           data-node-id="gallery-photo-02"
                           className="jsx-1944329802 node-abs"
                           style={{
-                            top: "8540px",
-                            left: "243px",
-                            width: "224px",
-                            height: "300px",
+                            top: "8695px",
+                            left: "7px",
+                            width: "460px",
+                            height: "220px",
                             transform: "rotate(0deg) scale(1, 1)",
                           }}
                         >
@@ -2564,7 +2564,7 @@ export default function BodyContent() {
                           data-node-id="gallery-photo-03"
                           className="jsx-1944329802 node-abs"
                           style={{
-                            top: "8853px",
+                            top: "8928px",
                             left: "7px",
                             width: "143px",
                             height: "200px",
@@ -2596,7 +2596,7 @@ export default function BodyContent() {
                           data-node-id="gallery-photo-04"
                           className="jsx-1944329802 node-abs"
                           style={{
-                            top: "8853px",
+                            top: "8928px",
                             left: "162px",
                             width: "150px",
                             height: "200px",
@@ -2628,7 +2628,7 @@ export default function BodyContent() {
                           data-node-id="gallery-photo-05"
                           className="jsx-1944329802 node-abs"
                           style={{
-                            top: "8853px",
+                            top: "8928px",
                             left: "324px",
                             width: "143px",
                             height: "200px",
@@ -2660,7 +2660,7 @@ export default function BodyContent() {
                           data-node-id="W3GBplK8YF"
                           className="jsx-3557960200 node-abs"
                           style={{
-                            top: "9181.19px",
+                            top: "9256.19px",
                             left: "0px",
                             width: "100%",
                             height: "280px",
@@ -2691,7 +2691,7 @@ export default function BodyContent() {
                           data-node-id="a77vdXA4WC"
                           className="jsx-1828971989 text-box-component node-abs"
                           style={{
-                            top: "9130.96px",
+                            top: "9205.96px",
                             left: "8.29274px",
                             width: "455.04px",
                             height: "auto",
