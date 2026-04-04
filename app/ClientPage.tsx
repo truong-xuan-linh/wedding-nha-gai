@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import BodyContent from "./BodyContent";
+import CustomCursor from "../components/CustomCursor";
+import SparkleEffects from "../components/SparkleEffects";
 
 export default function ClientPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -18,14 +20,26 @@ export default function ClientPage() {
       if (rootPage && vw < DESIGN_WIDTH) {
         const scale = vw / DESIGN_WIDTH;
         document.documentElement.style.setProperty("--mobile-scale", String(scale));
-        // Shrink scroll container height to match scaled content
-        if (rootPage.parentElement) {
-          rootPage.parentElement.style.height = `${vw / DESIGN_WIDTH * 100}vh`;
+        
+        // Fix for the "white area" at the bottom: 
+        // transform: scale only visual, doesn't affect document flow. 
+        // We use negative margin-bottom to shrink the occupied height.
+        const originalHeight = 8693.39;
+        const scaledHeight = originalHeight * scale;
+        const diff = originalHeight - scaledHeight;
+        rootPage.style.marginBottom = `-${diff}px`;
+        
+        // Also ensure pc-content parent doesn't have fixed 90vh on mobile if we want full screen
+        const pcContent = container.querySelector(".pc-content") as HTMLElement | null;
+        if (pcContent) {
+          pcContent.style.height = "100vh";
         }
       } else if (rootPage) {
         document.documentElement.style.removeProperty("--mobile-scale");
-        if (rootPage.parentElement) {
-          rootPage.parentElement.style.height = "";
+        rootPage.style.marginBottom = "";
+        const pcContent = container.querySelector(".pc-content") as HTMLElement | null;
+        if (pcContent) {
+          pcContent.style.height = "";
         }
       }
     };
@@ -499,6 +513,8 @@ export default function ClientPage() {
 
   return (
     <>
+      <CustomCursor />
+      <SparkleEffects />
       <link rel="preload" as="image" href="/audio-1.png" />
       <link rel="preload" as="image" href="/calen_heart_1.png" />
       <link rel="preload" as="image" href="/message.24f9a1e2.png" />

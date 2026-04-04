@@ -108,7 +108,7 @@ export default function BodyContent() {
                             <div className="jsx-1828971989 inner-content-base">
                               <div
                                 contentEditable={false}
-                                className="text-node-base text-white text-2xl font-bold text-center"
+                                className="text-node-base text-gold-gradient text-2xl font-bold text-center"
                                 style={{ fontFamily: "Mallong" }}
                               >
                                 Welcome to our wedding
@@ -2505,7 +2505,7 @@ export default function BodyContent() {
                                   width: "100%",
                                   minWidth: "20px",
                                   color: "rgb(255, 255, 255)",
-                                  fontSize: "24.648px",
+                                  fontSize: "28.648px",
                                   textShadow: "rgba(0, 0, 0, 0) 0px 0px 2px",
                                   fontWeight: "bold",
                                   fontFamily: "Mallong",
@@ -2519,6 +2519,7 @@ export default function BodyContent() {
                                   overflow: "hidden",
                                   wordBreak: "break-word",
                                 }}
+                                className="text-gold-gradient"
                               >
                                 Công Tú
                               </div>
@@ -2549,7 +2550,7 @@ export default function BodyContent() {
                                   width: "100%",
                                   minWidth: "20px",
                                   color: "rgb(255, 255, 255)",
-                                  fontSize: "24.648px",
+                                  fontSize: "28.648px",
                                   textShadow: "rgba(0, 0, 0, 0) 0px 0px 2px",
                                   fontWeight: "bold",
                                   fontFamily: "Mallong",
@@ -2563,6 +2564,7 @@ export default function BodyContent() {
                                   overflow: "hidden",
                                   wordBreak: "break-word",
                                 }}
+                                className="text-gold-gradient"
                               >
                                 Diễm My
                               </div>
