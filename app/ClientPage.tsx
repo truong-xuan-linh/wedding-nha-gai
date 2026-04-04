@@ -39,7 +39,7 @@ export default function ClientPage() {
         rootPage.style.marginBottom = "";
         const pcContent = container.querySelector(".pc-content") as HTMLElement | null;
         if (pcContent) {
-          pcContent.style.height = "";
+          pcContent.style.height = "90vh";
         }
       }
     };
