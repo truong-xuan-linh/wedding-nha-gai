@@ -2,22 +2,28 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "21.04.2026💍 | My & Tú",
-  description: "21.04.2026💍 ",
+  title: "Thiệp cưới Diễm My & Công Tú 💍 21.04.2026",
+  description: "Trân trọng kính mời bạn đến dự lễ thành hôn của Diễm My & Công Tú vào ngày 21 tháng 04 năm 2026. 💕",
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   openGraph: {
-    title: "21.04.2026💍 | My & Tú",
-    description: "21.04.2026💍 ",
+    title: "Thiệp cưới Diễm My & Công Tú 💍 21.04.2026",
+    description: "Trân trọng kính mời bạn đến dự lễ thành hôn của Diễm My & Công Tú vào ngày 21 tháng 04 năm 2026. 💕",
     type: "website",
     images: [
       {
-        url: "/assets/images/4011796024475880260.webp",
+        url: "https://wedding-bride-three.vercel.app/assets/images/4011796024475880260.webp",
         width: 1200,
         height: 630,
-        alt: "21.04.2026💍",
+        alt: "Thiệp cưới Diễm My & Công Tú 💍 21.04.2026",
       },
     ],
     locale: "vi_VN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Thiệp cưới Diễm My & Công Tú 💍 21.04.2026",
+    description: "Trân trọng kính mời bạn đến dự lễ thành hôn của Diễm My & Công Tú vào ngày 21 tháng 04 năm 2026. 💕",
+    images: ["https://wedding-bride-three.vercel.app/assets/images/4011796024475880260.webp"],
   },
 };
 
