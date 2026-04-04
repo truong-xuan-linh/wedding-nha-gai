@@ -3564,7 +3564,7 @@ export default function BodyContent() {
                   <div className="jsx-1401461546 toolbar">
                     <div className="jsx-831523885 toolbar-left">
                       <div className="jsx-831523885 message-box-button">
-                        <span className="jsx-831523885" style={{ display: "inline-block", width: "calc(100% - 24px)" }}>
+                        <span className="jsx-831523885" style={{ display: "inline-block", width: "calc(100% - 14px)" }}>
                           Gửi lời chúc...
                         </span>
                         <img

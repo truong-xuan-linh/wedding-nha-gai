@@ -307,16 +307,31 @@ export default function ClientPage() {
     };
 
     if (audioWrapper && audioEl && audioToggle) {
-      // Try autoplay on load; browsers usually block this until user interaction
+      // Try autoplay on load; browsers may block until user interaction
       audioEl
         .play()
         .then(() => setPlayingState(true))
         .catch(() => {
-          // Autoplay blocked — show paused state visually
+          // Autoplay blocked — play on first user interaction anywhere on the page
           setPlayingState(false);
+          const playOnInteraction = () => {
+            audioEl
+              .play()
+              .then(() => {
+                setPlayingState(true);
+              })
+              .catch(() => {});
+            ["click", "touchstart", "keydown", "scroll"].forEach((evt) =>
+              document.removeEventListener(evt, playOnInteraction)
+            );
+          };
+          ["click", "touchstart", "keydown", "scroll"].forEach((evt) =>
+            document.addEventListener(evt, playOnInteraction, { once: true, passive: true })
+          );
         });
 
-      audioWrapper.addEventListener("click", () => {
+      audioWrapper.addEventListener("click", (e) => {
+        e.stopPropagation();
         if (isPlaying) {
           audioEl.pause();
           setPlayingState(false);
