@@ -2003,7 +2003,7 @@ export default function BodyContent() {
                                 <div
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
-                                    backgroundImage: 'url("/assets/images/9621243010577606206.jpg")',
+                                    backgroundImage: 'url("/assets/images/32432512798917496184.jpg")',
                                   }}
                                 ></div>
                               </div>
@@ -3111,7 +3111,7 @@ export default function BodyContent() {
                                   textAlign: "center",
                                 }}
                               >
-                                Lễ Thành Hôn
+                                Lễ Vu Quy
                                 <br />
                               </div>
                             </div>
