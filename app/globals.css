@@ -3,106 +3,106 @@
 /* ===== FONT FACES ===== */
 @font-face {
   font-family: 'Mallong';
-  src: url('https://assets.cinelove.me/fonts/webfonts/mallong/mallong.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/mallong/mallong.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/mallong/mallong.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/mallong/mallong.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'Quicksand';
-  src: url('https://assets.cinelove.me/fonts/webfonts/quicksand/quicksand.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/quicksand/quicksand.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/quicksand/quicksand.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/quicksand/quicksand.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'Signora';
-  src: url('https://assets.cinelove.me/fonts/webfonts/signora/signora.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/signora/signora.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/signora/signora.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/signora/signora.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'Belinda Avenue';
-  src: url('https://assets.cinelove.me/fonts/webfonts/belinda-avenue/belinda-avenue.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/belinda-avenue/belinda-avenue.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/belinda-avenue/belinda-avenue.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/belinda-avenue/belinda-avenue.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'Gillastone';
-  src: url('https://assets.cinelove.me/fonts/webfonts/gillastone/gillastone.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/gillastone/gillastone.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/gillastone/gillastone.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/gillastone/gillastone.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'Madam Ghea';
-  src: url('https://assets.cinelove.me/fonts/webfonts/madam-ghea/madam-ghea.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/madam-ghea/madam-ghea.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/madam-ghea/madam-ghea.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/madam-ghea/madam-ghea.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'Moon Light';
-  src: url('https://assets.cinelove.me/fonts/webfonts/moon-light/moon-light.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/moon-light/moon-light.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/moon-light/moon-light.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/moon-light/moon-light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'BethanWhite';
-  src: url('https://assets.cinelove.me/fonts/webfonts/bethanwhite/bethanwhite.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/bethanwhite/bethanwhite.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/bethanwhite/bethanwhite.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/bethanwhite/bethanwhite.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'Soul Note Display';
-  src: url('https://assets.cinelove.me/fonts/webfonts/soul-note-display/soul-note-display.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/soul-note-display/soul-note-display.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/soul-note-display/soul-note-display.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/soul-note-display/soul-note-display.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'PlayfairDisplay';
-  src: url('https://assets.cinelove.me/fonts/webfonts/playfairdisplay/playfairdisplay.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/playfairdisplay/playfairdisplay.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/playfairdisplay/playfairdisplay.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/playfairdisplay/playfairdisplay.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'Faugllin Balseyn';
-  src: url('https://assets.cinelove.me/fonts/webfonts/faugllin-balseyn/faugllin-balseyn.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/faugllin-balseyn/faugllin-balseyn.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/faugllin-balseyn/faugllin-balseyn.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/faugllin-balseyn/faugllin-balseyn.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'The Hamstter';
-  src: url('https://assets.cinelove.me/fonts/webfonts/the-hamstter/the-hamstter.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/the-hamstter/the-hamstter.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/the-hamstter/the-hamstter.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/the-hamstter/the-hamstter.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'BucThu';
-  src: url('https://assets.cinelove.me/fonts/webfonts/bucthu/bucthu.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/bucthu/bucthu.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/bucthu/bucthu.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/bucthu/bucthu.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'Scarlet Bradley.regular';
-  src: url('https://assets.cinelove.me/fonts/webfonts/scarlet-bradleyregular/scarlet-bradleyregular.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/scarlet-bradleyregular/scarlet-bradleyregular.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/scarlet-bradleyregular/scarlet-bradleyregular.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/scarlet-bradleyregular/scarlet-bradleyregular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }@font-face {
   font-family: 'Monsieur La Doulaise';
-  src: url('https://assets.cinelove.me/fonts/webfonts/monsieur-la-doulaise/monsieur-la-doulaise.woff2') format('woff2'),
-       url('https://assets.cinelove.me/fonts/webfonts/monsieur-la-doulaise/monsieur-la-doulaise.woff') format('woff');
+  src: url('/assets/cinelove/fonts/webfonts/monsieur-la-doulaise/monsieur-la-doulaise.woff2') format('woff2'),
+       url('/assets/cinelove/fonts/webfonts/monsieur-la-doulaise/monsieur-la-doulaise.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

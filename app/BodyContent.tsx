@@ -34,7 +34,7 @@ export default function BodyContent() {
                   </div>
                 </div>
                 <audio
-                  src="https://assets.cinelove.me/mp3/de0b9487-deec-473f-a184-56106298338f.mp3"
+                  src="/assets/cinelove/mp3/de0b9487-deec-473f-a184-56106298338f.mp3"
                   loop
                   preload="auto"
                 ></audio>
@@ -92,7 +92,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/42820ab5-3e06-45cb-90ce-f4e5734f3222.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/42820ab5-3e06-45cb-90ce-f4e5734f3222.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -370,7 +370,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/2e27300c-364a-4477-8a4c-bfae17cac71a.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/2e27300c-364a-4477-8a4c-bfae17cac71a.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -475,7 +475,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/4d0cea10-4d8f-46aa-a3dc-f731f4711ea0.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/4d0cea10-4d8f-46aa-a3dc-f731f4711ea0.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -592,7 +592,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")',
+                                      'url("/assets/cinelove/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")',
                                   }}
                                 ></div>
                               </div>
@@ -621,7 +621,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")',
+                                      'url("/assets/cinelove/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")',
                                   }}
                                 ></div>
                               </div>
@@ -866,7 +866,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/9b87d5d7-eeaa-438f-9824-e21feb350c84.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/9b87d5d7-eeaa-438f-9824-e21feb350c84.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -898,7 +898,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/f7405d80-97b2-4fc6-9bca-aeeca3eaf72f.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/f7405d80-97b2-4fc6-9bca-aeeca3eaf72f.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -1078,7 +1078,7 @@ export default function BodyContent() {
                                   className="jsx-3557960200 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/resources/happiness/0o68oy8lw7sad3o74ehkwk.png")',
+                                      'url("/assets/cinelove/resources/happiness/0o68oy8lw7sad3o74ehkwk.png")',
                                   }}
                                 ></div>
                               </div>
@@ -1102,7 +1102,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/c1291ed3-2a45-4de0-9bb7-c01ae539f3e8.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/c1291ed3-2a45-4de0-9bb7-c01ae539f3e8.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -1393,7 +1393,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/6323cd41-3ff8-44bd-a8f7-ab0c0b024723.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/6323cd41-3ff8-44bd-a8f7-ab0c0b024723.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -1422,7 +1422,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/cc835da9-7e82-4bba-b3e4-284b08c5249e.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/cc835da9-7e82-4bba-b3e4-284b08c5249e.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -1489,7 +1489,7 @@ export default function BodyContent() {
                                   className="jsx-3557960200 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/resources/happiness/7kchz8iq0r729zjgw2xlh5.png")',
+                                      'url("/assets/cinelove/resources/happiness/7kchz8iq0r729zjgw2xlh5.png")',
                                   }}
                                 ></div>
                               </div>
@@ -1583,7 +1583,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/2a950678-b3a9-4cd6-a7e8-502d00fdc17f.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/2a950678-b3a9-4cd6-a7e8-502d00fdc17f.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -1612,7 +1612,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")',
+                                      'url("/assets/cinelove/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")',
                                   }}
                                 ></div>
                               </div>
@@ -1641,7 +1641,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")',
+                                      'url("/assets/cinelove/templates/assets/7e275458-268a-4dad-b147-1af6ad9abb46/4f9cc258-948c-4b45-b2fb-9075905dc57f.png")',
                                   }}
                                 ></div>
                               </div>
@@ -1977,7 +1977,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/9937d24b-da38-47f8-9821-e97a6d0cf6e0.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/9937d24b-da38-47f8-9821-e97a6d0cf6e0.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -2007,7 +2007,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/7f9e158d-5bfb-4c3d-90f2-6fe0f0cc1f60.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/7f9e158d-5bfb-4c3d-90f2-6fe0f0cc1f60.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -2083,7 +2083,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/3fc235c9-ab1e-4826-8d6b-9ca03729c40f.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/3fc235c9-ab1e-4826-8d6b-9ca03729c40f.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -2244,7 +2244,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/5adc6e05-dc4c-4b0f-a62e-5136017a7a55.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/5adc6e05-dc4c-4b0f-a62e-5136017a7a55.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -2406,7 +2406,7 @@ export default function BodyContent() {
                                   className="jsx-1944329802 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/uploads/72551605-7892-4c13-a158-ac080371e869/5e381788-0c5d-44ef-8678-550261a46d19.jpeg")',
+                                      'url("/assets/cinelove/uploads/72551605-7892-4c13-a158-ac080371e869/5e381788-0c5d-44ef-8678-550261a46d19.jpeg")',
                                   }}
                                 ></div>
                               </div>
@@ -2436,7 +2436,7 @@ export default function BodyContent() {
                                   className="jsx-3557960200 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/resources/characters/2pln23imlphtxz5q16j3mc.png")',
+                                      'url("/assets/cinelove/resources/characters/2pln23imlphtxz5q16j3mc.png")',
                                     border: "0px solid",
                                     padding: "0px",
                                     boxShadow: "none",
@@ -3300,7 +3300,7 @@ export default function BodyContent() {
                                   className="jsx-3557960200 photo-bg-wrap photo-bg-base"
                                   style={{
                                     backgroundImage:
-                                      'url("https://assets.cinelove.me/resources/love/1ufqiy0iyebfxitvbfetd7.png")',
+                                      'url("/assets/cinelove/resources/love/1ufqiy0iyebfxitvbfetd7.png")',
                                     border: "0px solid",
                                     padding: "0px",
                                     boxShadow: "none",
