@@ -1,5 +1,6 @@
 "use client";
 import { useRef, useEffect, useState, useCallback } from "react";
+import { createPortal } from "react-dom";
 
 const IMAGES = [
   "/assets/images/4277553449265611777.jpg",
@@ -14,7 +15,6 @@ const IMAGES = [
 const FRAME_H = 270;
 const FRAME_GAP = 12;
 const SPROCKET_ZONE = 20;
-// Fallback width before images are measured
 const FALLBACK_W = 198;
 
 function calcUnit(widths: number[]) {
@@ -58,16 +58,24 @@ export default function FilmStripGallery() {
   const startXRef = useRef(0);
   const startScrollRef = useRef(0);
   const totalDragRef = useRef(0);
+  // which frame index the user pressed down on (-1 = none)
+  const clickFrameRef = useRef(-1);
   const rafRef = useRef<number | null>(null);
 
-  // frameWidths[i] = measured pixel width for IMAGES[i], keeping height = FRAME_H
   const [frameWidths, setFrameWidths] = useState<number[]>(
     IMAGES.map(() => FALLBACK_W)
   );
   const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
-  const [grabbing, setGrabbing] = useState(false);
+  const grabbingRef = useRef(false);
+  const trackContainerRef = useRef<HTMLDivElement>(null);
+  // portal requires DOM — only true after mount
+  const [mounted, setMounted] = useState(false);
 
-  // Measure each image's natural aspect ratio once on mount
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Measure natural aspect ratios
   useEffect(() => {
     let cancelled = false;
     Promise.all(
@@ -77,9 +85,7 @@ export default function FilmStripGallery() {
             const img = new window.Image();
             img.onload = () => {
               const ratio = img.naturalWidth / img.naturalHeight;
-              // clamp: min 140px, max 400px
-              const w = Math.round(Math.max(140, Math.min(400, ratio * FRAME_H)));
-              resolve(w);
+              resolve(Math.round(Math.max(140, Math.min(400, ratio * FRAME_H))));
             };
             img.onerror = () => resolve(FALLBACK_W);
             img.src = src;
@@ -87,10 +93,8 @@ export default function FilmStripGallery() {
       )
     ).then((widths) => {
       if (cancelled) return;
-      const newUnit = calcUnit(widths);
-      unitRef.current = newUnit;
-      // re-anchor scroll to the middle copy so we can loop both ways
-      scrollXRef.current = newUnit;
+      unitRef.current = calcUnit(widths);
+      scrollXRef.current = unitRef.current; // start at middle copy
       setFrameWidths(widths);
     });
     return () => {
@@ -104,15 +108,13 @@ export default function FilmStripGallery() {
     }
   }, []);
 
-  // RAF auto-scroll — reads unitRef each tick so it stays correct after measure
+  // Auto-scroll RAF
   useEffect(() => {
     const AUTO_SPEED = 0.45;
     let last = performance.now();
-
     const tick = (now: number) => {
       const dt = Math.min(now - last, 50);
       last = now;
-
       if (!isDraggingRef.current) {
         const unit = unitRef.current;
         scrollXRef.current += AUTO_SPEED * (dt / 16.67);
@@ -120,10 +122,8 @@ export default function FilmStripGallery() {
         if (scrollXRef.current < 0) scrollXRef.current += unit;
         applyTransform();
       }
-
       rafRef.current = requestAnimationFrame(tick);
     };
-
     applyTransform();
     rafRef.current = requestAnimationFrame(tick);
     return () => {
@@ -131,34 +131,59 @@ export default function FilmStripGallery() {
     };
   }, [applyTransform]);
 
-  const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+  // Window-level drag listeners — avoids setPointerCapture which blocks click events
+  useEffect(() => {
+    const onMove = (e: PointerEvent) => {
+      if (!isDraggingRef.current) return;
+      // prevent page scroll while dragging the strip
+      e.preventDefault();
+      const dx = e.clientX - startXRef.current;
+      totalDragRef.current = Math.abs(dx);
+      const total = unitRef.current * 3;
+      let next = startScrollRef.current - dx;
+      next = ((next % total) + total) % total;
+      scrollXRef.current = next;
+      applyTransform();
+    };
+
+    const onUp = () => {
+      if (!isDraggingRef.current) return;
+      isDraggingRef.current = false;
+      grabbingRef.current = false;
+      if (trackContainerRef.current) {
+        trackContainerRef.current.style.cursor = "grab";
+      }
+      // treat as click if drag distance was small
+      if (totalDragRef.current < 8 && clickFrameRef.current >= 0) {
+        setLightboxIdx(clickFrameRef.current % IMAGES.length);
+      }
+      clickFrameRef.current = -1;
+    };
+
+    // { passive: false } required so preventDefault() works on mobile
+    window.addEventListener("pointermove", onMove, { passive: false });
+    window.addEventListener("pointerup", onUp);
+    return () => {
+      window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("pointerup", onUp);
+    };
+  }, [applyTransform]);
+
+  const onTrackPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    e.preventDefault();
     isDraggingRef.current = true;
+    grabbingRef.current = true;
     startXRef.current = e.clientX;
     startScrollRef.current = scrollXRef.current;
     totalDragRef.current = 0;
-    setGrabbing(true);
-    (e.currentTarget as HTMLDivElement).setPointerCapture(e.pointerId);
-  };
-
-  const onPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (!isDraggingRef.current) return;
-    const dx = e.clientX - startXRef.current;
-    totalDragRef.current = Math.abs(dx);
-    const total = unitRef.current * 3;
-    let next = startScrollRef.current - dx;
-    next = ((next % total) + total) % total;
-    scrollXRef.current = next;
-    applyTransform();
-  };
-
-  const onPointerUp = () => {
-    isDraggingRef.current = false;
-    setGrabbing(false);
-  };
-
-  const openLightbox = (imgIdx: number) => {
-    if (totalDragRef.current > 8) return;
-    setLightboxIdx(imgIdx % IMAGES.length);
+    if (trackContainerRef.current) {
+      trackContainerRef.current.style.cursor = "grabbing";
+    }
+    // record which frame was pressed — no setPointerCapture needed
+    const frameEl = (e.target as Element).closest("[data-frame-idx]");
+    clickFrameRef.current = frameEl
+      ? parseInt(frameEl.getAttribute("data-frame-idx") ?? "-1", 10)
+      : -1;
   };
 
   const closeLightbox = () => setLightboxIdx(null);
@@ -173,14 +198,184 @@ export default function FilmStripGallery() {
     setLightboxIdx((prev) => ((prev ?? 0) + 1) % IMAGES.length);
   };
 
-  // 3 copies for seamless looping
   const allImages = [...IMAGES, ...IMAGES, ...IMAGES];
-
   const stripHeight = SPROCKET_ZONE + 8 + FRAME_H + 8 + SPROCKET_ZONE;
+
+  const lightbox =
+    mounted && lightboxIdx !== null
+      ? createPortal(
+          <div
+            onClick={closeLightbox}
+            style={{
+              position: "fixed",
+              inset: 0,
+              background: "rgba(0,0,0,0.92)",
+              zIndex: 99999,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            {/* Close */}
+            <button
+              onClick={closeLightbox}
+              style={{
+                position: "absolute",
+                top: 16,
+                right: 20,
+                background: "none",
+                border: "none",
+                color: "rgba(255,255,255,0.8)",
+                fontSize: "36px",
+                lineHeight: 1,
+                cursor: "pointer",
+                zIndex: 1,
+                padding: "4px 8px",
+              }}
+            >
+              ×
+            </button>
+
+            {/* Counter */}
+            <div
+              style={{
+                position: "absolute",
+                top: 20,
+                left: "50%",
+                transform: "translateX(-50%)",
+                color: "rgba(201,169,110,0.8)",
+                fontFamily: "monospace",
+                fontSize: "13px",
+                letterSpacing: "2px",
+              }}
+            >
+              {String((lightboxIdx ?? 0) + 1).padStart(2, "0")} /{" "}
+              {String(IMAGES.length).padStart(2, "0")}
+            </div>
+
+            {/* Image */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={IMAGES[lightboxIdx]}
+              alt={`Khoảnh khắc ${lightboxIdx + 1}`}
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                maxWidth: "90vw",
+                maxHeight: "82vh",
+                objectFit: "contain",
+                borderRadius: "2px",
+                boxShadow: "0 0 60px rgba(0,0,0,0.9)",
+                border: "1px solid rgba(255,255,255,0.1)",
+              }}
+            />
+
+            {/* Prev */}
+            <button
+              onClick={prevPhoto}
+              style={{
+                position: "absolute",
+                left: 12,
+                top: "50%",
+                transform: "translateY(-50%)",
+                background: "rgba(255,255,255,0.08)",
+                border: "1px solid rgba(255,255,255,0.2)",
+                borderRadius: "50%",
+                width: 44,
+                height: 44,
+                color: "white",
+                fontSize: 22,
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              ‹
+            </button>
+
+            {/* Next */}
+            <button
+              onClick={nextPhoto}
+              style={{
+                position: "absolute",
+                right: 12,
+                top: "50%",
+                transform: "translateY(-50%)",
+                background: "rgba(255,255,255,0.08)",
+                border: "1px solid rgba(255,255,255,0.2)",
+                borderRadius: "50%",
+                width: 44,
+                height: 44,
+                color: "white",
+                fontSize: 22,
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              ›
+            </button>
+
+            {/* Thumbnails */}
+            <div
+              style={{
+                position: "absolute",
+                bottom: 16,
+                left: "50%",
+                transform: "translateX(-50%)",
+                display: "flex",
+                gap: "6px",
+                background: "rgba(0,0,0,0.5)",
+                padding: "6px 10px",
+                borderRadius: "4px",
+                border: "1px solid rgba(255,255,255,0.1)",
+              }}
+            >
+              {IMAGES.map((src, idx) => (
+                <div
+                  key={idx}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setLightboxIdx(idx);
+                  }}
+                  style={{
+                    width: `${Math.round((frameWidths[idx] / FRAME_H) * 32)}px`,
+                    height: "32px",
+                    overflow: "hidden",
+                    border:
+                      idx === lightboxIdx
+                        ? "2px solid rgba(201,169,110,0.9)"
+                        : "2px solid rgba(255,255,255,0.15)",
+                    borderRadius: "2px",
+                    cursor: "pointer",
+                    opacity: idx === lightboxIdx ? 1 : 0.5,
+                    transition: "opacity 0.2s, border-color 0.2s",
+                    flexShrink: 0,
+                  }}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={src}
+                    alt=""
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      pointerEvents: "none",
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>,
+          document.body
+        )
+      : null;
 
   return (
     <>
-      {/* ===== Film Strip Container ===== */}
+      {/* ===== Film Strip ===== */}
       <div
         style={{
           position: "absolute",
@@ -195,10 +390,9 @@ export default function FilmStripGallery() {
             "inset 0 4px 16px rgba(0,0,0,0.8), inset 0 -4px 16px rgba(0,0,0,0.8)",
         }}
       >
-        {/* Sprocket holes — top */}
         <SprocketRow />
 
-        {/* Film grain overlay */}
+        {/* Film grain */}
         <div
           style={{
             position: "absolute",
@@ -212,13 +406,19 @@ export default function FilmStripGallery() {
           }}
         />
 
-        {/* Scrolling track */}
+        {/* Track wrapper — touch-action:none stops browser from claiming the gesture */}
+        <div
+          ref={trackContainerRef}
+          onPointerDown={onTrackPointerDown}
+          style={{
+            touchAction: "none",
+            cursor: "grab",
+            overflow: "hidden",
+          }}
+        >
+        {/* Inner scrolling track */}
         <div
           ref={trackRef}
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={onPointerUp}
-          onPointerLeave={onPointerUp}
           style={{
             display: "flex",
             gap: `${FRAME_GAP}px`,
@@ -226,17 +426,15 @@ export default function FilmStripGallery() {
             paddingTop: "8px",
             paddingBottom: "8px",
             willChange: "transform",
-            cursor: grabbing ? "grabbing" : "grab",
           }}
         >
           {allImages.map((src, i) => {
             const imgIdx = i % IMAGES.length;
-            const frameNum = imgIdx + 1;
             const fw = frameWidths[imgIdx];
             return (
               <div
                 key={i}
-                onClick={() => openLightbox(i)}
+                data-frame-idx={i}
                 style={{
                   flexShrink: 0,
                   width: `${fw}px`,
@@ -246,11 +444,9 @@ export default function FilmStripGallery() {
                   overflow: "hidden",
                   background: "#1a1a1a",
                   boxShadow: "0 0 8px rgba(0,0,0,0.6)",
-                  // smooth width transition when measurements arrive
                   transition: "width 0.3s ease",
                 }}
               >
-                {/* Frame number stamp */}
                 <div
                   style={{
                     position: "absolute",
@@ -264,14 +460,13 @@ export default function FilmStripGallery() {
                     pointerEvents: "none",
                   }}
                 >
-                  {String(frameNum).padStart(2, "0")}
+                  {String(imgIdx + 1).padStart(2, "0")}
                 </div>
 
-                {/* Photo */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={src}
-                  alt={`Khoảnh khắc ${frameNum}`}
+                  alt={`Khoảnh khắc ${imgIdx + 1}`}
                   draggable={false}
                   style={{
                     width: "100%",
@@ -295,7 +490,6 @@ export default function FilmStripGallery() {
                   }}
                 />
 
-                {/* Bottom gradient overlay */}
                 <div
                   style={{
                     position: "absolute",
@@ -309,11 +503,11 @@ export default function FilmStripGallery() {
             );
           })}
         </div>
+        </div>{/* end trackContainerRef */}
 
-        {/* Sprocket holes — bottom */}
         <SprocketRow />
 
-        {/* Right-edge vignette */}
+        {/* Edge vignettes */}
         <div
           style={{
             position: "absolute",
@@ -326,7 +520,6 @@ export default function FilmStripGallery() {
             zIndex: 5,
           }}
         />
-        {/* Left-edge vignette */}
         <div
           style={{
             position: "absolute",
@@ -341,175 +534,8 @@ export default function FilmStripGallery() {
         />
       </div>
 
-      {/* ===== Lightbox ===== */}
-      {lightboxIdx !== null && (
-        <div
-          onClick={closeLightbox}
-          style={{
-            position: "fixed",
-            inset: 0,
-            background: "rgba(0,0,0,0.92)",
-            zIndex: 99999,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          {/* Close */}
-          <button
-            onClick={closeLightbox}
-            style={{
-              position: "absolute",
-              top: 16,
-              right: 20,
-              background: "none",
-              border: "none",
-              color: "rgba(255,255,255,0.8)",
-              fontSize: "36px",
-              lineHeight: 1,
-              cursor: "pointer",
-              zIndex: 1,
-              padding: "4px 8px",
-            }}
-          >
-            ×
-          </button>
-
-          {/* Frame counter */}
-          <div
-            style={{
-              position: "absolute",
-              top: 20,
-              left: "50%",
-              transform: "translateX(-50%)",
-              color: "rgba(201,169,110,0.8)",
-              fontFamily: "monospace",
-              fontSize: "13px",
-              letterSpacing: "2px",
-            }}
-          >
-            {String((lightboxIdx ?? 0) + 1).padStart(2, "0")} /{" "}
-            {String(IMAGES.length).padStart(2, "0")}
-          </div>
-
-          {/* Image */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={IMAGES[lightboxIdx]}
-            alt={`Khoảnh khắc ${lightboxIdx + 1}`}
-            onClick={(e) => e.stopPropagation()}
-            style={{
-              maxWidth: "90vw",
-              maxHeight: "82vh",
-              objectFit: "contain",
-              borderRadius: "2px",
-              boxShadow: "0 0 60px rgba(0,0,0,0.9)",
-              border: "1px solid rgba(255,255,255,0.1)",
-            }}
-          />
-
-          {/* Prev */}
-          <button
-            onClick={prevPhoto}
-            style={{
-              position: "absolute",
-              left: 12,
-              top: "50%",
-              transform: "translateY(-50%)",
-              background: "rgba(255,255,255,0.08)",
-              border: "1px solid rgba(255,255,255,0.2)",
-              borderRadius: "50%",
-              width: 44,
-              height: 44,
-              color: "white",
-              fontSize: 22,
-              cursor: "pointer",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            ‹
-          </button>
-
-          {/* Next */}
-          <button
-            onClick={nextPhoto}
-            style={{
-              position: "absolute",
-              right: 12,
-              top: "50%",
-              transform: "translateY(-50%)",
-              background: "rgba(255,255,255,0.08)",
-              border: "1px solid rgba(255,255,255,0.2)",
-              borderRadius: "50%",
-              width: 44,
-              height: 44,
-              color: "white",
-              fontSize: 22,
-              cursor: "pointer",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            ›
-          </button>
-
-          {/* Thumbnail strip */}
-          <div
-            style={{
-              position: "absolute",
-              bottom: 16,
-              left: "50%",
-              transform: "translateX(-50%)",
-              display: "flex",
-              gap: "6px",
-              background: "rgba(0,0,0,0.5)",
-              padding: "6px 10px",
-              borderRadius: "4px",
-              border: "1px solid rgba(255,255,255,0.1)",
-            }}
-          >
-            {IMAGES.map((src, idx) => (
-              <div
-                key={idx}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setLightboxIdx(idx);
-                }}
-                style={{
-                  // thumbnail width proportional to measured ratio
-                  width: `${Math.round((frameWidths[idx] / FRAME_H) * 32)}px`,
-                  height: "32px",
-                  overflow: "hidden",
-                  border:
-                    idx === lightboxIdx
-                      ? "2px solid rgba(201,169,110,0.9)"
-                      : "2px solid rgba(255,255,255,0.15)",
-                  borderRadius: "2px",
-                  cursor: "pointer",
-                  opacity: idx === lightboxIdx ? 1 : 0.5,
-                  transition: "opacity 0.2s, border-color 0.2s",
-                  flexShrink: 0,
-                }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={src}
-                  alt=""
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    pointerEvents: "none",
-                  }}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      {/* Lightbox rendered via portal → escapes transform stacking context */}
+      {lightbox}
     </>
   );
 }
