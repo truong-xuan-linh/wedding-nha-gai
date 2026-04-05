@@ -24,7 +24,7 @@ export default function ClientPage() {
         // Fix for the "white area" at the bottom:
         // transform: scale only visual, doesn't affect document flow.
         // We use negative margin-bottom to shrink the occupied height.
-        const originalHeight = 9568.39;
+        const originalHeight = 9238.39;
         const scaledHeight = originalHeight * scale;
         const diff = originalHeight - scaledHeight;
         rootPage.style.marginBottom = `-${diff}px`;
