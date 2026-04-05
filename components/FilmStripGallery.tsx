@@ -11,12 +11,15 @@ const IMAGES = [
   "/assets/images/3692672230771225358.jpg",
 ];
 
-const FRAME_W = 198;
 const FRAME_H = 270;
 const FRAME_GAP = 12;
 const SPROCKET_ZONE = 20;
-// total width of one repeated unit
-const UNIT = (FRAME_W + FRAME_GAP) * IMAGES.length;
+// Fallback width before images are measured
+const FALLBACK_W = 198;
+
+function calcUnit(widths: number[]) {
+  return widths.reduce((sum, w) => sum + w + FRAME_GAP, 0);
+}
 
 function SprocketRow() {
   return (
@@ -49,15 +52,51 @@ function SprocketRow() {
 
 export default function FilmStripGallery() {
   const trackRef = useRef<HTMLDivElement>(null);
-  // start in the middle copy so we can loop both ways
-  const scrollXRef = useRef(UNIT);
+  const scrollXRef = useRef(0);
+  const unitRef = useRef(calcUnit(IMAGES.map(() => FALLBACK_W)));
   const isDraggingRef = useRef(false);
   const startXRef = useRef(0);
   const startScrollRef = useRef(0);
   const totalDragRef = useRef(0);
   const rafRef = useRef<number | null>(null);
+
+  // frameWidths[i] = measured pixel width for IMAGES[i], keeping height = FRAME_H
+  const [frameWidths, setFrameWidths] = useState<number[]>(
+    IMAGES.map(() => FALLBACK_W)
+  );
   const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
   const [grabbing, setGrabbing] = useState(false);
+
+  // Measure each image's natural aspect ratio once on mount
+  useEffect(() => {
+    let cancelled = false;
+    Promise.all(
+      IMAGES.map(
+        (src) =>
+          new Promise<number>((resolve) => {
+            const img = new window.Image();
+            img.onload = () => {
+              const ratio = img.naturalWidth / img.naturalHeight;
+              // clamp: min 140px, max 400px
+              const w = Math.round(Math.max(140, Math.min(400, ratio * FRAME_H)));
+              resolve(w);
+            };
+            img.onerror = () => resolve(FALLBACK_W);
+            img.src = src;
+          })
+      )
+    ).then((widths) => {
+      if (cancelled) return;
+      const newUnit = calcUnit(widths);
+      unitRef.current = newUnit;
+      // re-anchor scroll to the middle copy so we can loop both ways
+      scrollXRef.current = newUnit;
+      setFrameWidths(widths);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const applyTransform = useCallback(() => {
     if (trackRef.current) {
@@ -65,8 +104,9 @@ export default function FilmStripGallery() {
     }
   }, []);
 
+  // RAF auto-scroll — reads unitRef each tick so it stays correct after measure
   useEffect(() => {
-    const AUTO_SPEED = 0.45; // px per 60fps frame
+    const AUTO_SPEED = 0.45;
     let last = performance.now();
 
     const tick = (now: number) => {
@@ -74,10 +114,10 @@ export default function FilmStripGallery() {
       last = now;
 
       if (!isDraggingRef.current) {
+        const unit = unitRef.current;
         scrollXRef.current += AUTO_SPEED * (dt / 16.67);
-        // loop: keep between UNIT..UNIT*2 to always have content on both sides
-        if (scrollXRef.current >= UNIT * 2) scrollXRef.current -= UNIT;
-        if (scrollXRef.current < 0) scrollXRef.current += UNIT;
+        if (scrollXRef.current >= unit * 2) scrollXRef.current -= unit;
+        if (scrollXRef.current < 0) scrollXRef.current += unit;
         applyTransform();
       }
 
@@ -104,9 +144,8 @@ export default function FilmStripGallery() {
     if (!isDraggingRef.current) return;
     const dx = e.clientX - startXRef.current;
     totalDragRef.current = Math.abs(dx);
+    const total = unitRef.current * 3;
     let next = startScrollRef.current - dx;
-    // keep in loopable range
-    const total = UNIT * 3;
     next = ((next % total) + total) % total;
     scrollXRef.current = next;
     applyTransform();
@@ -152,7 +191,8 @@ export default function FilmStripGallery() {
           background: "#0d0d0d",
           overflow: "hidden",
           userSelect: "none",
-          boxShadow: "inset 0 4px 16px rgba(0,0,0,0.8), inset 0 -4px 16px rgba(0,0,0,0.8)",
+          boxShadow:
+            "inset 0 4px 16px rgba(0,0,0,0.8), inset 0 -4px 16px rgba(0,0,0,0.8)",
         }}
       >
         {/* Sprocket holes — top */}
@@ -190,20 +230,24 @@ export default function FilmStripGallery() {
           }}
         >
           {allImages.map((src, i) => {
-            const frameNum = (i % IMAGES.length) + 1;
+            const imgIdx = i % IMAGES.length;
+            const frameNum = imgIdx + 1;
+            const fw = frameWidths[imgIdx];
             return (
               <div
                 key={i}
                 onClick={() => openLightbox(i)}
                 style={{
                   flexShrink: 0,
-                  width: `${FRAME_W}px`,
+                  width: `${fw}px`,
                   height: `${FRAME_H}px`,
                   position: "relative",
                   border: "2px solid rgba(255,255,255,0.12)",
                   overflow: "hidden",
                   background: "#1a1a1a",
                   boxShadow: "0 0 8px rgba(0,0,0,0.6)",
+                  // smooth width transition when measurements arrive
+                  transition: "width 0.3s ease",
                 }}
               >
                 {/* Frame number stamp */}
@@ -238,21 +282,26 @@ export default function FilmStripGallery() {
                     pointerEvents: "none",
                   }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLImageElement).style.filter = "sepia(0) contrast(1.05) brightness(1.05)";
-                    (e.currentTarget as HTMLImageElement).style.transform = "scale(1.04)";
+                    (e.currentTarget as HTMLImageElement).style.filter =
+                      "sepia(0) contrast(1.05) brightness(1.05)";
+                    (e.currentTarget as HTMLImageElement).style.transform =
+                      "scale(1.04)";
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLImageElement).style.filter = "sepia(0.15) contrast(1.08) brightness(0.95)";
-                    (e.currentTarget as HTMLImageElement).style.transform = "scale(1)";
+                    (e.currentTarget as HTMLImageElement).style.filter =
+                      "sepia(0.15) contrast(1.08) brightness(0.95)";
+                    (e.currentTarget as HTMLImageElement).style.transform =
+                      "scale(1)";
                   }}
                 />
 
-                {/* Click hint overlay */}
+                {/* Bottom gradient overlay */}
                 <div
                   style={{
                     position: "absolute",
                     inset: 0,
-                    background: "linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.4) 100%)",
+                    background:
+                      "linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.4) 100%)",
                     pointerEvents: "none",
                   }}
                 />
@@ -339,10 +388,12 @@ export default function FilmStripGallery() {
               letterSpacing: "2px",
             }}
           >
-            {String((lightboxIdx ?? 0) + 1).padStart(2, "0")} / {String(IMAGES.length).padStart(2, "0")}
+            {String((lightboxIdx ?? 0) + 1).padStart(2, "0")} /{" "}
+            {String(IMAGES.length).padStart(2, "0")}
           </div>
 
           {/* Image */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={IMAGES[lightboxIdx]}
             alt={`Khoảnh khắc ${lightboxIdx + 1}`}
@@ -405,7 +456,7 @@ export default function FilmStripGallery() {
             ›
           </button>
 
-          {/* Film strip bottom thumbnails */}
+          {/* Thumbnail strip */}
           <div
             style={{
               position: "absolute",
@@ -428,10 +479,14 @@ export default function FilmStripGallery() {
                   setLightboxIdx(idx);
                 }}
                 style={{
-                  width: "44px",
+                  // thumbnail width proportional to measured ratio
+                  width: `${Math.round((frameWidths[idx] / FRAME_H) * 32)}px`,
                   height: "32px",
                   overflow: "hidden",
-                  border: idx === lightboxIdx ? "2px solid rgba(201,169,110,0.9)" : "2px solid rgba(255,255,255,0.15)",
+                  border:
+                    idx === lightboxIdx
+                      ? "2px solid rgba(201,169,110,0.9)"
+                      : "2px solid rgba(255,255,255,0.15)",
                   borderRadius: "2px",
                   cursor: "pointer",
                   opacity: idx === lightboxIdx ? 1 : 0.5,
@@ -443,7 +498,12 @@ export default function FilmStripGallery() {
                 <img
                   src={src}
                   alt=""
-                  style={{ width: "100%", height: "100%", objectFit: "cover", pointerEvents: "none" }}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    pointerEvents: "none",
+                  }}
                 />
               </div>
             ))}
